@@ -1,0 +1,18 @@
+# ETL Demo Dependencies
+# Install with: pip install -r requirements-demo.txt
+#
+# These dependencies are optional and only required for running the ETL demo
+# located in examples/etl_demo/
+
+# Data processing
+pyarrow>=14.0.0,<18.0
+pandas>=2.0,<3.0
+
+# Data generation
+faker>=22.0.0,<30.0
+
+# YAML parsing
+pyyaml>=6.0,<7.0
+
+# XML parsing (alternative to built-in xml.etree)
+lxml>=5.0.0,<6.0

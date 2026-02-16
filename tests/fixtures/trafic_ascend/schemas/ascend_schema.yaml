@@ -1,0 +1,2135 @@
+version: '1.0'
+generated_at: '2026-02-06T07:53:57.249081Z'
+source_system: SAP_BODS
+tables:
+  ac_cargo:
+    category: source
+    datastore: DS_TRAFIC_ASCENDFEED
+    database: AscendFeed
+    owner: DBO
+    columns:
+    - name: ACCARGO
+      type: VARCHAR
+      size: 1
+      nullable: false
+    - name: ACCARGODESC
+      type: VARCHAR
+      size: 50
+      nullable: true
+    primary_key:
+    - ACCARGO
+  area:
+    category: source
+    datastore: DS_TRAFIC_ASCENDFEED
+    database: AscendFeed
+    owner: DBO
+    columns:
+    - name: AREA
+      type: VARCHAR
+      size: 1
+      nullable: false
+    - name: AREADESC
+      type: VARCHAR
+      size: 50
+      nullable: true
+    primary_key:
+    - AREA
+  category:
+    category: source
+    datastore: DS_TRAFIC_ASCENDFEED
+    database: AscendFeed
+    owner: DBO
+    columns:
+    - name: ACCAT
+      type: VARCHAR
+      size: 4
+      nullable: false
+    - name: ACCATDESC
+      type: VARCHAR
+      size: 50
+      nullable: true
+    primary_key:
+    - ACCAT
+  company:
+    category: source
+    datastore: DS_TRAFIC_ASCENDFEED
+    database: AscendFeed
+    owner: DBO
+    columns:
+    - name: COMPANY
+      type: VARCHAR
+      size: 4
+      nullable: false
+    - name: NAME
+      type: VARCHAR
+      size: 100
+      nullable: true
+    - name: CAT
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: AREA
+      type: VARCHAR
+      size: 1
+      nullable: true
+    - name: CTRY
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: SOURCE
+      type: VARCHAR
+      size: 40
+      nullable: true
+    - name: HISTORIC
+      type: VARCHAR
+      size: 1
+      nullable: true
+    - name: ICAO
+      type: VARCHAR
+      size: 3
+      nullable: true
+    - name: IATA
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: ALIAS
+      type: VARCHAR
+      size: 75
+      nullable: true
+    - name: CEASED_OPS
+      type: DATETIME
+      size: null
+      nullable: true
+    - name: CURRENTAC
+      type: INT
+      size: null
+      nullable: true
+    primary_key:
+    - COMPANY
+  country:
+    category: source
+    datastore: DS_TRAFIC_ASCENDFEED
+    database: AscendFeed
+    owner: DBO
+    columns:
+    - name: CTRY
+      type: VARCHAR
+      size: 2
+      nullable: false
+    - name: COUNTRYDESC
+      type: VARCHAR
+      size: 50
+      nullable: true
+    - name: AREA
+      type: VARCHAR
+      size: 1
+      nullable: true
+    primary_key:
+    - CTRY
+  event:
+    category: source
+    datastore: DS_TRAFIC_ASCENDFEED
+    database: AscendFeed
+    owner: DBO
+    columns:
+    - name: EVENT
+      type: VARCHAR
+      size: 4
+      nullable: false
+    - name: EVENTDESC
+      type: VARCHAR
+      size: 100
+      nullable: true
+    primary_key:
+    - EVENT
+  eventtypes:
+    category: source
+    datastore: DS_TRAFIC_ASCENDFEED
+    database: AscendFeed
+    owner: DBO
+    columns:
+    - name: EVENTTYPE
+      type: VARCHAR
+      size: 1
+      nullable: false
+    - name: EVENTTYPEDESC
+      type: VARCHAR
+      size: 25
+      nullable: true
+    primary_key:
+    - EVENTTYPE
+  gentech:
+    category: source
+    datastore: DS_TRAFIC_ASCENDFEED
+    database: AscendFeed
+    owner: DBO
+    columns:
+    - name: ACTYPE
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ACVAR
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: MTOW
+      type: INT
+      size: null
+      nullable: true
+    - name: MLW
+      type: INT
+      size: null
+      nullable: true
+    - name: MZFW
+      type: INT
+      size: null
+      nullable: true
+    - name: OEW
+      type: INT
+      size: null
+      nullable: true
+    - name: FUEL
+      type: INT
+      size: null
+      nullable: true
+    - name: EXITLIMIT
+      type: INT
+      size: null
+      nullable: true
+    - name: CARGOVOL
+      type: INT
+      size: null
+      nullable: true
+    - name: GENTECHID
+      type: INT
+      size: null
+      nullable: false
+    - name: MAXPAYLOAD
+      type: INT
+      size: null
+      nullable: true
+    - name: MAXSEATS
+      type: INT
+      size: null
+      nullable: true
+    - name: ACMFRCTRY
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: ACMFR
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: BUILDAREA
+      type: CHAR
+      size: 1
+      nullable: true
+    - name: JETTURBO
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: PAYLOAD
+      type: CHAR
+      size: 1
+      nullable: true
+    - name: RANGE
+      type: CHAR
+      size: 1
+      nullable: true
+    - name: ACVARDESC
+      type: VARCHAR
+      size: 50
+      nullable: true
+    - name: ACMINVAR
+      type: VARCHAR
+      size: 25
+      nullable: true
+    - name: ENGNO
+      type: INT
+      size: null
+      nullable: true
+    - name: NOISECERT
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: GRPPAYLOAD
+      type: CHAR
+      size: 1
+      nullable: true
+    - name: CONFIG
+      type: CHAR
+      size: 1
+      nullable: true
+    - name: TYPICALF
+      type: INT
+      size: null
+      nullable: true
+    - name: TYPICALC
+      type: INT
+      size: null
+      nullable: true
+    - name: TYPICALY
+      type: INT
+      size: null
+      nullable: true
+    - name: TYPICALTOT
+      type: INT
+      size: null
+      nullable: true
+    - name: ACCARGO
+      type: CHAR
+      size: 1
+      nullable: true
+    - name: ENGVAR
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ENGTYPE
+      type: VARCHAR
+      size: 4
+      nullable: true
+    primary_key:
+    - GENTECHID
+  histories:
+    category: source
+    datastore: DS_TRAFIC_ASCENDFEED
+    database: AscendFeed
+    owner: DBO
+    columns:
+    - name: ACCLASS
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: EVENTSEQNO
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: ACTYPE
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: OPR
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: MGR
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ACVAR
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: STARTEVENT
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ENDEVENT
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ACMFR
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: SERIALNO
+      type: VARCHAR
+      size: 20
+      nullable: true
+    - name: REGNO
+      type: VARCHAR
+      size: 15
+      nullable: true
+    - name: ACLINENO
+      type: VARCHAR
+      size: 8
+      nullable: true
+    - name: ACVALVAR
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ACMINVAR
+      type: VARCHAR
+      size: 25
+      nullable: true
+    - name: JOS
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: PART1
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: PART2
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: OPRSUB1
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ENGMFR
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ENGTYPE
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ENGVAR
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ACCARGO
+      type: VARCHAR
+      size: 1
+      nullable: true
+    - name: ACUSAGE
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: ACCLASS2
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: ESTIMATES
+      type: VARCHAR
+      size: 15
+      nullable: true
+    - name: STORAGE
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: STARTDATE
+      type: DATETIME
+      size: null
+      nullable: true
+    - name: ENDDATE
+      type: DATETIME
+      size: null
+      nullable: true
+    - name: AIRCRAFTID
+      type: INT
+      size: null
+      nullable: true
+    - name: GRP
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: HUSHKIT
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: DATESTAMP
+      type: DATETIME
+      size: null
+      nullable: true
+    - name: OWN
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: TRUST
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: OPRSUB2
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: OWNSUB
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ACHOURS
+      type: INT
+      size: null
+      nullable: true
+    - name: ACCYCLES
+      type: INT
+      size: null
+      nullable: true
+    - name: YOB
+      type: INT
+      size: null
+      nullable: true
+    - name: MOB
+      type: INT
+      size: null
+      nullable: true
+    - name: HISTORIESID
+      type: INT
+      size: null
+      nullable: false
+    primary_key:
+    - HISTORIESID
+  lastdelivery:
+    category: source
+    datastore: DS_TRAFIC_ASCENDFEED
+    database: AscendFeed
+    owner: DBO
+    columns:
+    - name: ACTYPE
+      type: VARCHAR
+      size: 4
+      nullable: false
+    - name: SERIALNO
+      type: VARCHAR
+      size: 20
+      nullable: false
+    - name: DELIVERYDATE
+      type: DATETIME
+      size: null
+      nullable: true
+    - name: OPRDESC
+      type: VARCHAR
+      size: 50
+      nullable: true
+    primary_key:
+    - ACTYPE
+    - SERIALNO
+  lastorder:
+    category: source
+    datastore: DS_TRAFIC_ASCENDFEED
+    database: AscendFeed
+    owner: DBO
+    columns:
+    - name: ACTYPE
+      type: VARCHAR
+      size: 4
+      nullable: false
+    - name: SERIALNO
+      type: VARCHAR
+      size: 20
+      nullable: false
+    - name: ORDERDATE
+      type: DATETIME
+      size: null
+      nullable: true
+    primary_key:
+    - ACTYPE
+    - SERIALNO
+  ordersplacedtmp:
+    category: source
+    datastore: DS_TRAFIC_ASCENDFEED
+    database: AscendFeed
+    owner: DBO
+    columns:
+    - name: ACTYPE
+      type: VARCHAR
+      size: 4
+      nullable: false
+    - name: SERIALNO
+      type: VARCHAR
+      size: 20
+      nullable: false
+    - name: LASTDATE
+      type: DATETIME
+      size: null
+      nullable: true
+    primary_key:
+    - ACTYPE
+    - SERIALNO
+  spectech:
+    category: source
+    datastore: DS_TRAFIC_ASCENDFEED
+    database: AscendFeed
+    owner: DBO
+    columns:
+    - name: ACTYPE
+      type: VARCHAR
+      size: 4
+      nullable: false
+    - name: SERIALNO
+      type: VARCHAR
+      size: 20
+      nullable: false
+    - name: MTOW
+      type: INT
+      size: null
+      nullable: true
+    - name: MLW
+      type: INT
+      size: null
+      nullable: true
+    - name: MZFW
+      type: INT
+      size: null
+      nullable: true
+    - name: OEW
+      type: INT
+      size: null
+      nullable: true
+    - name: FUELCAP
+      type: INT
+      size: null
+      nullable: true
+    - name: CLASS1
+      type: INT
+      size: null
+      nullable: true
+    - name: CLASS2
+      type: INT
+      size: null
+      nullable: true
+    - name: CLASS3
+      type: INT
+      size: null
+      nullable: true
+    - name: CLASSTYPE
+      type: VARCHAR
+      size: 1
+      nullable: true
+    - name: SEATTOTAL
+      type: INT
+      size: null
+      nullable: true
+    - name: EFF_DATE
+      type: DATETIME
+      size: null
+      nullable: true
+    - name: HRS
+      type: INT
+      size: null
+      nullable: true
+    - name: CYCLES
+      type: INT
+      size: null
+      nullable: true
+    - name: SEATEST
+      type: VARCHAR
+      size: 1
+      nullable: true
+    - name: FIRSTFLIGHT
+      type: DATETIME
+      size: null
+      nullable: true
+    - name: ROLLOUT
+      type: DATETIME
+      size: null
+      nullable: true
+    - name: ASATDATE
+      type: DATETIME
+      size: null
+      nullable: true
+    - name: QMRO
+      type: VARCHAR
+      size: 1
+      nullable: true
+    - name: QYRO
+      type: VARCHAR
+      size: 1
+      nullable: true
+    - name: QQRO
+      type: VARCHAR
+      size: 1
+      nullable: true
+    - name: QMFF
+      type: VARCHAR
+      size: 1
+      nullable: true
+    - name: QYFF
+      type: VARCHAR
+      size: 1
+      nullable: true
+    - name: QQFF
+      type: VARCHAR
+      size: 1
+      nullable: true
+    - name: WEIGHTEST
+      type: VARCHAR
+      size: 1
+      nullable: true
+    primary_key:
+    - ACTYPE
+    - SERIALNO
+  v_currenthistories:
+    category: source
+    datastore: DS_TRAFIC_ASCENDFEED
+    database: AscendFeed
+    owner: DBO
+    columns:
+    - name: ACCLASS
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: EVENTSEQNO
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: ACTYPE
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: OPR
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: MGR
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ACVAR
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: STARTEVENT
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ENDEVENT
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ACMFR
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: SERIALNO
+      type: VARCHAR
+      size: 20
+      nullable: true
+    - name: REGNO
+      type: VARCHAR
+      size: 15
+      nullable: true
+    - name: ACLINENO
+      type: VARCHAR
+      size: 8
+      nullable: true
+    - name: ACVALVAR
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ACMINVAR
+      type: VARCHAR
+      size: 25
+      nullable: true
+    - name: JOS
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: PART1
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: PART2
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: OPRSUB1
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ENGMFR
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ENGTYPE
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ENGVAR
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ACCARGO
+      type: VARCHAR
+      size: 1
+      nullable: true
+    - name: ACUSAGE
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: ACCLASS2
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: ESTIMATES
+      type: VARCHAR
+      size: 15
+      nullable: true
+    - name: STORAGE
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: STARTDATE
+      type: DATETIME
+      size: null
+      nullable: true
+    - name: ENDDATE
+      type: DATETIME
+      size: null
+      nullable: true
+    - name: AIRCRAFTID
+      type: INT
+      size: null
+      nullable: true
+    - name: GRP
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: HUSHKIT
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: DATESTAMP
+      type: DATETIME
+      size: null
+      nullable: true
+    - name: OWN
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: TRUST
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: OPRSUB2
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: OWNSUB
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ACHOURS
+      type: INT
+      size: null
+      nullable: true
+    - name: ACCYCLES
+      type: INT
+      size: null
+      nullable: true
+    - name: YOB
+      type: INT
+      size: null
+      nullable: true
+    - name: MOB
+      type: INT
+      size: null
+      nullable: true
+    - name: HISTORIESID
+      type: INT
+      size: null
+      nullable: false
+    primary_key: []
+  v_histories:
+    category: source
+    datastore: DS_TRAFIC_ASCENDFEED
+    database: AscendFeed
+    owner: DBO
+    columns:
+    - name: ACCLASS
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: EVENTSEQNO
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: ACTYPE
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ACTYPEDESC
+      type: VARCHAR
+      size: 50
+      nullable: true
+    - name: OPR
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: OPRDESC
+      type: VARCHAR
+      size: 50
+      nullable: true
+    - name: OPRAREA
+      type: VARCHAR
+      size: 1
+      nullable: true
+    - name: OPRCTRY
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: OPRCAT
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: MGR
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: MGRDESC
+      type: VARCHAR
+      size: 50
+      nullable: true
+    - name: MGRAREA
+      type: VARCHAR
+      size: 1
+      nullable: true
+    - name: MGRCTRY
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: MGRCAT
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ACVAR
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ACVARDESC
+      type: VARCHAR
+      size: 50
+      nullable: true
+    - name: STARTEVENT
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ENDEVENT
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ACMFR
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ACMFRDESC
+      type: VARCHAR
+      size: 50
+      nullable: true
+    - name: SERIALNO
+      type: VARCHAR
+      size: 20
+      nullable: true
+    - name: REGNO
+      type: VARCHAR
+      size: 15
+      nullable: true
+    - name: ACLINENO
+      type: VARCHAR
+      size: 8
+      nullable: true
+    - name: ACVALVAR
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ACMINVAR
+      type: VARCHAR
+      size: 25
+      nullable: true
+    - name: JOS
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: OWNDESC
+      type: VARCHAR
+      size: 50
+      nullable: true
+    - name: OWNAREA
+      type: VARCHAR
+      size: 1
+      nullable: true
+    - name: OWNCTRY
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: OWNCAT
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: PART1
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: PART1DESC
+      type: VARCHAR
+      size: 50
+      nullable: true
+    - name: PART2
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: PART2DESC
+      type: VARCHAR
+      size: 50
+      nullable: true
+    - name: OPRSUB1
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: OPRSUB1DESC
+      type: VARCHAR
+      size: 50
+      nullable: true
+    - name: ENGMFR
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ENGMFRDESC
+      type: VARCHAR
+      size: 50
+      nullable: true
+    - name: ENGTYPE
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ENGTYPEDESC
+      type: VARCHAR
+      size: 50
+      nullable: true
+    - name: ENGVAR
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ENGVARDESC
+      type: VARCHAR
+      size: 50
+      nullable: true
+    - name: ACCARGO
+      type: VARCHAR
+      size: 1
+      nullable: true
+    - name: ACUSAGE
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: ACCLASS2
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: ESTIMATES
+      type: VARCHAR
+      size: 15
+      nullable: true
+    - name: STORAGE
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: STARTDATE
+      type: DATETIME
+      size: null
+      nullable: true
+    - name: ENDDATE
+      type: DATETIME
+      size: null
+      nullable: true
+    - name: GRP
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: HUSHKIT
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: DATESTAMP
+      type: DATETIME
+      size: null
+      nullable: true
+    - name: OWN
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: TRUST
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: TRUSTDESC
+      type: VARCHAR
+      size: 50
+      nullable: true
+    - name: OPRSUB2
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: OWNSUB
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ACHOURS
+      type: INT
+      size: null
+      nullable: true
+    - name: ACCYCLES
+      type: INT
+      size: null
+      nullable: true
+    - name: YOB
+      type: INT
+      size: null
+      nullable: true
+    - name: MOB
+      type: INT
+      size: null
+      nullable: true
+    - name: HISTORIESID
+      type: INT
+      size: null
+      nullable: false
+    - name: ENGNO
+      type: INT
+      size: null
+      nullable: true
+    - name: ACNOISE
+      type: VARCHAR
+      size: 2
+      nullable: true
+    primary_key: []
+  td_dwh_traf_ascend_v_histories:
+    category: target
+    datastore: DS_TRAFIC_DATA
+    database: DS_TRAFIC_DATA
+    owner: TRAFIC_DATA
+    columns:
+    - name: ACCLASS
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: EVENTSEQNO
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: ACTYPE
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ACTYPEDESC
+      type: VARCHAR
+      size: 50
+      nullable: true
+    - name: OPR
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: OPRDESC
+      type: VARCHAR
+      size: 50
+      nullable: true
+    - name: OPRAREA
+      type: VARCHAR
+      size: 1
+      nullable: true
+    - name: OPRCTRY
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: OPRCAT
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: MGR
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: MGRDESC
+      type: VARCHAR
+      size: 50
+      nullable: true
+    - name: MGRAREA
+      type: VARCHAR
+      size: 1
+      nullable: true
+    - name: MGRCTRY
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: MGRCAT
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: ACVAR
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ACVARDESC
+      type: VARCHAR
+      size: 50
+      nullable: true
+    - name: STARTEVENT
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ENDEVENT
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ACMFR
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ACMFRDESC
+      type: VARCHAR
+      size: 50
+      nullable: true
+    - name: SERIALNO
+      type: VARCHAR
+      size: 20
+      nullable: true
+    - name: REGNO
+      type: VARCHAR
+      size: 15
+      nullable: true
+    - name: ACLINENO
+      type: VARCHAR
+      size: 8
+      nullable: true
+    - name: ACVALVAR
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ACMINVAR
+      type: VARCHAR
+      size: 25
+      nullable: true
+    - name: JOS
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: OWNDESC
+      type: VARCHAR
+      size: 50
+      nullable: true
+    - name: OWNAREA
+      type: VARCHAR
+      size: 1
+      nullable: true
+    - name: OWNCTRY
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: OWNCAT
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: PART1
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: PART1DESC
+      type: VARCHAR
+      size: 50
+      nullable: true
+    - name: PART2
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: PART2DESC
+      type: VARCHAR
+      size: 50
+      nullable: true
+    - name: OPRSUB1
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: OPRSUB1DESC
+      type: VARCHAR
+      size: 50
+      nullable: true
+    - name: ENGMFR
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ENGMFRDESC
+      type: VARCHAR
+      size: 50
+      nullable: true
+    - name: ENGTYPE
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ENGTYPEDESC
+      type: VARCHAR
+      size: 50
+      nullable: true
+    - name: ENGVAR
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ENGVARDESC
+      type: VARCHAR
+      size: 50
+      nullable: true
+    - name: ACCARGO
+      type: VARCHAR
+      size: 1
+      nullable: true
+    - name: ACUSAGE
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: ACCLASS2
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: ESTIMATES
+      type: VARCHAR
+      size: 15
+      nullable: true
+    - name: STORAGE
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: STARTDATE
+      type: DATETIME
+      size: null
+      nullable: true
+    - name: ENDDATE
+      type: DATETIME
+      size: null
+      nullable: true
+    - name: GRP
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: HUSHKIT
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: DATESTAMP
+      type: DATETIME
+      size: null
+      nullable: true
+    - name: OWN
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: TRUST
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: TRUSTDESC
+      type: VARCHAR
+      size: 50
+      nullable: true
+    - name: OPRSUB2
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: OWNSUB
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ACHOURS
+      type: INT
+      size: null
+      nullable: true
+    - name: ACCYCLES
+      type: INT
+      size: null
+      nullable: true
+    - name: YOB
+      type: INT
+      size: null
+      nullable: true
+    - name: MOB
+      type: INT
+      size: null
+      nullable: true
+    - name: HISTORIESID
+      type: INT
+      size: null
+      nullable: false
+    - name: ENGNO
+      type: INT
+      size: null
+      nullable: true
+    - name: ACNOISE
+      type: VARCHAR
+      size: 2
+      nullable: true
+    primary_key: []
+  td_dwh_traf_ascned_v_curhist:
+    category: target
+    datastore: DS_TRAFIC_DATA
+    database: DS_TRAFIC_DATA
+    owner: TRAFIC_DATA
+    columns:
+    - name: ACCLASS
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: EVENTSEQNO
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: ACTYPE
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: OPR
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: MGR
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ACVAR
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: STARTEVENT
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ENDEVENT
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ACMFR
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: SERIALNO
+      type: VARCHAR
+      size: 20
+      nullable: true
+    - name: REGNO
+      type: VARCHAR
+      size: 15
+      nullable: true
+    - name: ACLINENO
+      type: VARCHAR
+      size: 8
+      nullable: true
+    - name: ACVALVAR
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ACMINVAR
+      type: VARCHAR
+      size: 25
+      nullable: true
+    - name: JOS
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: PART1
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: PART2
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: OPRSUB1
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ENGMFR
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ENGTYPE
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ENGVAR
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ACCARGO
+      type: VARCHAR
+      size: 1
+      nullable: true
+    - name: ACUSAGE
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: ACCLASS2
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: ESTIMATES
+      type: VARCHAR
+      size: 15
+      nullable: true
+    - name: STORAGE
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: STARTDATE
+      type: DATETIME
+      size: null
+      nullable: true
+    - name: ENDDATE
+      type: DATETIME
+      size: null
+      nullable: true
+    - name: AIRCRAFTID
+      type: INT
+      size: null
+      nullable: true
+    - name: GRP
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: HUSHKIT
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: DATESTAMP
+      type: DATETIME
+      size: null
+      nullable: true
+    - name: OWN
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: TRUST
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: OPRSUB2
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: OWNSUB
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ACHOURS
+      type: INT
+      size: null
+      nullable: true
+    - name: ACCYCLES
+      type: INT
+      size: null
+      nullable: true
+    - name: YOB
+      type: INT
+      size: null
+      nullable: true
+    - name: MOB
+      type: INT
+      size: null
+      nullable: true
+    - name: HISTORIESID
+      type: INT
+      size: null
+      nullable: true
+    primary_key: []
+  tr_dwh_traf_ascend_ac_cargo:
+    category: target
+    datastore: DS_TRAFIC_DATA
+    database: DS_TRAFIC_DATA
+    owner: TRAFIC_DATA
+    columns:
+    - name: ACCARGO
+      type: VARCHAR
+      size: 1
+      nullable: true
+    - name: ACCARGODESC
+      type: VARCHAR
+      size: 50
+      nullable: true
+    primary_key: []
+  tr_dwh_traf_ascend_area:
+    category: target
+    datastore: DS_TRAFIC_DATA
+    database: DS_TRAFIC_DATA
+    owner: TRAFIC_DATA
+    columns:
+    - name: AREA
+      type: VARCHAR
+      size: 1
+      nullable: true
+    - name: AREADESC
+      type: VARCHAR
+      size: 50
+      nullable: true
+    primary_key: []
+  tr_dwh_traf_ascend_category:
+    category: target
+    datastore: DS_TRAFIC_DATA
+    database: DS_TRAFIC_DATA
+    owner: TRAFIC_DATA
+    columns:
+    - name: ACCAT
+      type: VARCHAR
+      size: 4
+      nullable: false
+    - name: ACCATDESC
+      type: VARCHAR
+      size: 50
+      nullable: true
+    primary_key: []
+  tr_dwh_traf_ascend_company:
+    category: target
+    datastore: DS_TRAFIC_DATA
+    database: DS_TRAFIC_DATA
+    owner: TRAFIC_DATA
+    columns:
+    - name: COMPANY
+      type: VARCHAR
+      size: 4
+      nullable: false
+    - name: NAME
+      type: VARCHAR
+      size: 100
+      nullable: true
+    - name: CAT
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: AREA
+      type: VARCHAR
+      size: 1
+      nullable: true
+    - name: CTRY
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: SOURCE
+      type: VARCHAR
+      size: 40
+      nullable: true
+    - name: HISTORIC
+      type: VARCHAR
+      size: 1
+      nullable: true
+    - name: ICAO
+      type: VARCHAR
+      size: 3
+      nullable: true
+    - name: IATA
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: ALIAS
+      type: VARCHAR
+      size: 75
+      nullable: true
+    - name: CEASED_OPS
+      type: DATETIME
+      size: null
+      nullable: true
+    - name: CURRENTAC
+      type: INT
+      size: null
+      nullable: true
+    primary_key: []
+  tr_dwh_traf_ascend_country:
+    category: target
+    datastore: DS_TRAFIC_DATA
+    database: DS_TRAFIC_DATA
+    owner: TRAFIC_DATA
+    columns:
+    - name: CTRY
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: COUNTRYDESC
+      type: VARCHAR
+      size: 50
+      nullable: true
+    - name: AREA
+      type: VARCHAR
+      size: 1
+      nullable: true
+    primary_key: []
+  tr_dwh_traf_ascend_event:
+    category: target
+    datastore: DS_TRAFIC_DATA
+    database: DS_TRAFIC_DATA
+    owner: TRAFIC_DATA
+    columns:
+    - name: EVENT
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: EVENTDESC
+      type: VARCHAR
+      size: 100
+      nullable: true
+    primary_key: []
+  tr_dwh_traf_ascend_eventtypes:
+    category: target
+    datastore: DS_TRAFIC_DATA
+    database: DS_TRAFIC_DATA
+    owner: TRAFIC_DATA
+    columns:
+    - name: EVENTTYPE
+      type: VARCHAR
+      size: 1
+      nullable: true
+    - name: EVENTTYPEDESC
+      type: VARCHAR
+      size: 25
+      nullable: true
+    primary_key: []
+  tr_dwh_traf_ascend_gentech:
+    category: target
+    datastore: DS_TRAFIC_DATA
+    database: DS_TRAFIC_DATA
+    owner: TRAFIC_DATA
+    columns:
+    - name: ACTYPE
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ACVAR
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: MTOW
+      type: INT
+      size: null
+      nullable: true
+    - name: MLW
+      type: INT
+      size: null
+      nullable: true
+    - name: MZFW
+      type: INT
+      size: null
+      nullable: true
+    - name: OEW
+      type: INT
+      size: null
+      nullable: true
+    - name: FUEL
+      type: INT
+      size: null
+      nullable: true
+    - name: EXITLIMIT
+      type: INT
+      size: null
+      nullable: true
+    - name: CARGOVOL
+      type: INT
+      size: null
+      nullable: true
+    - name: GENTECHID
+      type: INT
+      size: null
+      nullable: false
+    - name: MAXPAYLOAD
+      type: INT
+      size: null
+      nullable: true
+    - name: MAXSEATS
+      type: INT
+      size: null
+      nullable: true
+    - name: ACMFRCTRY
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: ACMFR
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: BUILDAREA
+      type: VARCHAR
+      size: 1
+      nullable: true
+    - name: JETTURBO
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: PAYLOAD
+      type: VARCHAR
+      size: 1
+      nullable: true
+    - name: RANGE
+      type: VARCHAR
+      size: 1
+      nullable: true
+    - name: ACVARDESC
+      type: VARCHAR
+      size: 50
+      nullable: true
+    - name: ACMINVAR
+      type: VARCHAR
+      size: 25
+      nullable: true
+    - name: ENGNO
+      type: INT
+      size: null
+      nullable: true
+    - name: NOISECERT
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: GRPPAYLOAD
+      type: VARCHAR
+      size: 1
+      nullable: true
+    - name: CONFIG
+      type: VARCHAR
+      size: 1
+      nullable: true
+    - name: TYPICALF
+      type: INT
+      size: null
+      nullable: true
+    - name: TYPICALC
+      type: INT
+      size: null
+      nullable: true
+    - name: TYPICALY
+      type: INT
+      size: null
+      nullable: true
+    - name: TYPICALTOT
+      type: INT
+      size: null
+      nullable: true
+    - name: ACCARGO
+      type: VARCHAR
+      size: 1
+      nullable: true
+    - name: ENGVAR
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ENGTYPE
+      type: VARCHAR
+      size: 4
+      nullable: true
+    primary_key: []
+  tr_dwh_traf_ascend_histories:
+    category: target
+    datastore: DS_TRAFIC_DATA
+    database: DS_TRAFIC_DATA
+    owner: TRAFIC_DATA
+    columns:
+    - name: ACCLASS
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: EVENTSEQNO
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: ACTYPE
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: OPR
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: MGR
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ACVAR
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: STARTEVENT
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ENDEVENT
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ACMFR
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: SERIALNO
+      type: VARCHAR
+      size: 20
+      nullable: true
+    - name: REGNO
+      type: VARCHAR
+      size: 15
+      nullable: true
+    - name: ACLINENO
+      type: VARCHAR
+      size: 8
+      nullable: true
+    - name: ACVALVAR
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ACMINVAR
+      type: VARCHAR
+      size: 25
+      nullable: true
+    - name: JOS
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: PART1
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: PART2
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: OPRSUB1
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ENGMFR
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ENGTYPE
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ENGVAR
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ACCARGO
+      type: VARCHAR
+      size: 1
+      nullable: true
+    - name: ACUSAGE
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: ACCLASS2
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: ESTIMATES
+      type: VARCHAR
+      size: 15
+      nullable: true
+    - name: STORAGE
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: STARTDATE
+      type: DATETIME
+      size: null
+      nullable: true
+    - name: ENDDATE
+      type: DATETIME
+      size: null
+      nullable: true
+    - name: AIRCRAFTID
+      type: INT
+      size: null
+      nullable: true
+    - name: GRP
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: HUSHKIT
+      type: VARCHAR
+      size: 2
+      nullable: true
+    - name: DATESTAMP
+      type: DATETIME
+      size: null
+      nullable: true
+    - name: OWN
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: TRUST
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: OPRSUB2
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: OWNSUB
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: ACHOURS
+      type: INT
+      size: null
+      nullable: true
+    - name: ACCYCLES
+      type: INT
+      size: null
+      nullable: true
+    - name: YOB
+      type: INT
+      size: null
+      nullable: true
+    - name: MOB
+      type: INT
+      size: null
+      nullable: true
+    - name: HISTORIESID
+      type: INT
+      size: null
+      nullable: true
+    primary_key: []
+  tr_dwh_traf_ascend_lastdeliv:
+    category: target
+    datastore: DS_TRAFIC_DATA
+    database: DS_TRAFIC_DATA
+    owner: TRAFIC_DATA
+    columns:
+    - name: ACTYPE
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: SERIALNO
+      type: VARCHAR
+      size: 20
+      nullable: true
+    - name: DELIVERYDATE
+      type: DATETIME
+      size: null
+      nullable: true
+    - name: OPRDESC
+      type: VARCHAR
+      size: 50
+      nullable: true
+    primary_key: []
+  tr_dwh_traf_ascend_lastorder:
+    category: target
+    datastore: DS_TRAFIC_DATA
+    database: DS_TRAFIC_DATA
+    owner: TRAFIC_DATA
+    columns:
+    - name: ACTYPE
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: SERIALNO
+      type: VARCHAR
+      size: 20
+      nullable: true
+    - name: ORDERDATE
+      type: DATETIME
+      size: null
+      nullable: true
+    primary_key: []
+  tr_dwh_traf_ascend_ordplcdtmp:
+    category: target
+    datastore: DS_TRAFIC_DATA
+    database: DS_TRAFIC_DATA
+    owner: TRAFIC_DATA
+    columns:
+    - name: ACTYPE
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: SERIALNO
+      type: VARCHAR
+      size: 20
+      nullable: true
+    - name: LASTDATE
+      type: DATETIME
+      size: null
+      nullable: true
+    primary_key: []
+  tr_dwh_traf_ascend_spectech:
+    category: target
+    datastore: DS_TRAFIC_DATA
+    database: DS_TRAFIC_DATA
+    owner: TRAFIC_DATA
+    columns:
+    - name: ACTYPE
+      type: VARCHAR
+      size: 4
+      nullable: true
+    - name: SERIALNO
+      type: VARCHAR
+      size: 20
+      nullable: true
+    - name: MTOW
+      type: INT
+      size: null
+      nullable: true
+    - name: MLW
+      type: INT
+      size: null
+      nullable: true
+    - name: MZFW
+      type: INT
+      size: null
+      nullable: true
+    - name: OEW
+      type: INT
+      size: null
+      nullable: true
+    - name: FUELCAP
+      type: INT
+      size: null
+      nullable: true
+    - name: CLASS1
+      type: INT
+      size: null
+      nullable: true
+    - name: CLASS2
+      type: INT
+      size: null
+      nullable: true
+    - name: CLASS3
+      type: INT
+      size: null
+      nullable: true
+    - name: CLASSTYPE
+      type: VARCHAR
+      size: 1
+      nullable: true
+    - name: SEATTOTAL
+      type: INT
+      size: null
+      nullable: true
+    - name: EFF_DATE
+      type: DATETIME
+      size: null
+      nullable: true
+    - name: HRS
+      type: INT
+      size: null
+      nullable: true
+    - name: CYCLES
+      type: INT
+      size: null
+      nullable: true
+    - name: SEATEST
+      type: VARCHAR
+      size: 1
+      nullable: true
+    - name: FIRSTFLIGHT
+      type: DATETIME
+      size: null
+      nullable: true
+    - name: ROLLOUT
+      type: DATETIME
+      size: null
+      nullable: true
+    - name: ASATDATE
+      type: DATETIME
+      size: null
+      nullable: true
+    - name: QMRO
+      type: VARCHAR
+      size: 1
+      nullable: true
+    - name: QYRO
+      type: VARCHAR
+      size: 1
+      nullable: true
+    - name: QQRO
+      type: VARCHAR
+      size: 1
+      nullable: true
+    - name: QMFF
+      type: VARCHAR
+      size: 1
+      nullable: true
+    - name: QYFF
+      type: VARCHAR
+      size: 1
+      nullable: true
+    - name: QQFF
+      type: VARCHAR
+      size: 1
+      nullable: true
+    - name: WEIGHTEST
+      type: VARCHAR
+      size: 1
+      nullable: true
+    primary_key: []

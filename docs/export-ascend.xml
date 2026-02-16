@@ -1,0 +1,4133 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DataIntegratorExport repositoryVersion="14.2.12.0000" productVersion="14.2.12.2793">
+<DIDatabaseDatastore name="DS_TRAFIC_ASCENDFEED" typeId="3" >
+<DIAttributes>
+<DIAttribute name="DBLiveLoad" value="no"/>
+<DIAttribute name="application_type" value="Custom"/>
+<DIAttribute name="cdc_enabled" value="no"/>
+<DIAttribute name="cdc_type" value="native"/>
+<DIAttribute name="datastore_repotype" value="local"/>
+<DIAttribute name="ds_configuration_enabled" value="yes"/>
+<DIAttribute name="ds_configurations" hasNestedXMLTree ="true">
+
+<DSConfigurations>
+<DSConfiguration default="false" name="Configuration1">
+<case_sensitive>yes</case_sensitive>
+<cdc_ra_password>+0400000000120303000803E851A53E24187297E269653871DF1A046701DF9D0EA11B2A30004F5FAD86118A9B7AF2E639F3BABDEFC059C9AF8D</cdc_ra_password>
+<cdc_ra_server>DS_RA</cdc_ra_server>
+<cdc_ra_user>sa</cdc_ra_user>
+<cdc_rs_password>+0400000000120303000803E82710B5BBE763C4DBA75A6116F1C3293E66E6F90ADB3CE1281D275E0F0C1A36EFB98B7B79662F4689A188B37F8F</cdc_rs_password>
+<cdc_rs_retention>0</cdc_rs_retention>
+<cdc_rs_server>SAMPLE_RS</cdc_rs_server>
+<cdc_rs_user>ds</cdc_rs_user>
+<database_subtype>On Premise</database_subtype>
+<database_type>Microsoft_SQL_Server</database_type>
+<db_mssql_change_data_tracking_method>MSSQL_Replication</db_mssql_change_data_tracking_method>
+<loader_xact_size>1000</loader_xact_size>
+<locale_codepage>&lt;default&gt;</locale_codepage>
+<locale_language>&lt;default&gt;</locale_language>
+<locale_territory>&lt;default&gt;</locale_territory>
+<mssql_windows_authentication>yes</mssql_windows_authentication>
+<server_codepage>&lt;default&gt;</server_codepage>
+<sql_server_database>AscendFeed</sql_server_database>
+<sql_server_dataserver>SQL12APP\PRODAPP</sql_server_dataserver>
+<sql_server_version>Microsoft SQL Server 2012</sql_server_version>
+<use_ssl_encryption>no</use_ssl_encryption>
+</DSConfiguration>
+<DSConfiguration default="true" name="configurationSQL19">
+<case_sensitive>no</case_sensitive>
+<cdc_ra_password>+0400000000120303000803E8D64C062F973007A2B1F6962C29C297C95C2988E4BA6B4228347AB0832DC60C48815619EF18AA0B42D0E5D6C7B6</cdc_ra_password>
+<cdc_ra_server>DS_RA</cdc_ra_server>
+<cdc_ra_user>sa</cdc_ra_user>
+<cdc_rs_password>+0400000000120303000803E8824711403BF4AAA1AFF98834B7CB8AD744A03EED7DCB538CE4E8B75B5BD85930A52314288CDC3AB14197BBDF20</cdc_rs_password>
+<cdc_rs_retention>0</cdc_rs_retention>
+<cdc_rs_server>SAMPLE_RS</cdc_rs_server>
+<cdc_rs_user>ds</cdc_rs_user>
+<database_subtype>On Premise</database_subtype>
+<database_type>Microsoft_SQL_Server</database_type>
+<loader_xact_size>1000</loader_xact_size>
+<locale_codepage>&lt;default&gt;</locale_codepage>
+<locale_language>&lt;default&gt;</locale_language>
+<locale_territory>&lt;default&gt;</locale_territory>
+<mssql_windows_authentication>yes</mssql_windows_authentication>
+<server_codepage>&lt;default&gt;</server_codepage>
+<sql_server_database>AscendFeed</sql_server_database>
+<sql_server_dataserver>SQL19PROD</sql_server_dataserver>
+<sql_server_version>Microsoft SQL Server 2017</sql_server_version>
+<use_ssl_encryption>no</use_ssl_encryption>
+</DSConfiguration>
+</DSConfigurations>
+
+</DIAttribute>
+<DIAttribute name="enable_data_transfer" value="yes"/>
+<DIAttribute name="import_unknown_type" value="no"/>
+<DIAttribute name="name" value="DS_TRAFIC_ASCENDFEED"/>
+<DIAttribute name="pcache_force_utf16" value="no"/>
+<DIAttribute name="unknown_type_size" value="255"/>
+</DIAttributes>
+</DIDatabaseDatastore>
+<DIDatabaseDatastore name="DS_TRAFIC_DATA" typeId="3" >
+<DIAttributes>
+<DIAttribute name="DBLiveLoad" value="no"/>
+<DIAttribute name="application_type" value="Custom"/>
+<DIAttribute name="cdc_enabled" value="no"/>
+<DIAttribute name="cdc_type" value="native"/>
+<DIAttribute name="datastore_repotype" value="local"/>
+<DIAttribute name="ds_configuration_enabled" value="yes"/>
+<DIAttribute name="ds_configurations" hasNestedXMLTree ="true">
+
+<DSConfigurations>
+<DSConfiguration default="true" name="TRAFIC_DW12PRO">
+<Oracle_default_number_precision>28</Oracle_default_number_precision>
+<Oracle_default_number_scale>7</Oracle_default_number_scale>
+<case_sensitive>no</case_sensitive>
+<cdc_ra_password>+0400000000120303000803E8531577CF78951E758CC91BC269FFA844B269AF653A398D0E621C0D62937A17E9E6A88DB86131BA6CDE79E1E19D</cdc_ra_password>
+<cdc_ra_server>DS_RA</cdc_ra_server>
+<cdc_ra_user>sa</cdc_ra_user>
+<cdc_rs_password>+0400000000120303000803E8CAA11F6750E59396112C16EB49755F499B5E9668404B9CDFA787FF78B2F3DEA1878D9455FEA88CDF2ECFC83E06</cdc_rs_password>
+<cdc_rs_retention>0</cdc_rs_retention>
+<cdc_rs_server>SAMPLE_RS</cdc_rs_server>
+<cdc_rs_user>ds</cdc_rs_user>
+<database_type>Oracle</database_type>
+<db_alias_name1>TRAFIC_DATA</db_alias_name1>
+<db_alias_user1>TRAFIC_DATA</db_alias_user1>
+<db_dsnless>no</db_dsnless>
+<loader_xact_size>1000</loader_xact_size>
+<locale_codepage>cp1252</locale_codepage>
+<locale_language>eng</locale_language>
+<locale_territory>&lt;default&gt;</locale_territory>
+<oracle_host_string>DW12PRO</oracle_host_string>
+<oracle_version>Oracle 12c</oracle_version>
+<password>+0400000000120303000803E84D543085521D4270156572F6AC8954D9B91315F9C0EB59382451321690DBA643EAF30F12E194CD184D2E15BC88663587AE1437613CE4C8307A</password>
+<server_codepage>&lt;default&gt;</server_codepage>
+<use_ssl_encryption>no</use_ssl_encryption>
+<user>TRAFIC_DATA</user>
+</DSConfiguration>
+</DSConfigurations>
+
+</DIAttribute>
+<DIAttribute name="enable_data_transfer" value="yes"/>
+<DIAttribute name="import_unknown_type" value="no"/>
+<DIAttribute name="name" value="DS_TRAFIC_DATA"/>
+<DIAttribute name="pcache_force_utf16" value="no"/>
+<DIAttribute name="unknown_type_size" value="255"/>
+</DIAttributes>
+</DIDatabaseDatastore>
+<DITable name="AC_CARGO" owner="DBO" datastore="DS_TRAFIC_ASCENDFEED" database="AscendFeed" description="" >
+<DIProperties>
+<DIAttribute name="Database_Object_Type" value="TABLE" />
+<DIAttribute name="Table_Type" value="TABLE" />
+<DIAttribute name="Estimated_Row_Count" value="50000" />
+<DIAttribute name="Loader_Is_Template_Table" value="no" />
+<DIAttribute name="db_alias_name" value="DBO" />
+</DIProperties>
+<DIColumn name="ACCARGO" datatype="VARCHAR" size="1" nullable="false" >
+</DIColumn>
+<DIColumn name="ACCARGODESC" datatype="VARCHAR" size="50" nullable="true" >
+</DIColumn>
+<DITableIndex name="PK_AC_CARGO" unique="true">
+<DIIndexColumn name="ACCARGO" />
+</DITableIndex>
+</DITable>
+<DITable name="AREA" owner="DBO" datastore="DS_TRAFIC_ASCENDFEED" database="AscendFeed" description="" >
+<DIProperties>
+<DIAttribute name="Table_Type" value="TABLE" />
+<DIAttribute name="Estimated_Row_Count" value="50000" />
+<DIAttribute name="Database_Object_Type" value="TABLE" />
+<DIAttribute name="Loader_Is_Template_Table" value="no" />
+<DIAttribute name="db_alias_name" value="DBO" />
+</DIProperties>
+<DIColumn name="AREA" datatype="VARCHAR" size="1" nullable="false" >
+</DIColumn>
+<DIColumn name="AREADESC" datatype="VARCHAR" size="50" nullable="true" >
+</DIColumn>
+<DITableIndex name="PK_AREA" unique="true">
+<DIIndexColumn name="AREA" />
+</DITableIndex>
+</DITable>
+<DITable name="CATEGORY" owner="DBO" datastore="DS_TRAFIC_ASCENDFEED" database="AscendFeed" >
+<DIProperties>
+<DIAttribute name="Database_Object_Type" value="TABLE" />
+<DIAttribute name="Table_Type" value="TABLE" />
+<DIAttribute name="Estimated_Row_Count" value="50000" />
+<DIAttribute name="Loader_Is_Template_Table" value="no" />
+<DIAttribute name="PartitionModified" value="no" />
+<DIAttribute name="db_alias_name" value="DBO" />
+</DIProperties>
+<DIColumn name="ACCAT" datatype="VARCHAR" size="4" nullable="false" >
+</DIColumn>
+<DIColumn name="ACCATDESC" datatype="VARCHAR" size="50" nullable="true" >
+</DIColumn>
+<DITableIndex name="PK_CATEGORY" unique="true">
+<DIIndexColumn name="ACCAT" />
+</DITableIndex>
+</DITable>
+<DITable name="COMPANY" owner="DBO" datastore="DS_TRAFIC_ASCENDFEED" database="AscendFeed" >
+<DIProperties>
+<DIAttribute name="Table_Type" value="TABLE" />
+<DIAttribute name="Estimated_Row_Count" value="50000" />
+<DIAttribute name="Database_Object_Type" value="TABLE" />
+<DIAttribute name="Loader_Is_Template_Table" value="no" />
+<DIAttribute name="PartitionModified" value="no" />
+<DIAttribute name="db_alias_name" value="DBO" />
+</DIProperties>
+<DIColumn name="COMPANY" datatype="VARCHAR" size="4" nullable="false" >
+</DIColumn>
+<DIColumn name="NAME" datatype="VARCHAR" size="100" nullable="true" Content_Type="NAME" >
+<DIProperties>
+<DIAttribute name="Content_Type" value="NAME"/>
+</DIProperties>
+</DIColumn>
+<DIColumn name="CAT" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="AREA" datatype="VARCHAR" size="1" nullable="true" >
+</DIColumn>
+<DIColumn name="CTRY" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="SOURCE" datatype="VARCHAR" size="40" nullable="true" >
+</DIColumn>
+<DIColumn name="HISTORIC" datatype="VARCHAR" size="1" nullable="true" >
+</DIColumn>
+<DIColumn name="ICAO" datatype="VARCHAR" size="3" nullable="true" >
+</DIColumn>
+<DIColumn name="IATA" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="ALIAS" datatype="VARCHAR" size="75" nullable="true" >
+</DIColumn>
+<DIColumn name="CEASED_OPS" datatype="DATETIME" scale="3" nullable="true" >
+</DIColumn>
+<DIColumn name="CURRENTAC" datatype="INT" nullable="true" >
+</DIColumn>
+<DITableIndex name="C_AREA" unique="true">
+<DIIndexColumn name="AREA" />
+</DITableIndex>
+<DITableIndex name="C_CAT" unique="true">
+<DIIndexColumn name="CAT" />
+</DITableIndex>
+<DITableIndex name="C_CTRY" unique="true">
+<DIIndexColumn name="CTRY" />
+</DITableIndex>
+<DITableIndex name="COM_ALIAS" unique="true">
+<DIIndexColumn name="ALIAS" />
+</DITableIndex>
+<DITableIndex name="COMPANY_UNAME" unique="true">
+<DIIndexColumn name="NAME" />
+</DITableIndex>
+<DITableIndex name="PK_COMPANY" unique="true">
+<DIIndexColumn name="COMPANY" />
+</DITableIndex>
+</DITable>
+<DITable name="COUNTRY" owner="DBO" datastore="DS_TRAFIC_ASCENDFEED" database="AscendFeed" description="" >
+<DIProperties>
+<DIAttribute name="Database_Object_Type" value="TABLE" />
+<DIAttribute name="Table_Type" value="TABLE" />
+<DIAttribute name="Estimated_Row_Count" value="50000" />
+<DIAttribute name="Loader_Is_Template_Table" value="no" />
+<DIAttribute name="db_alias_name" value="DBO" />
+</DIProperties>
+<DIColumn name="CTRY" datatype="VARCHAR" size="2" nullable="false" >
+</DIColumn>
+<DIColumn name="COUNTRYDESC" datatype="VARCHAR" size="50" nullable="true" >
+</DIColumn>
+<DIColumn name="AREA" datatype="VARCHAR" size="1" nullable="true" >
+</DIColumn>
+<DITableIndex name="PK_COUNTRY" unique="true">
+<DIIndexColumn name="CTRY" />
+</DITableIndex>
+</DITable>
+<DITable name="EVENT" owner="DBO" datastore="DS_TRAFIC_ASCENDFEED" database="AscendFeed" description="" >
+<DIProperties>
+<DIAttribute name="Database_Object_Type" value="TABLE" />
+<DIAttribute name="Table_Type" value="TABLE" />
+<DIAttribute name="Estimated_Row_Count" value="50000" />
+<DIAttribute name="Loader_Is_Template_Table" value="no" />
+<DIAttribute name="db_alias_name" value="DBO" />
+</DIProperties>
+<DIColumn name="EVENT" datatype="VARCHAR" size="4" nullable="false" >
+</DIColumn>
+<DIColumn name="EVENTDESC" datatype="VARCHAR" size="100" nullable="true" >
+</DIColumn>
+<DITableIndex name="PK_EVENT" unique="true">
+<DIIndexColumn name="EVENT" />
+</DITableIndex>
+</DITable>
+<DITable name="EVENTTYPES" owner="DBO" datastore="DS_TRAFIC_ASCENDFEED" database="AscendFeed" description="" >
+<DIProperties>
+<DIAttribute name="Database_Object_Type" value="TABLE" />
+<DIAttribute name="Table_Type" value="TABLE" />
+<DIAttribute name="Estimated_Row_Count" value="50000" />
+<DIAttribute name="Loader_Is_Template_Table" value="no" />
+<DIAttribute name="db_alias_name" value="DBO" />
+</DIProperties>
+<DIColumn name="EVENTTYPE" datatype="VARCHAR" size="1" nullable="false" >
+</DIColumn>
+<DIColumn name="EVENTTYPEDESC" datatype="VARCHAR" size="25" nullable="true" >
+</DIColumn>
+<DITableIndex name="PK_EVENTTYPES" unique="true">
+<DIIndexColumn name="EVENTTYPE" />
+</DITableIndex>
+</DITable>
+<DITable name="GENTECH" owner="DBO" datastore="DS_TRAFIC_ASCENDFEED" database="AscendFeed" description="" >
+<DIProperties>
+<DIAttribute name="Database_Object_Type" value="TABLE" />
+<DIAttribute name="Table_Type" value="TABLE" />
+<DIAttribute name="Estimated_Row_Count" value="50000" />
+<DIAttribute name="Loader_Is_Template_Table" value="no" />
+<DIAttribute name="db_alias_name" value="DBO" />
+</DIProperties>
+<DIColumn name="ACTYPE" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ACVAR" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="MTOW" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="MLW" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="MZFW" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="OEW" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="FUEL" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="EXITLIMIT" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="CARGOVOL" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="GENTECHID" datatype="INT" nullable="false" >
+</DIColumn>
+<DIColumn name="MAXPAYLOAD" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="MAXSEATS" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="ACMFRCTRY" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="ACMFR" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="BUILDAREA" datatype="CHAR" size="1" nullable="true" >
+</DIColumn>
+<DIColumn name="JETTURBO" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="PAYLOAD" datatype="CHAR" size="1" nullable="true" >
+</DIColumn>
+<DIColumn name="RANGE" datatype="CHAR" size="1" nullable="true" >
+</DIColumn>
+<DIColumn name="ACVARDESC" datatype="VARCHAR" size="50" nullable="true" >
+</DIColumn>
+<DIColumn name="ACMINVAR" datatype="VARCHAR" size="25" nullable="true" >
+</DIColumn>
+<DIColumn name="ENGNO" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="NOISECERT" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="GRPPAYLOAD" datatype="CHAR" size="1" nullable="true" >
+</DIColumn>
+<DIColumn name="CONFIG" datatype="CHAR" size="1" nullable="true" >
+</DIColumn>
+<DIColumn name="TYPICALF" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="TYPICALC" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="TYPICALY" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="TYPICALTOT" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="ACCARGO" datatype="CHAR" size="1" nullable="true" >
+</DIColumn>
+<DIColumn name="ENGVAR" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ENGTYPE" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DITableIndex name="GEN_AC_VAR" unique="true">
+<DIIndexColumn name="ACTYPE" />
+<DIIndexColumn name="ACVAR" />
+</DITableIndex>
+<DITableIndex name="GEN_MTOW" unique="true">
+<DIIndexColumn name="MTOW" />
+</DITableIndex>
+<DITableIndex name="PK_GENTECH" unique="true">
+<DIIndexColumn name="GENTECHID" />
+</DITableIndex>
+</DITable>
+<DITable name="HISTORIES" owner="DBO" datastore="DS_TRAFIC_ASCENDFEED" database="AscendFeed" description="" >
+<DIProperties>
+<DIAttribute name="Database_Object_Type" value="TABLE" />
+<DIAttribute name="Table_Type" value="TABLE" />
+<DIAttribute name="Estimated_Row_Count" value="50000" />
+<DIAttribute name="Loader_Is_Template_Table" value="no" />
+<DIAttribute name="db_alias_name" value="DBO" />
+</DIProperties>
+<DIColumn name="ACCLASS" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="EVENTSEQNO" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="ACTYPE" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="OPR" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="MGR" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ACVAR" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="STARTEVENT" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ENDEVENT" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ACMFR" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="SERIALNO" datatype="VARCHAR" size="20" nullable="true" >
+</DIColumn>
+<DIColumn name="REGNO" datatype="VARCHAR" size="15" nullable="true" >
+</DIColumn>
+<DIColumn name="ACLINENO" datatype="VARCHAR" size="8" nullable="true" >
+</DIColumn>
+<DIColumn name="ACVALVAR" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ACMINVAR" datatype="VARCHAR" size="25" nullable="true" >
+</DIColumn>
+<DIColumn name="JOS" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="PART1" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="PART2" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="OPRSUB1" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ENGMFR" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ENGTYPE" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ENGVAR" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ACCARGO" datatype="VARCHAR" size="1" nullable="true" >
+</DIColumn>
+<DIColumn name="ACUSAGE" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="ACCLASS2" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="ESTIMATES" datatype="VARCHAR" size="15" nullable="true" >
+</DIColumn>
+<DIColumn name="STORAGE" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="STARTDATE" datatype="DATETIME" scale="3" nullable="true" >
+</DIColumn>
+<DIColumn name="ENDDATE" datatype="DATETIME" scale="3" nullable="true" >
+</DIColumn>
+<DIColumn name="AIRCRAFTID" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="GRP" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="HUSHKIT" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="DATESTAMP" datatype="DATETIME" scale="3" nullable="true" >
+</DIColumn>
+<DIColumn name="OWN" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="TRUST" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="OPRSUB2" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="OWNSUB" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ACHOURS" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="ACCYCLES" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="YOB" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="MOB" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="HISTORIESID" datatype="INT" nullable="false" >
+</DIColumn>
+<DITableIndex name="ACMFR_IDX" unique="true">
+<DIIndexColumn name="ACMFR" />
+</DITableIndex>
+<DITableIndex name="ACTYPEVAR_IDX" unique="true">
+<DIIndexColumn name="ACTYPE" />
+<DIIndexColumn name="ACVAR" />
+</DITableIndex>
+<DITableIndex name="CLASS_IDX" unique="true">
+<DIIndexColumn name="ACCLASS" />
+</DITableIndex>
+<DITableIndex name="H_ACUSAGE" unique="true">
+<DIIndexColumn name="ACUSAGE" />
+</DITableIndex>
+<DITableIndex name="H_ENGMFR" unique="true">
+<DIIndexColumn name="ENGMFR" />
+</DITableIndex>
+<DITableIndex name="H_ENGTYPEVAR" unique="true">
+<DIIndexColumn name="ENGTYPE" />
+<DIIndexColumn name="ENGVAR" />
+</DITableIndex>
+<DITableIndex name="H_HUSHKIT" unique="true">
+<DIIndexColumn name="HUSHKIT" />
+</DITableIndex>
+<DITableIndex name="HIS_GRP" unique="true">
+<DIIndexColumn name="GRP" />
+</DITableIndex>
+<DITableIndex name="HIS_JOS" unique="true">
+<DIIndexColumn name="JOS" />
+</DITableIndex>
+<DITableIndex name="HIS_LINENO" unique="true">
+<DIIndexColumn name="ACLINENO" />
+</DITableIndex>
+<DITableIndex name="HIS_OPRSUB2" unique="true">
+<DIIndexColumn name="OPRSUB2" />
+</DITableIndex>
+<DITableIndex name="HIS_OWNSUB" unique="true">
+<DIIndexColumn name="OWNSUB" />
+</DITableIndex>
+<DITableIndex name="H_STARTDATE" unique="true">
+<DIIndexColumn name="STARTDATE" />
+<DIIndexColumn name="ENDDATE" />
+</DITableIndex>
+<DITableIndex name="H_STORAGE" unique="true">
+<DIIndexColumn name="STORAGE" />
+</DITableIndex>
+<DITableIndex name="MGR" unique="true">
+<DIIndexColumn name="MGR" />
+</DITableIndex>
+<DITableIndex name="OPR" unique="true">
+<DIIndexColumn name="OPR" />
+</DITableIndex>
+<DITableIndex name="OPRSUB1" unique="true">
+<DIIndexColumn name="OPRSUB1" />
+</DITableIndex>
+<DITableIndex name="OWN" unique="true">
+<DIIndexColumn name="OWN" />
+</DITableIndex>
+<DITableIndex name="PK_HISTORIES" unique="true">
+<DIIndexColumn name="HISTORIESID" />
+</DITableIndex>
+<DITableIndex name="REGNO_IDX" unique="true">
+<DIIndexColumn name="REGNO" />
+</DITableIndex>
+<DITableIndex name="SERIALTYPE_IDX" unique="true">
+<DIIndexColumn name="SERIALNO" />
+<DIIndexColumn name="ACTYPE" />
+</DITableIndex>
+<DITableIndex name="STARTEVENT_IDX" unique="true">
+<DIIndexColumn name="STARTEVENT" />
+</DITableIndex>
+</DITable>
+<DITable name="LASTDELIVERY" owner="DBO" datastore="DS_TRAFIC_ASCENDFEED" database="AscendFeed" description="" >
+<DIProperties>
+<DIAttribute name="Database_Object_Type" value="TABLE" />
+<DIAttribute name="Table_Type" value="TABLE" />
+<DIAttribute name="Estimated_Row_Count" value="50000" />
+<DIAttribute name="Loader_Is_Template_Table" value="no" />
+<DIAttribute name="db_alias_name" value="DBO" />
+</DIProperties>
+<DIColumn name="ACTYPE" datatype="VARCHAR" size="4" nullable="false" >
+</DIColumn>
+<DIColumn name="SERIALNO" datatype="VARCHAR" size="20" nullable="false" >
+</DIColumn>
+<DIColumn name="DELIVERYDATE" datatype="DATETIME" scale="3" nullable="true" >
+</DIColumn>
+<DIColumn name="OPRDESC" datatype="VARCHAR" size="50" nullable="true" >
+</DIColumn>
+<DITableIndex name="PK_LASTDELIVERY" unique="true">
+<DIIndexColumn name="ACTYPE" />
+<DIIndexColumn name="SERIALNO" />
+</DITableIndex>
+</DITable>
+<DITable name="LASTORDER" owner="DBO" datastore="DS_TRAFIC_ASCENDFEED" database="AscendFeed" description="" >
+<DIProperties>
+<DIAttribute name="Database_Object_Type" value="TABLE" />
+<DIAttribute name="Table_Type" value="TABLE" />
+<DIAttribute name="Estimated_Row_Count" value="50000" />
+<DIAttribute name="Loader_Is_Template_Table" value="no" />
+<DIAttribute name="db_alias_name" value="DBO" />
+</DIProperties>
+<DIColumn name="ACTYPE" datatype="VARCHAR" size="4" nullable="false" >
+</DIColumn>
+<DIColumn name="SERIALNO" datatype="VARCHAR" size="20" nullable="false" >
+</DIColumn>
+<DIColumn name="ORDERDATE" datatype="DATETIME" scale="3" nullable="true" >
+</DIColumn>
+<DITableIndex name="PK_LASTORDER" unique="true">
+<DIIndexColumn name="ACTYPE" />
+<DIIndexColumn name="SERIALNO" />
+</DITableIndex>
+</DITable>
+<DITable name="ORDERSPLACEDTMP" owner="DBO" datastore="DS_TRAFIC_ASCENDFEED" database="AscendFeed" description="" >
+<DIProperties>
+<DIAttribute name="Database_Object_Type" value="TABLE" />
+<DIAttribute name="Table_Type" value="TABLE" />
+<DIAttribute name="Estimated_Row_Count" value="50000" />
+<DIAttribute name="Loader_Is_Template_Table" value="no" />
+<DIAttribute name="db_alias_name" value="DBO" />
+</DIProperties>
+<DIColumn name="ACTYPE" datatype="VARCHAR" size="4" nullable="false" >
+</DIColumn>
+<DIColumn name="SERIALNO" datatype="VARCHAR" size="20" nullable="false" >
+</DIColumn>
+<DIColumn name="LASTDATE" datatype="DATETIME" scale="3" nullable="true" >
+</DIColumn>
+<DITableIndex name="PK_ORDERSPLACEDTMP" unique="true">
+<DIIndexColumn name="ACTYPE" />
+<DIIndexColumn name="SERIALNO" />
+</DITableIndex>
+</DITable>
+<DITable name="SPECTECH" owner="DBO" datastore="DS_TRAFIC_ASCENDFEED" database="AscendFeed" description="" >
+<DIProperties>
+<DIAttribute name="Database_Object_Type" value="TABLE" />
+<DIAttribute name="Table_Type" value="TABLE" />
+<DIAttribute name="Estimated_Row_Count" value="50000" />
+<DIAttribute name="Loader_Is_Template_Table" value="no" />
+<DIAttribute name="db_alias_name" value="DBO" />
+</DIProperties>
+<DIColumn name="ACTYPE" datatype="VARCHAR" size="4" nullable="false" >
+</DIColumn>
+<DIColumn name="SERIALNO" datatype="VARCHAR" size="20" nullable="false" >
+</DIColumn>
+<DIColumn name="MTOW" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="MLW" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="MZFW" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="OEW" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="FUELCAP" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="CLASS1" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="CLASS2" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="CLASS3" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="CLASSTYPE" datatype="VARCHAR" size="1" nullable="true" >
+</DIColumn>
+<DIColumn name="SEATTOTAL" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="EFF_DATE" datatype="DATETIME" scale="3" nullable="true" >
+</DIColumn>
+<DIColumn name="HRS" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="CYCLES" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="SEATEST" datatype="VARCHAR" size="1" nullable="true" >
+</DIColumn>
+<DIColumn name="FIRSTFLIGHT" datatype="DATETIME" scale="3" nullable="true" >
+</DIColumn>
+<DIColumn name="ROLLOUT" datatype="DATETIME" scale="3" nullable="true" >
+</DIColumn>
+<DIColumn name="ASATDATE" datatype="DATETIME" scale="3" nullable="true" >
+</DIColumn>
+<DIColumn name="QMRO" datatype="VARCHAR" size="1" nullable="true" >
+</DIColumn>
+<DIColumn name="QYRO" datatype="VARCHAR" size="1" nullable="true" >
+</DIColumn>
+<DIColumn name="QQRO" datatype="VARCHAR" size="1" nullable="true" >
+</DIColumn>
+<DIColumn name="QMFF" datatype="VARCHAR" size="1" nullable="true" >
+</DIColumn>
+<DIColumn name="QYFF" datatype="VARCHAR" size="1" nullable="true" >
+</DIColumn>
+<DIColumn name="QQFF" datatype="VARCHAR" size="1" nullable="true" >
+</DIColumn>
+<DIColumn name="WEIGHTEST" datatype="VARCHAR" size="1" nullable="true" >
+</DIColumn>
+<DITableIndex name="PK_SPECTECH" unique="true">
+<DIIndexColumn name="ACTYPE" />
+<DIIndexColumn name="SERIALNO" />
+</DITableIndex>
+</DITable>
+<DITable name="TD_DWH_TRAF_ASCEND_V_HISTORIES" owner="TRAFIC_DATA" datastore="DS_TRAFIC_DATA" database="DS_TRAFIC_DATA" description="" >
+<DIProperties>
+<DIAttribute name="Total_Number_Of_Rows_Processed" value="6292467" />
+<DIAttribute name="Number_Of_Rows_Rejected" value="0" />
+<DIAttribute name="Number_Of_Inserts" value="6292467" />
+<DIAttribute name="Number_Of_Updates" value="0" />
+<DIAttribute name="Number_Of_Deletes" value="0" />
+<DIAttribute name="Elapsed_Time_For_Load" value="3 Minutes and 46 Seconds" />
+<DIAttribute name="Database_Object_Type" value="TABLE" />
+<DIAttribute name="Table_Type" value="TABLE" />
+<DIAttribute name="Estimated_Row_Count" value="50000" />
+<DIAttribute name="Loader_Is_Template_Table" value="yes" />
+<DIAttribute name="db_alias_name" value="TRAFIC_DATA" />
+</DIProperties>
+<DIColumn name="ACCLASS" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="EVENTSEQNO" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="ACTYPE" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ACTYPEDESC" datatype="VARCHAR" size="50" nullable="true" >
+</DIColumn>
+<DIColumn name="OPR" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="OPRDESC" datatype="VARCHAR" size="50" nullable="true" >
+</DIColumn>
+<DIColumn name="OPRAREA" datatype="VARCHAR" size="1" nullable="true" >
+</DIColumn>
+<DIColumn name="OPRCTRY" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="OPRCAT" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="MGR" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="MGRDESC" datatype="VARCHAR" size="50" nullable="true" >
+</DIColumn>
+<DIColumn name="MGRAREA" datatype="VARCHAR" size="1" nullable="true" >
+</DIColumn>
+<DIColumn name="MGRCTRY" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="MGRCAT" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="ACVAR" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ACVARDESC" datatype="VARCHAR" size="50" nullable="true" >
+</DIColumn>
+<DIColumn name="STARTEVENT" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ENDEVENT" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ACMFR" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ACMFRDESC" datatype="VARCHAR" size="50" nullable="true" >
+</DIColumn>
+<DIColumn name="SERIALNO" datatype="VARCHAR" size="20" nullable="true" >
+</DIColumn>
+<DIColumn name="REGNO" datatype="VARCHAR" size="15" nullable="true" >
+</DIColumn>
+<DIColumn name="ACLINENO" datatype="VARCHAR" size="8" nullable="true" >
+</DIColumn>
+<DIColumn name="ACVALVAR" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ACMINVAR" datatype="VARCHAR" size="25" nullable="true" >
+</DIColumn>
+<DIColumn name="JOS" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="OWNDESC" datatype="VARCHAR" size="50" nullable="true" >
+</DIColumn>
+<DIColumn name="OWNAREA" datatype="VARCHAR" size="1" nullable="true" >
+</DIColumn>
+<DIColumn name="OWNCTRY" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="OWNCAT" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="PART1" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="PART1DESC" datatype="VARCHAR" size="50" nullable="true" >
+</DIColumn>
+<DIColumn name="PART2" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="PART2DESC" datatype="VARCHAR" size="50" nullable="true" >
+</DIColumn>
+<DIColumn name="OPRSUB1" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="OPRSUB1DESC" datatype="VARCHAR" size="50" nullable="true" >
+</DIColumn>
+<DIColumn name="ENGMFR" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ENGMFRDESC" datatype="VARCHAR" size="50" nullable="true" >
+</DIColumn>
+<DIColumn name="ENGTYPE" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ENGTYPEDESC" datatype="VARCHAR" size="50" nullable="true" >
+</DIColumn>
+<DIColumn name="ENGVAR" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ENGVARDESC" datatype="VARCHAR" size="50" nullable="true" >
+</DIColumn>
+<DIColumn name="ACCARGO" datatype="VARCHAR" size="1" nullable="true" >
+</DIColumn>
+<DIColumn name="ACUSAGE" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="ACCLASS2" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="ESTIMATES" datatype="VARCHAR" size="15" nullable="true" >
+</DIColumn>
+<DIColumn name="STORAGE" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="STARTDATE" datatype="DATETIME" scale="3" nullable="true" >
+</DIColumn>
+<DIColumn name="ENDDATE" datatype="DATETIME" scale="3" nullable="true" >
+</DIColumn>
+<DIColumn name="GRP" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="HUSHKIT" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="DATESTAMP" datatype="DATETIME" scale="3" nullable="true" >
+</DIColumn>
+<DIColumn name="OWN" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="TRUST" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="TRUSTDESC" datatype="VARCHAR" size="50" nullable="true" >
+</DIColumn>
+<DIColumn name="OPRSUB2" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="OWNSUB" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ACHOURS" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="ACCYCLES" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="YOB" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="MOB" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="HISTORIESID" datatype="INT" nullable="false" >
+</DIColumn>
+<DIColumn name="ENGNO" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="ACNOISE" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+</DITable>
+<DITable name="TD_DWH_TRAF_ASCNED_V_CURHIST" owner="TRAFIC_DATA" datastore="DS_TRAFIC_DATA" database="DS_TRAFIC_DATA" description="" >
+<DIProperties>
+<DIAttribute name="Database_Object_Type" value="TABLE" />
+<DIAttribute name="Table_Type" value="TABLE" />
+<DIAttribute name="Estimated_Row_Count" value="50000" />
+<DIAttribute name="Loader_Is_Template_Table" value="yes" />
+<DIAttribute name="Total_Number_Of_Rows_Processed" value="213849" />
+<DIAttribute name="Number_Of_Rows_Rejected" value="0" />
+<DIAttribute name="Number_Of_Inserts" value="213849" />
+<DIAttribute name="Number_Of_Updates" value="0" />
+<DIAttribute name="Number_Of_Deletes" value="0" />
+<DIAttribute name="Elapsed_Time_For_Load" value="2 Seconds" />
+<DIAttribute name="db_alias_name" value="TRAFIC_DATA" />
+</DIProperties>
+<DIColumn name="ACCLASS" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="EVENTSEQNO" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="ACTYPE" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="OPR" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="MGR" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ACVAR" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="STARTEVENT" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ENDEVENT" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ACMFR" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="SERIALNO" datatype="VARCHAR" size="20" nullable="true" >
+</DIColumn>
+<DIColumn name="REGNO" datatype="VARCHAR" size="15" nullable="true" >
+</DIColumn>
+<DIColumn name="ACLINENO" datatype="VARCHAR" size="8" nullable="true" >
+</DIColumn>
+<DIColumn name="ACVALVAR" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ACMINVAR" datatype="VARCHAR" size="25" nullable="true" >
+</DIColumn>
+<DIColumn name="JOS" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="PART1" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="PART2" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="OPRSUB1" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ENGMFR" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ENGTYPE" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ENGVAR" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ACCARGO" datatype="VARCHAR" size="1" nullable="true" >
+</DIColumn>
+<DIColumn name="ACUSAGE" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="ACCLASS2" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="ESTIMATES" datatype="VARCHAR" size="15" nullable="true" >
+</DIColumn>
+<DIColumn name="STORAGE" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="STARTDATE" datatype="DATETIME" scale="3" nullable="true" >
+</DIColumn>
+<DIColumn name="ENDDATE" datatype="DATETIME" scale="3" nullable="true" >
+</DIColumn>
+<DIColumn name="AIRCRAFTID" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="GRP" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="HUSHKIT" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="DATESTAMP" datatype="DATETIME" scale="3" nullable="true" >
+</DIColumn>
+<DIColumn name="OWN" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="TRUST" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="OPRSUB2" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="OWNSUB" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ACHOURS" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="ACCYCLES" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="YOB" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="MOB" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="HISTORIESID" datatype="INT" nullable="true" >
+</DIColumn>
+</DITable>
+<DITable name="TR_DWH_TRAF_ASCEND_AC_CARGO" owner="TRAFIC_DATA" datastore="DS_TRAFIC_DATA" database="DS_TRAFIC_DATA" description="" >
+<DIProperties>
+<DIAttribute name="Database_Object_Type" value="TABLE" />
+<DIAttribute name="Table_Type" value="TABLE" />
+<DIAttribute name="Estimated_Row_Count" value="50000" />
+<DIAttribute name="Loader_Is_Template_Table" value="yes" />
+<DIAttribute name="Total_Number_Of_Rows_Processed" value="5" />
+<DIAttribute name="Number_Of_Rows_Rejected" value="0" />
+<DIAttribute name="Number_Of_Inserts" value="5" />
+<DIAttribute name="Number_Of_Updates" value="0" />
+<DIAttribute name="Number_Of_Deletes" value="0" />
+<DIAttribute name="Elapsed_Time_For_Load" value="0 Seconds" />
+<DIAttribute name="db_alias_name" value="TRAFIC_DATA" />
+</DIProperties>
+<DIColumn name="ACCARGO" datatype="VARCHAR" size="1" nullable="true" >
+</DIColumn>
+<DIColumn name="ACCARGODESC" datatype="VARCHAR" size="50" nullable="true" >
+</DIColumn>
+</DITable>
+<DITable name="TR_DWH_TRAF_ASCEND_AREA" owner="TRAFIC_DATA" datastore="DS_TRAFIC_DATA" database="DS_TRAFIC_DATA" description="" >
+<DIProperties>
+<DIAttribute name="Database_Object_Type" value="TABLE" />
+<DIAttribute name="Table_Type" value="TABLE" />
+<DIAttribute name="Estimated_Row_Count" value="50000" />
+<DIAttribute name="Loader_Is_Template_Table" value="yes" />
+<DIAttribute name="Total_Number_Of_Rows_Processed" value="8" />
+<DIAttribute name="Number_Of_Rows_Rejected" value="0" />
+<DIAttribute name="Number_Of_Inserts" value="8" />
+<DIAttribute name="Number_Of_Updates" value="0" />
+<DIAttribute name="Number_Of_Deletes" value="0" />
+<DIAttribute name="Elapsed_Time_For_Load" value="0 Seconds" />
+<DIAttribute name="db_alias_name" value="TRAFIC_DATA" />
+</DIProperties>
+<DIColumn name="AREA" datatype="VARCHAR" size="1" nullable="true" >
+</DIColumn>
+<DIColumn name="AREADESC" datatype="VARCHAR" size="50" nullable="true" >
+</DIColumn>
+</DITable>
+<DITable name="TR_DWH_TRAF_ASCEND_CATEGORY" owner="TRAFIC_DATA" datastore="DS_TRAFIC_DATA" database="DS_TRAFIC_DATA" description="" >
+<DIProperties>
+<DIAttribute name="Elapsed_Time_For_Load" value="0 Seconds" />
+<DIAttribute name="Database_Object_Type" value="TABLE" />
+<DIAttribute name="Table_Type" value="TABLE" />
+<DIAttribute name="Estimated_Row_Count" value="50000" />
+<DIAttribute name="Loader_Is_Template_Table" value="yes" />
+<DIAttribute name="Total_Number_Of_Rows_Processed" value="90" />
+<DIAttribute name="Number_Of_Rows_Rejected" value="0" />
+<DIAttribute name="Number_Of_Inserts" value="90" />
+<DIAttribute name="Number_Of_Updates" value="0" />
+<DIAttribute name="Number_Of_Deletes" value="0" />
+<DIAttribute name="db_alias_name" value="TRAFIC_DATA" />
+</DIProperties>
+<DIColumn name="ACCAT" datatype="VARCHAR" size="4" nullable="false" >
+</DIColumn>
+<DIColumn name="ACCATDESC" datatype="VARCHAR" size="50" nullable="true" >
+</DIColumn>
+</DITable>
+<DITable name="TR_DWH_TRAF_ASCEND_COMPANY" owner="TRAFIC_DATA" datastore="DS_TRAFIC_DATA" database="DS_TRAFIC_DATA" description="" >
+<DIProperties>
+<DIAttribute name="Total_Number_Of_Rows_Processed" value="291212" />
+<DIAttribute name="Number_Of_Rows_Rejected" value="0" />
+<DIAttribute name="Number_Of_Inserts" value="291212" />
+<DIAttribute name="Number_Of_Updates" value="0" />
+<DIAttribute name="Number_Of_Deletes" value="0" />
+<DIAttribute name="Elapsed_Time_For_Load" value="2 Seconds" />
+<DIAttribute name="Database_Object_Type" value="TABLE" />
+<DIAttribute name="Table_Type" value="TABLE" />
+<DIAttribute name="Estimated_Row_Count" value="50000" />
+<DIAttribute name="Loader_Is_Template_Table" value="yes" />
+<DIAttribute name="db_alias_name" value="TRAFIC_DATA" />
+</DIProperties>
+<DIColumn name="COMPANY" datatype="VARCHAR" size="4" nullable="false" >
+</DIColumn>
+<DIColumn name="NAME" datatype="VARCHAR" size="100" nullable="true" Content_Type="NAME" >
+<DIProperties>
+<DIAttribute name="Content_Type" value="NAME"/>
+</DIProperties>
+</DIColumn>
+<DIColumn name="CAT" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="AREA" datatype="VARCHAR" size="1" nullable="true" >
+</DIColumn>
+<DIColumn name="CTRY" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="SOURCE" datatype="VARCHAR" size="40" nullable="true" >
+</DIColumn>
+<DIColumn name="HISTORIC" datatype="VARCHAR" size="1" nullable="true" >
+</DIColumn>
+<DIColumn name="ICAO" datatype="VARCHAR" size="3" nullable="true" >
+</DIColumn>
+<DIColumn name="IATA" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="ALIAS" datatype="VARCHAR" size="75" nullable="true" >
+</DIColumn>
+<DIColumn name="CEASED_OPS" datatype="DATETIME" scale="3" nullable="true" >
+</DIColumn>
+<DIColumn name="CURRENTAC" datatype="INT" nullable="true" >
+</DIColumn>
+</DITable>
+<DITable name="TR_DWH_TRAF_ASCEND_COUNTRY" owner="TRAFIC_DATA" datastore="DS_TRAFIC_DATA" database="DS_TRAFIC_DATA" description="" >
+<DIProperties>
+<DIAttribute name="Number_Of_Rows_Rejected" value="0" />
+<DIAttribute name="Database_Object_Type" value="TABLE" />
+<DIAttribute name="Table_Type" value="TABLE" />
+<DIAttribute name="Estimated_Row_Count" value="50000" />
+<DIAttribute name="Loader_Is_Template_Table" value="yes" />
+<DIAttribute name="Total_Number_Of_Rows_Processed" value="282" />
+<DIAttribute name="Number_Of_Inserts" value="282" />
+<DIAttribute name="Number_Of_Updates" value="0" />
+<DIAttribute name="Number_Of_Deletes" value="0" />
+<DIAttribute name="Elapsed_Time_For_Load" value="0 Seconds" />
+<DIAttribute name="db_alias_name" value="TRAFIC_DATA" />
+</DIProperties>
+<DIColumn name="CTRY" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="COUNTRYDESC" datatype="VARCHAR" size="50" nullable="true" >
+</DIColumn>
+<DIColumn name="AREA" datatype="VARCHAR" size="1" nullable="true" >
+</DIColumn>
+</DITable>
+<DITable name="TR_DWH_TRAF_ASCEND_EVENT" owner="TRAFIC_DATA" datastore="DS_TRAFIC_DATA" database="DS_TRAFIC_DATA" description="" >
+<DIProperties>
+<DIAttribute name="Database_Object_Type" value="TABLE" />
+<DIAttribute name="Table_Type" value="TABLE" />
+<DIAttribute name="Estimated_Row_Count" value="50000" />
+<DIAttribute name="Loader_Is_Template_Table" value="yes" />
+<DIAttribute name="Total_Number_Of_Rows_Processed" value="367" />
+<DIAttribute name="Number_Of_Rows_Rejected" value="0" />
+<DIAttribute name="Number_Of_Inserts" value="367" />
+<DIAttribute name="Number_Of_Updates" value="0" />
+<DIAttribute name="Number_Of_Deletes" value="0" />
+<DIAttribute name="Elapsed_Time_For_Load" value="0 Seconds" />
+<DIAttribute name="db_alias_name" value="TRAFIC_DATA" />
+</DIProperties>
+<DIColumn name="EVENT" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="EVENTDESC" datatype="VARCHAR" size="100" nullable="true" >
+</DIColumn>
+</DITable>
+<DITable name="TR_DWH_TRAF_ASCEND_EVENTTYPES" owner="TRAFIC_DATA" datastore="DS_TRAFIC_DATA" database="DS_TRAFIC_DATA" description="" >
+<DIProperties>
+<DIAttribute name="Number_Of_Rows_Rejected" value="0" />
+<DIAttribute name="Number_Of_Inserts" value="7" />
+<DIAttribute name="Number_Of_Updates" value="0" />
+<DIAttribute name="Number_Of_Deletes" value="0" />
+<DIAttribute name="Elapsed_Time_For_Load" value="0 Seconds" />
+<DIAttribute name="Database_Object_Type" value="TABLE" />
+<DIAttribute name="Table_Type" value="TABLE" />
+<DIAttribute name="Estimated_Row_Count" value="50000" />
+<DIAttribute name="Total_Number_Of_Rows_Processed" value="7" />
+<DIAttribute name="Loader_Is_Template_Table" value="yes" />
+<DIAttribute name="db_alias_name" value="TRAFIC_DATA" />
+</DIProperties>
+<DIColumn name="EVENTTYPE" datatype="VARCHAR" size="1" nullable="true" >
+</DIColumn>
+<DIColumn name="EVENTTYPEDESC" datatype="VARCHAR" size="25" nullable="true" >
+</DIColumn>
+</DITable>
+<DITable name="TR_DWH_TRAF_ASCEND_GENTECH" owner="TRAFIC_DATA" datastore="DS_TRAFIC_DATA" database="DS_TRAFIC_DATA" description="" >
+<DIProperties>
+<DIAttribute name="Database_Object_Type" value="TABLE" />
+<DIAttribute name="Table_Type" value="TABLE" />
+<DIAttribute name="Estimated_Row_Count" value="50000" />
+<DIAttribute name="Loader_Is_Template_Table" value="yes" />
+<DIAttribute name="db_alias_name" value="TRAFIC_DATA" />
+</DIProperties>
+<DIColumn name="ACTYPE" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ACVAR" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="MTOW" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="MLW" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="MZFW" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="OEW" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="FUEL" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="EXITLIMIT" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="CARGOVOL" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="GENTECHID" datatype="INT" nullable="false" >
+</DIColumn>
+<DIColumn name="MAXPAYLOAD" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="MAXSEATS" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="ACMFRCTRY" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="ACMFR" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="BUILDAREA" datatype="VARCHAR" size="1" nullable="true" >
+</DIColumn>
+<DIColumn name="JETTURBO" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="PAYLOAD" datatype="VARCHAR" size="1" nullable="true" >
+</DIColumn>
+<DIColumn name="RANGE" datatype="VARCHAR" size="1" nullable="true" >
+</DIColumn>
+<DIColumn name="ACVARDESC" datatype="VARCHAR" size="50" nullable="true" >
+</DIColumn>
+<DIColumn name="ACMINVAR" datatype="VARCHAR" size="25" nullable="true" >
+</DIColumn>
+<DIColumn name="ENGNO" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="NOISECERT" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="GRPPAYLOAD" datatype="VARCHAR" size="1" nullable="true" >
+</DIColumn>
+<DIColumn name="CONFIG" datatype="VARCHAR" size="1" nullable="true" >
+</DIColumn>
+<DIColumn name="TYPICALF" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="TYPICALC" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="TYPICALY" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="TYPICALTOT" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="ACCARGO" datatype="VARCHAR" size="1" nullable="true" >
+</DIColumn>
+<DIColumn name="ENGVAR" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ENGTYPE" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+</DITable>
+<DITable name="TR_DWH_TRAF_ASCEND_HISTORIES" owner="TRAFIC_DATA" datastore="DS_TRAFIC_DATA" database="DS_TRAFIC_DATA" description="" >
+<DIProperties>
+<DIAttribute name="Database_Object_Type" value="TABLE" />
+<DIAttribute name="Table_Type" value="TABLE" />
+<DIAttribute name="Estimated_Row_Count" value="50000" />
+<DIAttribute name="Loader_Is_Template_Table" value="yes" />
+<DIAttribute name="Total_Number_Of_Rows_Processed" value="2641743" />
+<DIAttribute name="Number_Of_Rows_Rejected" value="0" />
+<DIAttribute name="Number_Of_Inserts" value="2641743" />
+<DIAttribute name="Number_Of_Updates" value="0" />
+<DIAttribute name="Number_Of_Deletes" value="0" />
+<DIAttribute name="Elapsed_Time_For_Load" value="31 Seconds" />
+<DIAttribute name="db_alias_name" value="TRAFIC_DATA" />
+</DIProperties>
+<DIColumn name="ACCLASS" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="EVENTSEQNO" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="ACTYPE" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="OPR" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="MGR" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ACVAR" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="STARTEVENT" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ENDEVENT" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ACMFR" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="SERIALNO" datatype="VARCHAR" size="20" nullable="true" >
+</DIColumn>
+<DIColumn name="REGNO" datatype="VARCHAR" size="15" nullable="true" >
+</DIColumn>
+<DIColumn name="ACLINENO" datatype="VARCHAR" size="8" nullable="true" >
+</DIColumn>
+<DIColumn name="ACVALVAR" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ACMINVAR" datatype="VARCHAR" size="25" nullable="true" >
+</DIColumn>
+<DIColumn name="JOS" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="PART1" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="PART2" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="OPRSUB1" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ENGMFR" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ENGTYPE" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ENGVAR" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ACCARGO" datatype="VARCHAR" size="1" nullable="true" >
+</DIColumn>
+<DIColumn name="ACUSAGE" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="ACCLASS2" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="ESTIMATES" datatype="VARCHAR" size="15" nullable="true" >
+</DIColumn>
+<DIColumn name="STORAGE" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="STARTDATE" datatype="DATETIME" scale="3" nullable="true" >
+</DIColumn>
+<DIColumn name="ENDDATE" datatype="DATETIME" scale="3" nullable="true" >
+</DIColumn>
+<DIColumn name="AIRCRAFTID" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="GRP" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="HUSHKIT" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="DATESTAMP" datatype="DATETIME" scale="3" nullable="true" >
+</DIColumn>
+<DIColumn name="OWN" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="TRUST" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="OPRSUB2" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="OWNSUB" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ACHOURS" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="ACCYCLES" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="YOB" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="MOB" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="HISTORIESID" datatype="INT" nullable="true" >
+</DIColumn>
+</DITable>
+<DITable name="TR_DWH_TRAF_ASCEND_LASTDELIV" owner="TRAFIC_DATA" datastore="DS_TRAFIC_DATA" database="DS_TRAFIC_DATA" description="" >
+<DIProperties>
+<DIAttribute name="Database_Object_Type" value="TABLE" />
+<DIAttribute name="Table_Type" value="TABLE" />
+<DIAttribute name="Estimated_Row_Count" value="50000" />
+<DIAttribute name="Loader_Is_Template_Table" value="yes" />
+<DIAttribute name="Number_Of_Rows_Rejected" value="0" />
+<DIAttribute name="Total_Number_Of_Rows_Processed" value="356262" />
+<DIAttribute name="Number_Of_Inserts" value="356262" />
+<DIAttribute name="Number_Of_Updates" value="0" />
+<DIAttribute name="Number_Of_Deletes" value="0" />
+<DIAttribute name="Elapsed_Time_For_Load" value="1 Seconds" />
+<DIAttribute name="db_alias_name" value="TRAFIC_DATA" />
+</DIProperties>
+<DIColumn name="ACTYPE" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="SERIALNO" datatype="VARCHAR" size="20" nullable="true" >
+</DIColumn>
+<DIColumn name="DELIVERYDATE" datatype="DATETIME" scale="3" nullable="true" >
+</DIColumn>
+<DIColumn name="OPRDESC" datatype="VARCHAR" size="50" nullable="true" >
+</DIColumn>
+</DITable>
+<DITable name="TR_DWH_TRAF_ASCEND_LASTORDER" owner="TRAFIC_DATA" datastore="DS_TRAFIC_DATA" database="DS_TRAFIC_DATA" description="" >
+<DIProperties>
+<DIAttribute name="Table_Type" value="TABLE" />
+<DIAttribute name="Estimated_Row_Count" value="50000" />
+<DIAttribute name="Database_Object_Type" value="TABLE" />
+<DIAttribute name="Loader_Is_Template_Table" value="yes" />
+<DIAttribute name="Total_Number_Of_Rows_Processed" value="356262" />
+<DIAttribute name="Number_Of_Rows_Rejected" value="0" />
+<DIAttribute name="Number_Of_Inserts" value="356262" />
+<DIAttribute name="Number_Of_Updates" value="0" />
+<DIAttribute name="Number_Of_Deletes" value="0" />
+<DIAttribute name="Elapsed_Time_For_Load" value="2 Seconds" />
+<DIAttribute name="db_alias_name" value="TRAFIC_DATA" />
+</DIProperties>
+<DIColumn name="ACTYPE" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="SERIALNO" datatype="VARCHAR" size="20" nullable="true" >
+</DIColumn>
+<DIColumn name="ORDERDATE" datatype="DATETIME" scale="3" nullable="true" >
+</DIColumn>
+</DITable>
+<DITable name="TR_DWH_TRAF_ASCEND_ORDPLCDTMP" owner="TRAFIC_DATA" datastore="DS_TRAFIC_DATA" database="DS_TRAFIC_DATA" description="" >
+<DIProperties>
+<DIAttribute name="Database_Object_Type" value="TABLE" />
+<DIAttribute name="Table_Type" value="TABLE" />
+<DIAttribute name="Estimated_Row_Count" value="50000" />
+<DIAttribute name="Loader_Is_Template_Table" value="yes" />
+<DIAttribute name="Number_Of_Rows_Rejected" value="0" />
+<DIAttribute name="Number_Of_Inserts" value="356262" />
+<DIAttribute name="Number_Of_Updates" value="0" />
+<DIAttribute name="Number_Of_Deletes" value="0" />
+<DIAttribute name="Elapsed_Time_For_Load" value="2 Seconds" />
+<DIAttribute name="Total_Number_Of_Rows_Processed" value="356262" />
+<DIAttribute name="db_alias_name" value="TRAFIC_DATA" />
+</DIProperties>
+<DIColumn name="ACTYPE" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="SERIALNO" datatype="VARCHAR" size="20" nullable="true" >
+</DIColumn>
+<DIColumn name="LASTDATE" datatype="DATETIME" scale="3" nullable="true" >
+</DIColumn>
+</DITable>
+<DITable name="TR_DWH_TRAF_ASCEND_SPECTECH" owner="TRAFIC_DATA" datastore="DS_TRAFIC_DATA" database="DS_TRAFIC_DATA" description="" >
+<DIProperties>
+<DIAttribute name="Database_Object_Type" value="TABLE" />
+<DIAttribute name="Table_Type" value="TABLE" />
+<DIAttribute name="Estimated_Row_Count" value="50000" />
+<DIAttribute name="Loader_Is_Template_Table" value="yes" />
+<DIAttribute name="Total_Number_Of_Rows_Processed" value="387413" />
+<DIAttribute name="Number_Of_Rows_Rejected" value="0" />
+<DIAttribute name="Number_Of_Inserts" value="387413" />
+<DIAttribute name="Number_Of_Updates" value="0" />
+<DIAttribute name="Number_Of_Deletes" value="0" />
+<DIAttribute name="Elapsed_Time_For_Load" value="4 Seconds" />
+<DIAttribute name="db_alias_name" value="TRAFIC_DATA" />
+</DIProperties>
+<DIColumn name="ACTYPE" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="SERIALNO" datatype="VARCHAR" size="20" nullable="true" >
+</DIColumn>
+<DIColumn name="MTOW" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="MLW" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="MZFW" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="OEW" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="FUELCAP" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="CLASS1" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="CLASS2" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="CLASS3" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="CLASSTYPE" datatype="VARCHAR" size="1" nullable="true" >
+</DIColumn>
+<DIColumn name="SEATTOTAL" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="EFF_DATE" datatype="DATETIME" scale="3" nullable="true" >
+</DIColumn>
+<DIColumn name="HRS" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="CYCLES" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="SEATEST" datatype="VARCHAR" size="1" nullable="true" >
+</DIColumn>
+<DIColumn name="FIRSTFLIGHT" datatype="DATETIME" scale="3" nullable="true" >
+</DIColumn>
+<DIColumn name="ROLLOUT" datatype="DATETIME" scale="3" nullable="true" >
+</DIColumn>
+<DIColumn name="ASATDATE" datatype="DATETIME" scale="3" nullable="true" >
+</DIColumn>
+<DIColumn name="QMRO" datatype="VARCHAR" size="1" nullable="true" >
+</DIColumn>
+<DIColumn name="QYRO" datatype="VARCHAR" size="1" nullable="true" >
+</DIColumn>
+<DIColumn name="QQRO" datatype="VARCHAR" size="1" nullable="true" >
+</DIColumn>
+<DIColumn name="QMFF" datatype="VARCHAR" size="1" nullable="true" >
+</DIColumn>
+<DIColumn name="QYFF" datatype="VARCHAR" size="1" nullable="true" >
+</DIColumn>
+<DIColumn name="QQFF" datatype="VARCHAR" size="1" nullable="true" >
+</DIColumn>
+<DIColumn name="WEIGHTEST" datatype="VARCHAR" size="1" nullable="true" >
+</DIColumn>
+</DITable>
+<DITable name="V_CURRENTHISTORIES" owner="DBO" datastore="DS_TRAFIC_ASCENDFEED" database="AscendFeed" description="" >
+<DIProperties>
+<DIAttribute name="Table_Type" value="TABLE" />
+<DIAttribute name="Estimated_Row_Count" value="50000" />
+<DIAttribute name="Loader_Is_Template_Table" value="no" />
+<DIAttribute name="Database_Object_Type" value="VIEW" />
+<DIAttribute name="db_alias_name" value="DBO" />
+</DIProperties>
+<DIColumn name="ACCLASS" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="EVENTSEQNO" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="ACTYPE" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="OPR" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="MGR" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ACVAR" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="STARTEVENT" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ENDEVENT" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ACMFR" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="SERIALNO" datatype="VARCHAR" size="20" nullable="true" >
+</DIColumn>
+<DIColumn name="REGNO" datatype="VARCHAR" size="15" nullable="true" >
+</DIColumn>
+<DIColumn name="ACLINENO" datatype="VARCHAR" size="8" nullable="true" >
+</DIColumn>
+<DIColumn name="ACVALVAR" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ACMINVAR" datatype="VARCHAR" size="25" nullable="true" >
+</DIColumn>
+<DIColumn name="JOS" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="PART1" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="PART2" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="OPRSUB1" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ENGMFR" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ENGTYPE" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ENGVAR" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ACCARGO" datatype="VARCHAR" size="1" nullable="true" >
+</DIColumn>
+<DIColumn name="ACUSAGE" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="ACCLASS2" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="ESTIMATES" datatype="VARCHAR" size="15" nullable="true" >
+</DIColumn>
+<DIColumn name="STORAGE" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="STARTDATE" datatype="DATETIME" scale="3" nullable="true" >
+</DIColumn>
+<DIColumn name="ENDDATE" datatype="DATETIME" scale="3" nullable="true" >
+</DIColumn>
+<DIColumn name="AIRCRAFTID" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="GRP" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="HUSHKIT" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="DATESTAMP" datatype="DATETIME" scale="3" nullable="true" >
+</DIColumn>
+<DIColumn name="OWN" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="TRUST" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="OPRSUB2" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="OWNSUB" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ACHOURS" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="ACCYCLES" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="YOB" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="MOB" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="HISTORIESID" datatype="INT" nullable="false" >
+</DIColumn>
+</DITable>
+<DITable name="V_HISTORIES" owner="DBO" datastore="DS_TRAFIC_ASCENDFEED" database="AscendFeed" >
+<DIProperties>
+<DIAttribute name="Table_Type" value="TABLE" />
+<DIAttribute name="Estimated_Row_Count" value="50000" />
+<DIAttribute name="Loader_Is_Template_Table" value="no" />
+<DIAttribute name="Database_Object_Type" value="VIEW" />
+<DIAttribute name="PartitionModified" value="no" />
+<DIAttribute name="db_alias_name" value="DBO" />
+</DIProperties>
+<DIColumn name="ACCLASS" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="EVENTSEQNO" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="ACTYPE" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ACTYPEDESC" datatype="VARCHAR" size="50" nullable="true" >
+</DIColumn>
+<DIColumn name="OPR" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="OPRDESC" datatype="VARCHAR" size="50" nullable="true" >
+</DIColumn>
+<DIColumn name="OPRAREA" datatype="VARCHAR" size="1" nullable="true" >
+</DIColumn>
+<DIColumn name="OPRCTRY" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="OPRCAT" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="MGR" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="MGRDESC" datatype="VARCHAR" size="50" nullable="true" >
+</DIColumn>
+<DIColumn name="MGRAREA" datatype="VARCHAR" size="1" nullable="true" >
+</DIColumn>
+<DIColumn name="MGRCTRY" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="MGRCAT" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ACVAR" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ACVARDESC" datatype="VARCHAR" size="50" nullable="true" >
+</DIColumn>
+<DIColumn name="STARTEVENT" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ENDEVENT" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ACMFR" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ACMFRDESC" datatype="VARCHAR" size="50" nullable="true" >
+</DIColumn>
+<DIColumn name="SERIALNO" datatype="VARCHAR" size="20" nullable="true" >
+</DIColumn>
+<DIColumn name="REGNO" datatype="VARCHAR" size="15" nullable="true" >
+</DIColumn>
+<DIColumn name="ACLINENO" datatype="VARCHAR" size="8" nullable="true" >
+</DIColumn>
+<DIColumn name="ACVALVAR" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ACMINVAR" datatype="VARCHAR" size="25" nullable="true" >
+</DIColumn>
+<DIColumn name="JOS" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="OWNDESC" datatype="VARCHAR" size="50" nullable="true" >
+</DIColumn>
+<DIColumn name="OWNAREA" datatype="VARCHAR" size="1" nullable="true" >
+</DIColumn>
+<DIColumn name="OWNCTRY" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="OWNCAT" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="PART1" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="PART1DESC" datatype="VARCHAR" size="50" nullable="true" >
+</DIColumn>
+<DIColumn name="PART2" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="PART2DESC" datatype="VARCHAR" size="50" nullable="true" >
+</DIColumn>
+<DIColumn name="OPRSUB1" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="OPRSUB1DESC" datatype="VARCHAR" size="50" nullable="true" >
+</DIColumn>
+<DIColumn name="ENGMFR" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ENGMFRDESC" datatype="VARCHAR" size="50" nullable="true" >
+</DIColumn>
+<DIColumn name="ENGTYPE" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ENGTYPEDESC" datatype="VARCHAR" size="50" nullable="true" >
+</DIColumn>
+<DIColumn name="ENGVAR" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ENGVARDESC" datatype="VARCHAR" size="50" nullable="true" >
+</DIColumn>
+<DIColumn name="ACCARGO" datatype="VARCHAR" size="1" nullable="true" >
+</DIColumn>
+<DIColumn name="ACUSAGE" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="ACCLASS2" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="ESTIMATES" datatype="VARCHAR" size="15" nullable="true" >
+</DIColumn>
+<DIColumn name="STORAGE" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="STARTDATE" datatype="DATETIME" scale="3" nullable="true" >
+</DIColumn>
+<DIColumn name="ENDDATE" datatype="DATETIME" scale="3" nullable="true" >
+</DIColumn>
+<DIColumn name="GRP" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="HUSHKIT" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+<DIColumn name="DATESTAMP" datatype="DATETIME" scale="3" nullable="true" >
+</DIColumn>
+<DIColumn name="OWN" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="TRUST" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="TRUSTDESC" datatype="VARCHAR" size="50" nullable="true" >
+</DIColumn>
+<DIColumn name="OPRSUB2" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="OWNSUB" datatype="VARCHAR" size="4" nullable="true" >
+</DIColumn>
+<DIColumn name="ACHOURS" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="ACCYCLES" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="YOB" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="MOB" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="HISTORIESID" datatype="INT" nullable="false" >
+</DIColumn>
+<DIColumn name="ENGNO" datatype="INT" nullable="true" >
+</DIColumn>
+<DIColumn name="ACNOISE" datatype="VARCHAR" size="2" nullable="true" >
+</DIColumn>
+</DITable>
+<DIDataflow name="DF_TRAFIC2_DWH_AC_CARGO" typeId="1" >
+<DITransforms>
+<DIDatabaseTableSource typeId="12" datastoreName="DS_TRAFIC_ASCENDFEED" ownerName="DBO" tableName="AC_CARGO" >
+<DIOutputView name="AC_CARGO"  />
+<DIAttributes>
+<DIAttribute name="Initial_Load" value="no"/>
+<DIAttribute name="array_fetch_size" value="1000"/>
+<DIAttribute name="cache" value="yes"/>
+<DIAttribute name="connection_port" value="no"/>
+<DIAttribute name="enable_partitioning" value="no"/>
+<DIAttribute name="name" value="DS_TRAFIC_ASCENDFEED"/>
+<DIAttribute name="package_size" value="0"/>
+<DIAttribute name="reader_is_DB2CDC_table" value="no"/>
+<DIAttribute name="reader_overflow_file" value="overflow_file"/>
+<DIAttribute name="reader_template_table" value="no"/>
+<DIAttribute name="reader_use_overflow_file" value="no"/>
+<DIAttribute name="reader_use_trex_transaction" value="no"/>
+<DIAttribute name="table_weight" value="0"/>
+<DIAttribute name="teradata_bulk_rdr_cleanup" value="yes"/>
+</DIAttributes>
+</DIDatabaseTableSource>
+
+<DIDatabaseTableTarget typeID="5" bulkLoader="false" datastoreName="DS_TRAFIC_DATA" ownerName="TRAFIC_DATA" tableName="TR_DWH_TRAF_ASCEND_AC_CARGO" >
+<DIInputView name="AC_CARGO"  />
+<DIAttributes>
+<DIAttribute name="connection_port" value="no"/>
+<DIAttribute name="ldr_configuration_enabled" value="yes"/>
+<DIAttribute name="ldr_configurations" hasNestedXMLTree ="true">
+
+<LDRConfigurations>
+<LDRConfiguration database_type="Oracle" database_version="Oracle 10g">
+<bulk_col_delimiter>/127</bulk_col_delimiter>
+<bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
+<bulk_ldr_max_bind_array>100000</bulk_ldr_max_bind_array>
+<bulk_ldr_max_discards>10</bulk_ldr_max_discards>
+<bulk_ldr_mode>append</bulk_ldr_mode>
+<bulk_ldr_rows_per_commit>1000</bulk_ldr_rows_per_commit>
+<column_delimiter>,</column_delimiter>
+<enable_partitioning>no</enable_partitioning>
+<ignore_column_case>yes</ignore_column_case>
+<ignore_columns_null>no</ignore_columns_null>
+<loader_auto_correct>no</loader_auto_correct>
+<loader_bulk_load></loader_bulk_load>
+<loader_compare_column>compare_by_name</loader_compare_column>
+<loader_drop_and_create_table>yes</loader_drop_and_create_table>
+<loader_insert_select_commit_size>yes</loader_insert_select_commit_size>
+<loader_load_choice>append</loader_load_choice>
+<loader_num_parallel_loaders>1</loader_num_parallel_loaders>
+<loader_quote_names>0</loader_quote_names>
+<loader_transactional>no</loader_transactional>
+<loader_transactional_order>0</loader_transactional_order>
+<loader_update_key_columns>no</loader_update_key_columns>
+<loader_use_user_defined_keys>no</loader_use_user_defined_keys>
+<loader_xact_size>1000</loader_xact_size>
+<oracle_auto_correct_using_merge>yes</oracle_auto_correct_using_merge>
+<oracle_bulk_ldr_all_method>None</oracle_bulk_ldr_all_method>
+<oracle_bulk_ldr_file_method>None</oracle_bulk_ldr_file_method>
+<oracle_bulk_ldr_method>None</oracle_bulk_ldr_method>
+<oracle_bulk_ldr_method_api>API</oracle_bulk_ldr_method_api>
+<oracle_bulk_ldr_method_file>File</oracle_bulk_ldr_method_file>
+<oracle_bulk_ldr_method_none>None</oracle_bulk_ldr_method_none>
+<oracle_bulk_ldr_mode_api>append</oracle_bulk_ldr_mode_api>
+<oracle_bulk_ldr_use_local_index_for_pkey>no</oracle_bulk_ldr_use_local_index_for_pkey>
+<overflow_file_format>write_data</overflow_file_format>
+<use_overflow_file>no</use_overflow_file>
+<use_unicode_varchar>no</use_unicode_varchar>
+</LDRConfiguration>
+<LDRConfiguration database_type="Oracle" database_version="Oracle 12c">
+<bulk_col_delimiter>/127</bulk_col_delimiter>
+<bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
+<bulk_ldr_control_file_name></bulk_ldr_control_file_name>
+<bulk_ldr_direct></bulk_ldr_direct>
+<bulk_ldr_direct_api></bulk_ldr_direct_api>
+<bulk_ldr_generate_files_only></bulk_ldr_generate_files_only>
+<bulk_ldr_max_bind_array>100000</bulk_ldr_max_bind_array>
+<bulk_ldr_max_discards>10</bulk_ldr_max_discards>
+<bulk_ldr_mode>append</bulk_ldr_mode>
+<bulk_ldr_recoverable></bulk_ldr_recoverable>
+<bulk_ldr_rows_per_commit>1000</bulk_ldr_rows_per_commit>
+<bulk_ldr_trailing_nullcols></bulk_ldr_trailing_nullcols>
+<bulk_ldr_use_control_file></bulk_ldr_use_control_file>
+<column_delimiter>,</column_delimiter>
+<enable_partitioning>no</enable_partitioning>
+<ignore_column_case>yes</ignore_column_case>
+<ignore_columns_null>no</ignore_columns_null>
+<ignore_columns_value></ignore_columns_value>
+<loader_auto_correct>no</loader_auto_correct>
+<loader_bulk_load></loader_bulk_load>
+<loader_compare_column>compare_by_name</loader_compare_column>
+<loader_delete_map></loader_delete_map>
+<loader_drop_and_create_table>yes</loader_drop_and_create_table>
+<loader_insert_map></loader_insert_map>
+<loader_insert_select_commit_size>yes</loader_insert_select_commit_size>
+<loader_load_choice>append</loader_load_choice>
+<loader_num_parallel_loaders>1</loader_num_parallel_loaders>
+<loader_overflow_file></loader_overflow_file>
+<loader_quote_names>0</loader_quote_names>
+<loader_transactional>no</loader_transactional>
+<loader_transactional_order>0</loader_transactional_order>
+<loader_update_key_columns>no</loader_update_key_columns>
+<loader_update_map></loader_update_map>
+<loader_use_user_defined_keys>no</loader_use_user_defined_keys>
+<loader_xact_size>1000</loader_xact_size>
+<newdb_table_type>column_store</newdb_table_type>
+<oracle_auto_correct_using_merge>yes</oracle_auto_correct_using_merge>
+<oracle_bulk_ldr_all_method>None</oracle_bulk_ldr_all_method>
+<oracle_bulk_ldr_file_method>None</oracle_bulk_ldr_file_method>
+<oracle_bulk_ldr_method>None</oracle_bulk_ldr_method>
+<oracle_bulk_ldr_method_api>API</oracle_bulk_ldr_method_api>
+<oracle_bulk_ldr_method_file>File</oracle_bulk_ldr_method_file>
+<oracle_bulk_ldr_method_none>None</oracle_bulk_ldr_method_none>
+<oracle_bulk_ldr_mode_api>append</oracle_bulk_ldr_mode_api>
+<oracle_bulk_ldr_use_local_index_for_pkey>no</oracle_bulk_ldr_use_local_index_for_pkey>
+<oracle_sqlldr_version></oracle_sqlldr_version>
+<overflow_file_format>write_data</overflow_file_format>
+<overriding_substitution_parameter_for_tablename></overriding_substitution_parameter_for_tablename>
+<text_delimiter></text_delimiter>
+<use_overflow_file>no</use_overflow_file>
+<use_unicode_varchar>no</use_unicode_varchar>
+</LDRConfiguration>
+</LDRConfigurations>
+
+</DIAttribute>
+<DIAttribute name="loader_template_table" value="yes"/>
+<DIAttribute name="name" value="DS_TRAFIC_DATA"/>
+<DIAttribute name="use_unicode_varchar" value="no"/>
+</DIAttributes>
+</DIDatabaseTableTarget>
+
+</DITransforms>
+<DIAttributes>
+<DIAttribute name="Cache_type" value="pageable_cache"/>
+<DIAttribute name="Parallelism_degree" value="0"/>
+<DIAttribute name="allows_both_input_and_output" value="yes"/>
+<DIAttribute name="run_once" value="no"/>
+<DIAttribute name="use_dataflow_links" value="no"/>
+<DIAttribute name="use_datastore_links" value="yes"/>
+<DIAttribute name="validation_xform_exists" value="no"/>
+<DIAttribute name="validation_xform_stats" value="no"/>
+</DIAttributes>
+</DIDataflow>
+<DIDataflow name="DF_TRAFIC2_DWH_AREA" typeId="1" >
+<DITransforms>
+<DIDatabaseTableSource typeId="12" datastoreName="DS_TRAFIC_ASCENDFEED" ownerName="DBO" tableName="AREA" >
+<DIOutputView name="AREA"  />
+<DIAttributes>
+<DIAttribute name="Initial_Load" value="no"/>
+<DIAttribute name="array_fetch_size" value="1000"/>
+<DIAttribute name="cache" value="yes"/>
+<DIAttribute name="connection_port" value="no"/>
+<DIAttribute name="enable_partitioning" value="no"/>
+<DIAttribute name="name" value="DS_TRAFIC_ASCENDFEED"/>
+<DIAttribute name="package_size" value="0"/>
+<DIAttribute name="reader_is_DB2CDC_table" value="no"/>
+<DIAttribute name="reader_overflow_file" value="overflow_file"/>
+<DIAttribute name="reader_template_table" value="no"/>
+<DIAttribute name="reader_use_overflow_file" value="no"/>
+<DIAttribute name="reader_use_trex_transaction" value="no"/>
+<DIAttribute name="table_weight" value="0"/>
+<DIAttribute name="teradata_bulk_rdr_cleanup" value="yes"/>
+</DIAttributes>
+</DIDatabaseTableSource>
+
+<DIDatabaseTableTarget typeID="5" bulkLoader="false" datastoreName="DS_TRAFIC_DATA" ownerName="TRAFIC_DATA" tableName="TR_DWH_TRAF_ASCEND_AREA" >
+<DIInputView name="AREA"  />
+<DIAttributes>
+<DIAttribute name="connection_port" value="no"/>
+<DIAttribute name="ldr_configuration_enabled" value="yes"/>
+<DIAttribute name="ldr_configurations" hasNestedXMLTree ="true">
+
+<LDRConfigurations>
+<LDRConfiguration database_type="Oracle" database_version="Oracle 10g">
+<bulk_col_delimiter>/127</bulk_col_delimiter>
+<bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
+<bulk_ldr_max_bind_array>100000</bulk_ldr_max_bind_array>
+<bulk_ldr_max_discards>10</bulk_ldr_max_discards>
+<bulk_ldr_mode>append</bulk_ldr_mode>
+<bulk_ldr_rows_per_commit>1000</bulk_ldr_rows_per_commit>
+<column_delimiter>,</column_delimiter>
+<enable_partitioning>no</enable_partitioning>
+<ignore_column_case>yes</ignore_column_case>
+<ignore_columns_null>no</ignore_columns_null>
+<loader_auto_correct>no</loader_auto_correct>
+<loader_bulk_load></loader_bulk_load>
+<loader_compare_column>compare_by_name</loader_compare_column>
+<loader_drop_and_create_table>yes</loader_drop_and_create_table>
+<loader_insert_select_commit_size>yes</loader_insert_select_commit_size>
+<loader_load_choice>append</loader_load_choice>
+<loader_num_parallel_loaders>1</loader_num_parallel_loaders>
+<loader_quote_names>0</loader_quote_names>
+<loader_transactional>no</loader_transactional>
+<loader_transactional_order>0</loader_transactional_order>
+<loader_update_key_columns>no</loader_update_key_columns>
+<loader_use_user_defined_keys>no</loader_use_user_defined_keys>
+<loader_xact_size>1000</loader_xact_size>
+<oracle_auto_correct_using_merge>yes</oracle_auto_correct_using_merge>
+<oracle_bulk_ldr_all_method>None</oracle_bulk_ldr_all_method>
+<oracle_bulk_ldr_file_method>None</oracle_bulk_ldr_file_method>
+<oracle_bulk_ldr_method>None</oracle_bulk_ldr_method>
+<oracle_bulk_ldr_method_api>API</oracle_bulk_ldr_method_api>
+<oracle_bulk_ldr_method_file>File</oracle_bulk_ldr_method_file>
+<oracle_bulk_ldr_method_none>None</oracle_bulk_ldr_method_none>
+<oracle_bulk_ldr_mode_api>append</oracle_bulk_ldr_mode_api>
+<oracle_bulk_ldr_use_local_index_for_pkey>no</oracle_bulk_ldr_use_local_index_for_pkey>
+<overflow_file_format>write_data</overflow_file_format>
+<use_overflow_file>no</use_overflow_file>
+<use_unicode_varchar>no</use_unicode_varchar>
+</LDRConfiguration>
+<LDRConfiguration database_type="Oracle" database_version="Oracle 12c">
+<bulk_col_delimiter>/127</bulk_col_delimiter>
+<bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
+<bulk_ldr_control_file_name></bulk_ldr_control_file_name>
+<bulk_ldr_direct></bulk_ldr_direct>
+<bulk_ldr_direct_api></bulk_ldr_direct_api>
+<bulk_ldr_generate_files_only></bulk_ldr_generate_files_only>
+<bulk_ldr_max_bind_array>100000</bulk_ldr_max_bind_array>
+<bulk_ldr_max_discards>10</bulk_ldr_max_discards>
+<bulk_ldr_mode>append</bulk_ldr_mode>
+<bulk_ldr_recoverable></bulk_ldr_recoverable>
+<bulk_ldr_rows_per_commit>1000</bulk_ldr_rows_per_commit>
+<bulk_ldr_trailing_nullcols></bulk_ldr_trailing_nullcols>
+<bulk_ldr_use_control_file></bulk_ldr_use_control_file>
+<column_delimiter>,</column_delimiter>
+<enable_partitioning>no</enable_partitioning>
+<ignore_column_case>yes</ignore_column_case>
+<ignore_columns_null>no</ignore_columns_null>
+<ignore_columns_value></ignore_columns_value>
+<loader_auto_correct>no</loader_auto_correct>
+<loader_bulk_load></loader_bulk_load>
+<loader_compare_column>compare_by_name</loader_compare_column>
+<loader_delete_map></loader_delete_map>
+<loader_drop_and_create_table>yes</loader_drop_and_create_table>
+<loader_insert_map></loader_insert_map>
+<loader_insert_select_commit_size>yes</loader_insert_select_commit_size>
+<loader_load_choice>append</loader_load_choice>
+<loader_num_parallel_loaders>1</loader_num_parallel_loaders>
+<loader_overflow_file></loader_overflow_file>
+<loader_quote_names>0</loader_quote_names>
+<loader_transactional>no</loader_transactional>
+<loader_transactional_order>0</loader_transactional_order>
+<loader_update_key_columns>no</loader_update_key_columns>
+<loader_update_map></loader_update_map>
+<loader_use_user_defined_keys>no</loader_use_user_defined_keys>
+<loader_xact_size>1000</loader_xact_size>
+<newdb_table_type>column_store</newdb_table_type>
+<oracle_auto_correct_using_merge>yes</oracle_auto_correct_using_merge>
+<oracle_bulk_ldr_all_method>None</oracle_bulk_ldr_all_method>
+<oracle_bulk_ldr_file_method>None</oracle_bulk_ldr_file_method>
+<oracle_bulk_ldr_method>None</oracle_bulk_ldr_method>
+<oracle_bulk_ldr_method_api>API</oracle_bulk_ldr_method_api>
+<oracle_bulk_ldr_method_file>File</oracle_bulk_ldr_method_file>
+<oracle_bulk_ldr_method_none>None</oracle_bulk_ldr_method_none>
+<oracle_bulk_ldr_mode_api>append</oracle_bulk_ldr_mode_api>
+<oracle_bulk_ldr_use_local_index_for_pkey>no</oracle_bulk_ldr_use_local_index_for_pkey>
+<oracle_sqlldr_version></oracle_sqlldr_version>
+<overflow_file_format>write_data</overflow_file_format>
+<overriding_substitution_parameter_for_tablename></overriding_substitution_parameter_for_tablename>
+<text_delimiter></text_delimiter>
+<use_overflow_file>no</use_overflow_file>
+<use_unicode_varchar>no</use_unicode_varchar>
+</LDRConfiguration>
+</LDRConfigurations>
+
+</DIAttribute>
+<DIAttribute name="loader_template_table" value="yes"/>
+<DIAttribute name="name" value="DS_TRAFIC_DATA"/>
+<DIAttribute name="use_unicode_varchar" value="no"/>
+</DIAttributes>
+</DIDatabaseTableTarget>
+
+</DITransforms>
+<DIAttributes>
+<DIAttribute name="Cache_type" value="pageable_cache"/>
+<DIAttribute name="Parallelism_degree" value="0"/>
+<DIAttribute name="allows_both_input_and_output" value="yes"/>
+<DIAttribute name="run_once" value="no"/>
+<DIAttribute name="use_dataflow_links" value="no"/>
+<DIAttribute name="use_datastore_links" value="yes"/>
+<DIAttribute name="validation_xform_exists" value="no"/>
+<DIAttribute name="validation_xform_stats" value="no"/>
+</DIAttributes>
+</DIDataflow>
+<DIDataflow name="DF_TRAFIC2_DWH_CATEGORY" typeId="1" >
+<DITransforms>
+<DIDatabaseTableSource typeId="12" datastoreName="DS_TRAFIC_ASCENDFEED" ownerName="DBO" tableName="CATEGORY" >
+<DIOutputView name="CATEGORY"  />
+<DIAttributes>
+<DIAttribute name="Initial_Load" value="no"/>
+<DIAttribute name="array_fetch_size" value="1000"/>
+<DIAttribute name="cache" value="yes"/>
+<DIAttribute name="connection_port" value="no"/>
+<DIAttribute name="enable_partitioning" value="no"/>
+<DIAttribute name="name" value="DS_TRAFIC_ASCENDFEED"/>
+<DIAttribute name="package_size" value="0"/>
+<DIAttribute name="parallel_sap_connections" value="0"/>
+<DIAttribute name="reader_is_DB2CDC_table" value="no"/>
+<DIAttribute name="reader_overflow_file" value="overflow_file"/>
+<DIAttribute name="reader_template_table" value="no"/>
+<DIAttribute name="reader_use_overflow_file" value="no"/>
+<DIAttribute name="reader_use_trex_transaction" value="no"/>
+<DIAttribute name="sap_odp_cwf_delay" value="5"/>
+<DIAttribute name="table_weight" value="0"/>
+<DIAttribute name="teradata_bulk_rdr_cleanup" value="yes"/>
+</DIAttributes>
+</DIDatabaseTableSource>
+
+<DIDatabaseTableTarget typeID="5" bulkLoader="false" datastoreName="DS_TRAFIC_DATA" ownerName="TRAFIC_DATA" tableName="TR_DWH_TRAF_ASCEND_CATEGORY" >
+<DIInputView name="CATEGORY"  />
+<DIAttributes>
+<DIAttribute name="connection_port" value="no"/>
+<DIAttribute name="ldr_configuration_enabled" value="yes"/>
+<DIAttribute name="ldr_configurations" hasNestedXMLTree ="true">
+
+<LDRConfigurations>
+<LDRConfiguration database_type="Oracle" database_version="Oracle 12c">
+<bulk_col_delimiter>/127</bulk_col_delimiter>
+<bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
+<bulk_ldr_control_file_name></bulk_ldr_control_file_name>
+<bulk_ldr_direct></bulk_ldr_direct>
+<bulk_ldr_direct_api></bulk_ldr_direct_api>
+<bulk_ldr_generate_files_only></bulk_ldr_generate_files_only>
+<bulk_ldr_max_bind_array>100000</bulk_ldr_max_bind_array>
+<bulk_ldr_max_discards>10</bulk_ldr_max_discards>
+<bulk_ldr_mode>append</bulk_ldr_mode>
+<bulk_ldr_recoverable></bulk_ldr_recoverable>
+<bulk_ldr_rows_per_commit>1000</bulk_ldr_rows_per_commit>
+<bulk_ldr_trailing_nullcols></bulk_ldr_trailing_nullcols>
+<bulk_ldr_use_control_file></bulk_ldr_use_control_file>
+<column_delimiter>,</column_delimiter>
+<enable_partitioning>no</enable_partitioning>
+<ignore_column_case>yes</ignore_column_case>
+<ignore_columns_null>no</ignore_columns_null>
+<ignore_columns_value></ignore_columns_value>
+<loader_auto_correct>no</loader_auto_correct>
+<loader_bulk_load></loader_bulk_load>
+<loader_compare_column>compare_by_name</loader_compare_column>
+<loader_delete_map></loader_delete_map>
+<loader_drop_and_create_table>yes</loader_drop_and_create_table>
+<loader_insert_map></loader_insert_map>
+<loader_insert_select_commit_size>yes</loader_insert_select_commit_size>
+<loader_load_choice>append</loader_load_choice>
+<loader_num_parallel_loaders>1</loader_num_parallel_loaders>
+<loader_overflow_file>DS_TRAFIC_DATA_TRAFIC_DATA_TR_DWH_TRAF_ASCEND_CATEGORY.txt</loader_overflow_file>
+<loader_post_load1></loader_post_load1>
+<loader_pre_load1></loader_pre_load1>
+<loader_quote_names>0</loader_quote_names>
+<loader_transactional>no</loader_transactional>
+<loader_transactional_order>0</loader_transactional_order>
+<loader_update_key_columns>no</loader_update_key_columns>
+<loader_update_map></loader_update_map>
+<loader_use_user_defined_keys>no</loader_use_user_defined_keys>
+<loader_xact_size>1000</loader_xact_size>
+<oracle_auto_correct_using_merge>yes</oracle_auto_correct_using_merge>
+<oracle_bulk_ldr_all_method>None</oracle_bulk_ldr_all_method>
+<oracle_bulk_ldr_file_method>None</oracle_bulk_ldr_file_method>
+<oracle_bulk_ldr_method>None</oracle_bulk_ldr_method>
+<oracle_bulk_ldr_method_api>API</oracle_bulk_ldr_method_api>
+<oracle_bulk_ldr_method_file>File</oracle_bulk_ldr_method_file>
+<oracle_bulk_ldr_method_none>None</oracle_bulk_ldr_method_none>
+<oracle_bulk_ldr_mode_api>append</oracle_bulk_ldr_mode_api>
+<oracle_bulk_ldr_use_local_index_for_pkey>no</oracle_bulk_ldr_use_local_index_for_pkey>
+<oracle_sqlldr_version></oracle_sqlldr_version>
+<overflow_file_format>write_data</overflow_file_format>
+<overriding_substitution_parameter_for_tablename></overriding_substitution_parameter_for_tablename>
+<text_delimiter></text_delimiter>
+<use_overflow_file>no</use_overflow_file>
+<use_unicode_varchar>no</use_unicode_varchar>
+<sql_text></sql_text>
+</LDRConfiguration>
+<LDRConfiguration database_type="Oracle" database_version="Oracle 10g">
+<bulk_col_delimiter>/127</bulk_col_delimiter>
+<bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
+<bulk_ldr_control_file_name></bulk_ldr_control_file_name>
+<bulk_ldr_direct></bulk_ldr_direct>
+<bulk_ldr_direct_api></bulk_ldr_direct_api>
+<bulk_ldr_generate_files_only></bulk_ldr_generate_files_only>
+<bulk_ldr_max_bind_array>100000</bulk_ldr_max_bind_array>
+<bulk_ldr_max_discards>10</bulk_ldr_max_discards>
+<bulk_ldr_mode>append</bulk_ldr_mode>
+<bulk_ldr_recoverable></bulk_ldr_recoverable>
+<bulk_ldr_rows_per_commit>1000</bulk_ldr_rows_per_commit>
+<bulk_ldr_trailing_nullcols></bulk_ldr_trailing_nullcols>
+<bulk_ldr_use_control_file></bulk_ldr_use_control_file>
+<column_delimiter>,</column_delimiter>
+<enable_partitioning>no</enable_partitioning>
+<ignore_column_case>yes</ignore_column_case>
+<ignore_columns_null>no</ignore_columns_null>
+<ignore_columns_value></ignore_columns_value>
+<loader_auto_correct>no</loader_auto_correct>
+<loader_bulk_load></loader_bulk_load>
+<loader_compare_column>compare_by_name</loader_compare_column>
+<loader_delete_map></loader_delete_map>
+<loader_drop_and_create_table>yes</loader_drop_and_create_table>
+<loader_insert_map></loader_insert_map>
+<loader_insert_select_commit_size>yes</loader_insert_select_commit_size>
+<loader_load_choice>append</loader_load_choice>
+<loader_num_parallel_loaders>1</loader_num_parallel_loaders>
+<loader_overflow_file></loader_overflow_file>
+<loader_post_load1></loader_post_load1>
+<loader_pre_load1></loader_pre_load1>
+<loader_quote_names>0</loader_quote_names>
+<loader_transactional>no</loader_transactional>
+<loader_transactional_order>0</loader_transactional_order>
+<loader_update_key_columns>no</loader_update_key_columns>
+<loader_update_map></loader_update_map>
+<loader_use_user_defined_keys>no</loader_use_user_defined_keys>
+<loader_xact_size>1000</loader_xact_size>
+<newdb_table_type>column_store</newdb_table_type>
+<oracle_auto_correct_using_merge>yes</oracle_auto_correct_using_merge>
+<oracle_bulk_ldr_all_method>None</oracle_bulk_ldr_all_method>
+<oracle_bulk_ldr_file_method>None</oracle_bulk_ldr_file_method>
+<oracle_bulk_ldr_method>None</oracle_bulk_ldr_method>
+<oracle_bulk_ldr_method_api>API</oracle_bulk_ldr_method_api>
+<oracle_bulk_ldr_method_file>File</oracle_bulk_ldr_method_file>
+<oracle_bulk_ldr_method_none>None</oracle_bulk_ldr_method_none>
+<oracle_bulk_ldr_mode_api>append</oracle_bulk_ldr_mode_api>
+<oracle_bulk_ldr_use_local_index_for_pkey>no</oracle_bulk_ldr_use_local_index_for_pkey>
+<oracle_sqlldr_version></oracle_sqlldr_version>
+<overflow_file_format>write_data</overflow_file_format>
+<overriding_substitution_parameter_for_tablename></overriding_substitution_parameter_for_tablename>
+<text_delimiter></text_delimiter>
+<use_overflow_file>no</use_overflow_file>
+<use_unicode_varchar>no</use_unicode_varchar>
+<sql_text></sql_text>
+</LDRConfiguration>
+</LDRConfigurations>
+</DIAttribute>
+<DIAttribute name="loader_template_table" value="yes"/>
+<DIAttribute name="name" value="DS_TRAFIC_DATA"/>
+<DIAttribute name="use_unicode_varchar" value="no"/>
+</DIAttributes>
+</DIDatabaseTableTarget>
+
+</DITransforms>
+<DIAttributes>
+<DIAttribute name="Cache_type" value="pageable_cache"/>
+<DIAttribute name="Parallelism_degree" value="0"/>
+<DIAttribute name="allows_both_input_and_output" value="yes"/>
+<DIAttribute name="dataflow_loader_bulk_load" value="no"/>
+<DIAttribute name="dataflow_loader_commit_size" value="default"/>
+<DIAttribute name="dataflow_loader_row_size_bytes" value="0"/>
+<DIAttribute name="dataflow_number_of_loaders" value="0"/>
+<DIAttribute name="run_once" value="no"/>
+<DIAttribute name="use_dataflow_links" value="no"/>
+<DIAttribute name="use_datastore_links" value="yes"/>
+<DIAttribute name="validation_xform_exists" value="no"/>
+<DIAttribute name="validation_xform_stats" value="no"/>
+</DIAttributes>
+</DIDataflow>
+<DIDataflow name="DF_TRAFIC2_DWH_COMPANY" typeId="1" >
+<DITransforms>
+<DIDatabaseTableSource typeId="12" datastoreName="DS_TRAFIC_ASCENDFEED" ownerName="DBO" tableName="COMPANY" >
+<DIOutputView name="COMPANY"  />
+<DIAttributes>
+<DIAttribute name="Initial_Load" value="no"/>
+<DIAttribute name="array_fetch_size" value="1000"/>
+<DIAttribute name="cache" value="yes"/>
+<DIAttribute name="connection_port" value="no"/>
+<DIAttribute name="enable_partitioning" value="no"/>
+<DIAttribute name="name" value="DS_TRAFIC_ASCENDFEED"/>
+<DIAttribute name="package_size" value="0"/>
+<DIAttribute name="parallel_sap_connections" value="0"/>
+<DIAttribute name="reader_is_DB2CDC_table" value="no"/>
+<DIAttribute name="reader_overflow_file" value="overflow_file"/>
+<DIAttribute name="reader_template_table" value="no"/>
+<DIAttribute name="reader_use_overflow_file" value="no"/>
+<DIAttribute name="reader_use_trex_transaction" value="no"/>
+<DIAttribute name="sap_odp_cwf_delay" value="5"/>
+<DIAttribute name="table_weight" value="0"/>
+<DIAttribute name="teradata_bulk_rdr_cleanup" value="yes"/>
+</DIAttributes>
+</DIDatabaseTableSource>
+
+<DIDatabaseTableTarget typeID="5" bulkLoader="false" datastoreName="DS_TRAFIC_DATA" ownerName="TRAFIC_DATA" tableName="TR_DWH_TRAF_ASCEND_COMPANY" >
+<DIInputView name="COMPANY"  />
+<DIAttributes>
+<DIAttribute name="connection_port" value="no"/>
+<DIAttribute name="ldr_configuration_enabled" value="yes"/>
+<DIAttribute name="ldr_configurations" hasNestedXMLTree ="true">
+
+<LDRConfigurations>
+<LDRConfiguration database_type="Oracle" database_version="Oracle 12c">
+<bulk_col_delimiter>/127</bulk_col_delimiter>
+<bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
+<bulk_ldr_control_file_name></bulk_ldr_control_file_name>
+<bulk_ldr_direct></bulk_ldr_direct>
+<bulk_ldr_direct_api></bulk_ldr_direct_api>
+<bulk_ldr_generate_files_only></bulk_ldr_generate_files_only>
+<bulk_ldr_max_bind_array>100000</bulk_ldr_max_bind_array>
+<bulk_ldr_max_discards>10</bulk_ldr_max_discards>
+<bulk_ldr_mode>append</bulk_ldr_mode>
+<bulk_ldr_recoverable></bulk_ldr_recoverable>
+<bulk_ldr_rows_per_commit>1000</bulk_ldr_rows_per_commit>
+<bulk_ldr_trailing_nullcols></bulk_ldr_trailing_nullcols>
+<bulk_ldr_use_control_file></bulk_ldr_use_control_file>
+<column_delimiter>,</column_delimiter>
+<enable_partitioning>no</enable_partitioning>
+<ignore_column_case>yes</ignore_column_case>
+<ignore_columns_null>no</ignore_columns_null>
+<ignore_columns_value></ignore_columns_value>
+<loader_auto_correct>no</loader_auto_correct>
+<loader_bulk_load></loader_bulk_load>
+<loader_compare_column>compare_by_name</loader_compare_column>
+<loader_delete_map></loader_delete_map>
+<loader_drop_and_create_table>yes</loader_drop_and_create_table>
+<loader_insert_map></loader_insert_map>
+<loader_insert_select_commit_size>yes</loader_insert_select_commit_size>
+<loader_load_choice>append</loader_load_choice>
+<loader_num_parallel_loaders>1</loader_num_parallel_loaders>
+<loader_overflow_file></loader_overflow_file>
+<loader_post_load1></loader_post_load1>
+<loader_pre_load1></loader_pre_load1>
+<loader_quote_names>0</loader_quote_names>
+<loader_transactional>no</loader_transactional>
+<loader_transactional_order>0</loader_transactional_order>
+<loader_update_key_columns>no</loader_update_key_columns>
+<loader_update_map></loader_update_map>
+<loader_use_user_defined_keys>no</loader_use_user_defined_keys>
+<loader_xact_size>1000</loader_xact_size>
+<newdb_table_type>column_store</newdb_table_type>
+<oracle_auto_correct_using_merge>yes</oracle_auto_correct_using_merge>
+<oracle_bulk_ldr_all_method>None</oracle_bulk_ldr_all_method>
+<oracle_bulk_ldr_file_method>None</oracle_bulk_ldr_file_method>
+<oracle_bulk_ldr_method>None</oracle_bulk_ldr_method>
+<oracle_bulk_ldr_method_api>API</oracle_bulk_ldr_method_api>
+<oracle_bulk_ldr_method_file>File</oracle_bulk_ldr_method_file>
+<oracle_bulk_ldr_method_none>None</oracle_bulk_ldr_method_none>
+<oracle_bulk_ldr_mode_api>append</oracle_bulk_ldr_mode_api>
+<oracle_bulk_ldr_use_local_index_for_pkey>no</oracle_bulk_ldr_use_local_index_for_pkey>
+<oracle_sqlldr_version></oracle_sqlldr_version>
+<overflow_file_format>write_data</overflow_file_format>
+<overriding_substitution_parameter_for_tablename></overriding_substitution_parameter_for_tablename>
+<text_delimiter></text_delimiter>
+<use_overflow_file>no</use_overflow_file>
+<use_unicode_varchar>no</use_unicode_varchar>
+<sql_text></sql_text>
+</LDRConfiguration>
+<LDRConfiguration database_type="Oracle" database_version="Oracle 10g">
+<bulk_col_delimiter>/127</bulk_col_delimiter>
+<bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
+<bulk_ldr_control_file_name></bulk_ldr_control_file_name>
+<bulk_ldr_direct></bulk_ldr_direct>
+<bulk_ldr_direct_api></bulk_ldr_direct_api>
+<bulk_ldr_generate_files_only></bulk_ldr_generate_files_only>
+<bulk_ldr_max_bind_array>100000</bulk_ldr_max_bind_array>
+<bulk_ldr_max_discards>10</bulk_ldr_max_discards>
+<bulk_ldr_mode>append</bulk_ldr_mode>
+<bulk_ldr_recoverable></bulk_ldr_recoverable>
+<bulk_ldr_rows_per_commit>1000</bulk_ldr_rows_per_commit>
+<bulk_ldr_trailing_nullcols></bulk_ldr_trailing_nullcols>
+<bulk_ldr_use_control_file></bulk_ldr_use_control_file>
+<column_delimiter>,</column_delimiter>
+<enable_partitioning>no</enable_partitioning>
+<ignore_column_case>yes</ignore_column_case>
+<ignore_columns_null>no</ignore_columns_null>
+<ignore_columns_value></ignore_columns_value>
+<loader_auto_correct>no</loader_auto_correct>
+<loader_bulk_load></loader_bulk_load>
+<loader_compare_column>compare_by_name</loader_compare_column>
+<loader_delete_map></loader_delete_map>
+<loader_drop_and_create_table>yes</loader_drop_and_create_table>
+<loader_insert_map></loader_insert_map>
+<loader_insert_select_commit_size>yes</loader_insert_select_commit_size>
+<loader_load_choice>append</loader_load_choice>
+<loader_num_parallel_loaders>1</loader_num_parallel_loaders>
+<loader_overflow_file></loader_overflow_file>
+<loader_post_load1></loader_post_load1>
+<loader_pre_load1></loader_pre_load1>
+<loader_quote_names>0</loader_quote_names>
+<loader_transactional>no</loader_transactional>
+<loader_transactional_order>0</loader_transactional_order>
+<loader_update_key_columns>no</loader_update_key_columns>
+<loader_update_map></loader_update_map>
+<loader_use_user_defined_keys>no</loader_use_user_defined_keys>
+<loader_xact_size>1000</loader_xact_size>
+<newdb_table_type>column_store</newdb_table_type>
+<oracle_auto_correct_using_merge>yes</oracle_auto_correct_using_merge>
+<oracle_bulk_ldr_all_method>None</oracle_bulk_ldr_all_method>
+<oracle_bulk_ldr_file_method>None</oracle_bulk_ldr_file_method>
+<oracle_bulk_ldr_method>None</oracle_bulk_ldr_method>
+<oracle_bulk_ldr_method_api>API</oracle_bulk_ldr_method_api>
+<oracle_bulk_ldr_method_file>File</oracle_bulk_ldr_method_file>
+<oracle_bulk_ldr_method_none>None</oracle_bulk_ldr_method_none>
+<oracle_bulk_ldr_mode_api>append</oracle_bulk_ldr_mode_api>
+<oracle_bulk_ldr_use_local_index_for_pkey>no</oracle_bulk_ldr_use_local_index_for_pkey>
+<oracle_sqlldr_version></oracle_sqlldr_version>
+<overflow_file_format>write_data</overflow_file_format>
+<overriding_substitution_parameter_for_tablename></overriding_substitution_parameter_for_tablename>
+<text_delimiter></text_delimiter>
+<use_overflow_file>no</use_overflow_file>
+<use_unicode_varchar>no</use_unicode_varchar>
+<sql_text></sql_text>
+</LDRConfiguration>
+</LDRConfigurations>
+</DIAttribute>
+<DIAttribute name="loader_template_table" value="yes"/>
+<DIAttribute name="name" value="DS_TRAFIC_DATA"/>
+<DIAttribute name="use_unicode_varchar" value="no"/>
+</DIAttributes>
+</DIDatabaseTableTarget>
+
+</DITransforms>
+<DIAttributes>
+<DIAttribute name="Cache_type" value="pageable_cache"/>
+<DIAttribute name="Parallelism_degree" value="0"/>
+<DIAttribute name="allows_both_input_and_output" value="yes"/>
+<DIAttribute name="dataflow_loader_bulk_load" value="no"/>
+<DIAttribute name="dataflow_loader_commit_size" value="default"/>
+<DIAttribute name="dataflow_loader_row_size_bytes" value="0"/>
+<DIAttribute name="dataflow_number_of_loaders" value="0"/>
+<DIAttribute name="run_once" value="no"/>
+<DIAttribute name="use_dataflow_links" value="no"/>
+<DIAttribute name="use_datastore_links" value="yes"/>
+<DIAttribute name="validation_xform_exists" value="no"/>
+<DIAttribute name="validation_xform_stats" value="no"/>
+</DIAttributes>
+</DIDataflow>
+<DIDataflow name="DF_TRAFIC2_DWH_COUNTRY" typeId="1" >
+<DITransforms>
+<DIDatabaseTableSource typeId="12" datastoreName="DS_TRAFIC_ASCENDFEED" ownerName="DBO" tableName="COUNTRY" >
+<DIOutputView name="COUNTRY"  />
+<DIAttributes>
+<DIAttribute name="Initial_Load" value="no"/>
+<DIAttribute name="array_fetch_size" value="1000"/>
+<DIAttribute name="cache" value="yes"/>
+<DIAttribute name="connection_port" value="no"/>
+<DIAttribute name="enable_partitioning" value="no"/>
+<DIAttribute name="name" value="DS_TRAFIC_ASCENDFEED"/>
+<DIAttribute name="package_size" value="0"/>
+<DIAttribute name="reader_is_DB2CDC_table" value="no"/>
+<DIAttribute name="reader_overflow_file" value="overflow_file"/>
+<DIAttribute name="reader_template_table" value="no"/>
+<DIAttribute name="reader_use_overflow_file" value="no"/>
+<DIAttribute name="reader_use_trex_transaction" value="no"/>
+<DIAttribute name="table_weight" value="0"/>
+<DIAttribute name="teradata_bulk_rdr_cleanup" value="yes"/>
+</DIAttributes>
+</DIDatabaseTableSource>
+
+<DIDatabaseTableTarget typeID="5" bulkLoader="false" datastoreName="DS_TRAFIC_DATA" ownerName="TRAFIC_DATA" tableName="TR_DWH_TRAF_ASCEND_COUNTRY" >
+<DIInputView name="COUNTRY"  />
+<DIAttributes>
+<DIAttribute name="connection_port" value="no"/>
+<DIAttribute name="ldr_configuration_enabled" value="yes"/>
+<DIAttribute name="ldr_configurations" hasNestedXMLTree ="true">
+
+<LDRConfigurations>
+<LDRConfiguration database_type="Oracle" database_version="Oracle 10g">
+<bulk_col_delimiter>/127</bulk_col_delimiter>
+<bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
+<bulk_ldr_max_bind_array>100000</bulk_ldr_max_bind_array>
+<bulk_ldr_max_discards>10</bulk_ldr_max_discards>
+<bulk_ldr_mode>append</bulk_ldr_mode>
+<bulk_ldr_rows_per_commit>1000</bulk_ldr_rows_per_commit>
+<column_delimiter>,</column_delimiter>
+<enable_partitioning>no</enable_partitioning>
+<ignore_column_case>yes</ignore_column_case>
+<ignore_columns_null>no</ignore_columns_null>
+<loader_auto_correct>no</loader_auto_correct>
+<loader_bulk_load></loader_bulk_load>
+<loader_compare_column>compare_by_name</loader_compare_column>
+<loader_drop_and_create_table>yes</loader_drop_and_create_table>
+<loader_insert_select_commit_size>yes</loader_insert_select_commit_size>
+<loader_load_choice>append</loader_load_choice>
+<loader_num_parallel_loaders>1</loader_num_parallel_loaders>
+<loader_quote_names>0</loader_quote_names>
+<loader_transactional>no</loader_transactional>
+<loader_transactional_order>0</loader_transactional_order>
+<loader_update_key_columns>no</loader_update_key_columns>
+<loader_use_user_defined_keys>no</loader_use_user_defined_keys>
+<loader_xact_size>1000</loader_xact_size>
+<oracle_auto_correct_using_merge>yes</oracle_auto_correct_using_merge>
+<oracle_bulk_ldr_all_method>None</oracle_bulk_ldr_all_method>
+<oracle_bulk_ldr_file_method>None</oracle_bulk_ldr_file_method>
+<oracle_bulk_ldr_method>None</oracle_bulk_ldr_method>
+<oracle_bulk_ldr_method_api>API</oracle_bulk_ldr_method_api>
+<oracle_bulk_ldr_method_file>File</oracle_bulk_ldr_method_file>
+<oracle_bulk_ldr_method_none>None</oracle_bulk_ldr_method_none>
+<oracle_bulk_ldr_mode_api>append</oracle_bulk_ldr_mode_api>
+<oracle_bulk_ldr_use_local_index_for_pkey>no</oracle_bulk_ldr_use_local_index_for_pkey>
+<overflow_file_format>write_data</overflow_file_format>
+<use_overflow_file>no</use_overflow_file>
+<use_unicode_varchar>no</use_unicode_varchar>
+</LDRConfiguration>
+<LDRConfiguration database_type="Oracle" database_version="Oracle 12c">
+<bulk_col_delimiter>/127</bulk_col_delimiter>
+<bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
+<bulk_ldr_control_file_name></bulk_ldr_control_file_name>
+<bulk_ldr_direct></bulk_ldr_direct>
+<bulk_ldr_direct_api></bulk_ldr_direct_api>
+<bulk_ldr_generate_files_only></bulk_ldr_generate_files_only>
+<bulk_ldr_max_bind_array>100000</bulk_ldr_max_bind_array>
+<bulk_ldr_max_discards>10</bulk_ldr_max_discards>
+<bulk_ldr_mode>append</bulk_ldr_mode>
+<bulk_ldr_recoverable></bulk_ldr_recoverable>
+<bulk_ldr_rows_per_commit>1000</bulk_ldr_rows_per_commit>
+<bulk_ldr_trailing_nullcols></bulk_ldr_trailing_nullcols>
+<bulk_ldr_use_control_file></bulk_ldr_use_control_file>
+<column_delimiter>,</column_delimiter>
+<enable_partitioning>no</enable_partitioning>
+<ignore_column_case>yes</ignore_column_case>
+<ignore_columns_null>no</ignore_columns_null>
+<ignore_columns_value></ignore_columns_value>
+<loader_auto_correct>no</loader_auto_correct>
+<loader_bulk_load></loader_bulk_load>
+<loader_compare_column>compare_by_name</loader_compare_column>
+<loader_delete_map></loader_delete_map>
+<loader_drop_and_create_table>yes</loader_drop_and_create_table>
+<loader_insert_map></loader_insert_map>
+<loader_insert_select_commit_size>yes</loader_insert_select_commit_size>
+<loader_load_choice>append</loader_load_choice>
+<loader_num_parallel_loaders>1</loader_num_parallel_loaders>
+<loader_overflow_file></loader_overflow_file>
+<loader_quote_names>0</loader_quote_names>
+<loader_transactional>no</loader_transactional>
+<loader_transactional_order>0</loader_transactional_order>
+<loader_update_key_columns>no</loader_update_key_columns>
+<loader_update_map></loader_update_map>
+<loader_use_user_defined_keys>no</loader_use_user_defined_keys>
+<loader_xact_size>1000</loader_xact_size>
+<newdb_table_type>column_store</newdb_table_type>
+<oracle_auto_correct_using_merge>yes</oracle_auto_correct_using_merge>
+<oracle_bulk_ldr_all_method>None</oracle_bulk_ldr_all_method>
+<oracle_bulk_ldr_file_method>None</oracle_bulk_ldr_file_method>
+<oracle_bulk_ldr_method>None</oracle_bulk_ldr_method>
+<oracle_bulk_ldr_method_api>API</oracle_bulk_ldr_method_api>
+<oracle_bulk_ldr_method_file>File</oracle_bulk_ldr_method_file>
+<oracle_bulk_ldr_method_none>None</oracle_bulk_ldr_method_none>
+<oracle_bulk_ldr_mode_api>append</oracle_bulk_ldr_mode_api>
+<oracle_bulk_ldr_use_local_index_for_pkey>no</oracle_bulk_ldr_use_local_index_for_pkey>
+<oracle_sqlldr_version></oracle_sqlldr_version>
+<overflow_file_format>write_data</overflow_file_format>
+<overriding_substitution_parameter_for_tablename></overriding_substitution_parameter_for_tablename>
+<text_delimiter></text_delimiter>
+<use_overflow_file>no</use_overflow_file>
+<use_unicode_varchar>no</use_unicode_varchar>
+</LDRConfiguration>
+</LDRConfigurations>
+
+</DIAttribute>
+<DIAttribute name="loader_template_table" value="yes"/>
+<DIAttribute name="name" value="DS_TRAFIC_DATA"/>
+<DIAttribute name="use_unicode_varchar" value="no"/>
+</DIAttributes>
+</DIDatabaseTableTarget>
+
+</DITransforms>
+<DIAttributes>
+<DIAttribute name="Cache_type" value="pageable_cache"/>
+<DIAttribute name="Parallelism_degree" value="0"/>
+<DIAttribute name="allows_both_input_and_output" value="yes"/>
+<DIAttribute name="run_once" value="no"/>
+<DIAttribute name="use_dataflow_links" value="no"/>
+<DIAttribute name="use_datastore_links" value="yes"/>
+<DIAttribute name="validation_xform_exists" value="no"/>
+<DIAttribute name="validation_xform_stats" value="no"/>
+</DIAttributes>
+</DIDataflow>
+<DIDataflow name="DF_TRAFIC2_DWH_EVENT" typeId="1" >
+<DITransforms>
+<DIDatabaseTableSource typeId="12" datastoreName="DS_TRAFIC_ASCENDFEED" ownerName="DBO" tableName="EVENT" >
+<DIOutputView name="EVENT"  />
+<DIAttributes>
+<DIAttribute name="Initial_Load" value="no"/>
+<DIAttribute name="array_fetch_size" value="1000"/>
+<DIAttribute name="cache" value="yes"/>
+<DIAttribute name="connection_port" value="no"/>
+<DIAttribute name="enable_partitioning" value="no"/>
+<DIAttribute name="name" value="DS_TRAFIC_ASCENDFEED"/>
+<DIAttribute name="package_size" value="0"/>
+<DIAttribute name="reader_is_DB2CDC_table" value="no"/>
+<DIAttribute name="reader_overflow_file" value="overflow_file"/>
+<DIAttribute name="reader_template_table" value="no"/>
+<DIAttribute name="reader_use_overflow_file" value="no"/>
+<DIAttribute name="reader_use_trex_transaction" value="no"/>
+<DIAttribute name="table_weight" value="0"/>
+<DIAttribute name="teradata_bulk_rdr_cleanup" value="yes"/>
+</DIAttributes>
+</DIDatabaseTableSource>
+
+<DIDatabaseTableTarget typeID="5" bulkLoader="false" datastoreName="DS_TRAFIC_DATA" ownerName="TRAFIC_DATA" tableName="TR_DWH_TRAF_ASCEND_EVENT" >
+<DIInputView name="EVENT"  />
+<DIAttributes>
+<DIAttribute name="connection_port" value="no"/>
+<DIAttribute name="ldr_configuration_enabled" value="yes"/>
+<DIAttribute name="ldr_configurations" hasNestedXMLTree ="true">
+
+<LDRConfigurations>
+<LDRConfiguration database_type="Oracle" database_version="Oracle 10g">
+<bulk_col_delimiter>/127</bulk_col_delimiter>
+<bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
+<bulk_ldr_max_bind_array>100000</bulk_ldr_max_bind_array>
+<bulk_ldr_max_discards>10</bulk_ldr_max_discards>
+<bulk_ldr_mode>append</bulk_ldr_mode>
+<bulk_ldr_rows_per_commit>1000</bulk_ldr_rows_per_commit>
+<column_delimiter>,</column_delimiter>
+<enable_partitioning>no</enable_partitioning>
+<ignore_column_case>yes</ignore_column_case>
+<ignore_columns_null>no</ignore_columns_null>
+<loader_auto_correct>no</loader_auto_correct>
+<loader_bulk_load></loader_bulk_load>
+<loader_compare_column>compare_by_name</loader_compare_column>
+<loader_drop_and_create_table>yes</loader_drop_and_create_table>
+<loader_insert_select_commit_size>yes</loader_insert_select_commit_size>
+<loader_load_choice>append</loader_load_choice>
+<loader_num_parallel_loaders>1</loader_num_parallel_loaders>
+<loader_quote_names>0</loader_quote_names>
+<loader_transactional>no</loader_transactional>
+<loader_transactional_order>0</loader_transactional_order>
+<loader_update_key_columns>no</loader_update_key_columns>
+<loader_use_user_defined_keys>no</loader_use_user_defined_keys>
+<loader_xact_size>1000</loader_xact_size>
+<oracle_auto_correct_using_merge>yes</oracle_auto_correct_using_merge>
+<oracle_bulk_ldr_all_method>None</oracle_bulk_ldr_all_method>
+<oracle_bulk_ldr_file_method>None</oracle_bulk_ldr_file_method>
+<oracle_bulk_ldr_method>None</oracle_bulk_ldr_method>
+<oracle_bulk_ldr_method_api>API</oracle_bulk_ldr_method_api>
+<oracle_bulk_ldr_method_file>File</oracle_bulk_ldr_method_file>
+<oracle_bulk_ldr_method_none>None</oracle_bulk_ldr_method_none>
+<oracle_bulk_ldr_mode_api>append</oracle_bulk_ldr_mode_api>
+<oracle_bulk_ldr_use_local_index_for_pkey>no</oracle_bulk_ldr_use_local_index_for_pkey>
+<overflow_file_format>write_data</overflow_file_format>
+<use_overflow_file>no</use_overflow_file>
+<use_unicode_varchar>no</use_unicode_varchar>
+</LDRConfiguration>
+<LDRConfiguration database_type="Oracle" database_version="Oracle 12c">
+<bulk_col_delimiter>/127</bulk_col_delimiter>
+<bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
+<bulk_ldr_control_file_name></bulk_ldr_control_file_name>
+<bulk_ldr_direct></bulk_ldr_direct>
+<bulk_ldr_direct_api></bulk_ldr_direct_api>
+<bulk_ldr_generate_files_only></bulk_ldr_generate_files_only>
+<bulk_ldr_max_bind_array>100000</bulk_ldr_max_bind_array>
+<bulk_ldr_max_discards>10</bulk_ldr_max_discards>
+<bulk_ldr_mode>append</bulk_ldr_mode>
+<bulk_ldr_recoverable></bulk_ldr_recoverable>
+<bulk_ldr_rows_per_commit>1000</bulk_ldr_rows_per_commit>
+<bulk_ldr_trailing_nullcols></bulk_ldr_trailing_nullcols>
+<bulk_ldr_use_control_file></bulk_ldr_use_control_file>
+<column_delimiter>,</column_delimiter>
+<enable_partitioning>no</enable_partitioning>
+<ignore_column_case>yes</ignore_column_case>
+<ignore_columns_null>no</ignore_columns_null>
+<ignore_columns_value></ignore_columns_value>
+<loader_auto_correct>no</loader_auto_correct>
+<loader_bulk_load></loader_bulk_load>
+<loader_compare_column>compare_by_name</loader_compare_column>
+<loader_delete_map></loader_delete_map>
+<loader_drop_and_create_table>yes</loader_drop_and_create_table>
+<loader_insert_map></loader_insert_map>
+<loader_insert_select_commit_size>yes</loader_insert_select_commit_size>
+<loader_load_choice>append</loader_load_choice>
+<loader_num_parallel_loaders>1</loader_num_parallel_loaders>
+<loader_overflow_file></loader_overflow_file>
+<loader_quote_names>0</loader_quote_names>
+<loader_transactional>no</loader_transactional>
+<loader_transactional_order>0</loader_transactional_order>
+<loader_update_key_columns>no</loader_update_key_columns>
+<loader_update_map></loader_update_map>
+<loader_use_user_defined_keys>no</loader_use_user_defined_keys>
+<loader_xact_size>1000</loader_xact_size>
+<newdb_table_type>column_store</newdb_table_type>
+<oracle_auto_correct_using_merge>yes</oracle_auto_correct_using_merge>
+<oracle_bulk_ldr_all_method>None</oracle_bulk_ldr_all_method>
+<oracle_bulk_ldr_file_method>None</oracle_bulk_ldr_file_method>
+<oracle_bulk_ldr_method>None</oracle_bulk_ldr_method>
+<oracle_bulk_ldr_method_api>API</oracle_bulk_ldr_method_api>
+<oracle_bulk_ldr_method_file>File</oracle_bulk_ldr_method_file>
+<oracle_bulk_ldr_method_none>None</oracle_bulk_ldr_method_none>
+<oracle_bulk_ldr_mode_api>append</oracle_bulk_ldr_mode_api>
+<oracle_bulk_ldr_use_local_index_for_pkey>no</oracle_bulk_ldr_use_local_index_for_pkey>
+<oracle_sqlldr_version></oracle_sqlldr_version>
+<overflow_file_format>write_data</overflow_file_format>
+<overriding_substitution_parameter_for_tablename></overriding_substitution_parameter_for_tablename>
+<text_delimiter></text_delimiter>
+<use_overflow_file>no</use_overflow_file>
+<use_unicode_varchar>no</use_unicode_varchar>
+</LDRConfiguration>
+</LDRConfigurations>
+
+</DIAttribute>
+<DIAttribute name="loader_template_table" value="yes"/>
+<DIAttribute name="name" value="DS_TRAFIC_DATA"/>
+<DIAttribute name="use_unicode_varchar" value="no"/>
+</DIAttributes>
+</DIDatabaseTableTarget>
+
+</DITransforms>
+<DIAttributes>
+<DIAttribute name="Cache_type" value="pageable_cache"/>
+<DIAttribute name="Parallelism_degree" value="0"/>
+<DIAttribute name="allows_both_input_and_output" value="yes"/>
+<DIAttribute name="run_once" value="no"/>
+<DIAttribute name="use_dataflow_links" value="no"/>
+<DIAttribute name="use_datastore_links" value="yes"/>
+<DIAttribute name="validation_xform_exists" value="no"/>
+<DIAttribute name="validation_xform_stats" value="no"/>
+</DIAttributes>
+</DIDataflow>
+<DIDataflow name="DF_TRAFIC2_DWH_EVENTTYPES" typeId="1" >
+<DITransforms>
+<DIDatabaseTableSource typeId="12" datastoreName="DS_TRAFIC_ASCENDFEED" ownerName="DBO" tableName="EVENTTYPES" >
+<DIOutputView name="EVENTTYPES"  />
+<DIAttributes>
+<DIAttribute name="Initial_Load" value="no"/>
+<DIAttribute name="array_fetch_size" value="1000"/>
+<DIAttribute name="cache" value="yes"/>
+<DIAttribute name="connection_port" value="no"/>
+<DIAttribute name="enable_partitioning" value="no"/>
+<DIAttribute name="name" value="DS_TRAFIC_ASCENDFEED"/>
+<DIAttribute name="package_size" value="0"/>
+<DIAttribute name="reader_is_DB2CDC_table" value="no"/>
+<DIAttribute name="reader_overflow_file" value="overflow_file"/>
+<DIAttribute name="reader_template_table" value="no"/>
+<DIAttribute name="reader_use_overflow_file" value="no"/>
+<DIAttribute name="reader_use_trex_transaction" value="no"/>
+<DIAttribute name="table_weight" value="0"/>
+<DIAttribute name="teradata_bulk_rdr_cleanup" value="yes"/>
+</DIAttributes>
+</DIDatabaseTableSource>
+
+<DIDatabaseTableTarget typeID="5" bulkLoader="false" datastoreName="DS_TRAFIC_DATA" ownerName="TRAFIC_DATA" tableName="TR_DWH_TRAF_ASCEND_EVENTTYPES" >
+<DIInputView name="EVENTTYPES"  />
+<DIAttributes>
+<DIAttribute name="connection_port" value="no"/>
+<DIAttribute name="ldr_configuration_enabled" value="yes"/>
+<DIAttribute name="ldr_configurations" hasNestedXMLTree ="true">
+
+<LDRConfigurations>
+<LDRConfiguration database_type="Oracle" database_version="Oracle 10g">
+<bulk_col_delimiter>/127</bulk_col_delimiter>
+<bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
+<bulk_ldr_max_bind_array>100000</bulk_ldr_max_bind_array>
+<bulk_ldr_max_discards>10</bulk_ldr_max_discards>
+<bulk_ldr_mode>append</bulk_ldr_mode>
+<bulk_ldr_rows_per_commit>1000</bulk_ldr_rows_per_commit>
+<column_delimiter>,</column_delimiter>
+<enable_partitioning>no</enable_partitioning>
+<ignore_column_case>yes</ignore_column_case>
+<ignore_columns_null>no</ignore_columns_null>
+<loader_auto_correct>no</loader_auto_correct>
+<loader_bulk_load></loader_bulk_load>
+<loader_compare_column>compare_by_name</loader_compare_column>
+<loader_drop_and_create_table>yes</loader_drop_and_create_table>
+<loader_insert_select_commit_size>yes</loader_insert_select_commit_size>
+<loader_load_choice>append</loader_load_choice>
+<loader_num_parallel_loaders>1</loader_num_parallel_loaders>
+<loader_quote_names>0</loader_quote_names>
+<loader_transactional>no</loader_transactional>
+<loader_transactional_order>0</loader_transactional_order>
+<loader_update_key_columns>no</loader_update_key_columns>
+<loader_use_user_defined_keys>no</loader_use_user_defined_keys>
+<loader_xact_size>1000</loader_xact_size>
+<oracle_auto_correct_using_merge>yes</oracle_auto_correct_using_merge>
+<oracle_bulk_ldr_all_method>None</oracle_bulk_ldr_all_method>
+<oracle_bulk_ldr_file_method>None</oracle_bulk_ldr_file_method>
+<oracle_bulk_ldr_method>None</oracle_bulk_ldr_method>
+<oracle_bulk_ldr_method_api>API</oracle_bulk_ldr_method_api>
+<oracle_bulk_ldr_method_file>File</oracle_bulk_ldr_method_file>
+<oracle_bulk_ldr_method_none>None</oracle_bulk_ldr_method_none>
+<oracle_bulk_ldr_mode_api>append</oracle_bulk_ldr_mode_api>
+<oracle_bulk_ldr_use_local_index_for_pkey>no</oracle_bulk_ldr_use_local_index_for_pkey>
+<overflow_file_format>write_data</overflow_file_format>
+<use_overflow_file>no</use_overflow_file>
+<use_unicode_varchar>no</use_unicode_varchar>
+</LDRConfiguration>
+<LDRConfiguration database_type="Oracle" database_version="Oracle 12c">
+<bulk_col_delimiter>/127</bulk_col_delimiter>
+<bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
+<bulk_ldr_control_file_name></bulk_ldr_control_file_name>
+<bulk_ldr_direct></bulk_ldr_direct>
+<bulk_ldr_direct_api></bulk_ldr_direct_api>
+<bulk_ldr_generate_files_only></bulk_ldr_generate_files_only>
+<bulk_ldr_max_bind_array>100000</bulk_ldr_max_bind_array>
+<bulk_ldr_max_discards>10</bulk_ldr_max_discards>
+<bulk_ldr_mode>append</bulk_ldr_mode>
+<bulk_ldr_recoverable></bulk_ldr_recoverable>
+<bulk_ldr_rows_per_commit>1000</bulk_ldr_rows_per_commit>
+<bulk_ldr_trailing_nullcols></bulk_ldr_trailing_nullcols>
+<bulk_ldr_use_control_file></bulk_ldr_use_control_file>
+<column_delimiter>,</column_delimiter>
+<enable_partitioning>no</enable_partitioning>
+<ignore_column_case>yes</ignore_column_case>
+<ignore_columns_null>no</ignore_columns_null>
+<ignore_columns_value></ignore_columns_value>
+<loader_auto_correct>no</loader_auto_correct>
+<loader_bulk_load></loader_bulk_load>
+<loader_compare_column>compare_by_name</loader_compare_column>
+<loader_delete_map></loader_delete_map>
+<loader_drop_and_create_table>yes</loader_drop_and_create_table>
+<loader_insert_map></loader_insert_map>
+<loader_insert_select_commit_size>yes</loader_insert_select_commit_size>
+<loader_load_choice>append</loader_load_choice>
+<loader_num_parallel_loaders>1</loader_num_parallel_loaders>
+<loader_overflow_file></loader_overflow_file>
+<loader_quote_names>0</loader_quote_names>
+<loader_transactional>no</loader_transactional>
+<loader_transactional_order>0</loader_transactional_order>
+<loader_update_key_columns>no</loader_update_key_columns>
+<loader_update_map></loader_update_map>
+<loader_use_user_defined_keys>no</loader_use_user_defined_keys>
+<loader_xact_size>1000</loader_xact_size>
+<newdb_table_type>column_store</newdb_table_type>
+<oracle_auto_correct_using_merge>yes</oracle_auto_correct_using_merge>
+<oracle_bulk_ldr_all_method>None</oracle_bulk_ldr_all_method>
+<oracle_bulk_ldr_file_method>None</oracle_bulk_ldr_file_method>
+<oracle_bulk_ldr_method>None</oracle_bulk_ldr_method>
+<oracle_bulk_ldr_method_api>API</oracle_bulk_ldr_method_api>
+<oracle_bulk_ldr_method_file>File</oracle_bulk_ldr_method_file>
+<oracle_bulk_ldr_method_none>None</oracle_bulk_ldr_method_none>
+<oracle_bulk_ldr_mode_api>append</oracle_bulk_ldr_mode_api>
+<oracle_bulk_ldr_use_local_index_for_pkey>no</oracle_bulk_ldr_use_local_index_for_pkey>
+<oracle_sqlldr_version></oracle_sqlldr_version>
+<overflow_file_format>write_data</overflow_file_format>
+<overriding_substitution_parameter_for_tablename></overriding_substitution_parameter_for_tablename>
+<text_delimiter></text_delimiter>
+<use_overflow_file>no</use_overflow_file>
+<use_unicode_varchar>no</use_unicode_varchar>
+</LDRConfiguration>
+</LDRConfigurations>
+
+</DIAttribute>
+<DIAttribute name="loader_template_table" value="yes"/>
+<DIAttribute name="name" value="DS_TRAFIC_DATA"/>
+<DIAttribute name="use_unicode_varchar" value="no"/>
+</DIAttributes>
+</DIDatabaseTableTarget>
+
+</DITransforms>
+<DIAttributes>
+<DIAttribute name="Cache_type" value="pageable_cache"/>
+<DIAttribute name="Parallelism_degree" value="0"/>
+<DIAttribute name="allows_both_input_and_output" value="yes"/>
+<DIAttribute name="run_once" value="no"/>
+<DIAttribute name="use_dataflow_links" value="no"/>
+<DIAttribute name="use_datastore_links" value="yes"/>
+<DIAttribute name="validation_xform_exists" value="no"/>
+<DIAttribute name="validation_xform_stats" value="no"/>
+</DIAttributes>
+</DIDataflow>
+<DIDataflow name="DF_TRAFIC2_DWH_GENTECH" typeId="1" >
+<DIUIOptions>
+<DIAnnotation name="ANNOTATION_0"><DIAttribute name="ObjectDesc" value="Les tables suffixées par AF proviennent de la base SQL Server AscendFeed&#xD;&#xA;&#xD;&#xA;La table est recréée en annule et remplace"/>
+</DIAnnotation></DIUIOptions>
+<DITransforms>
+<DIDatabaseTableSource typeId="12" datastoreName="DS_TRAFIC_ASCENDFEED" ownerName="DBO" tableName="GENTECH" >
+<DIOutputView name="GENTECH"  />
+<DIAttributes>
+<DIAttribute name="Initial_Load" value="no"/>
+<DIAttribute name="array_fetch_size" value="1000"/>
+<DIAttribute name="cache" value="yes"/>
+<DIAttribute name="connection_port" value="no"/>
+<DIAttribute name="enable_partitioning" value="no"/>
+<DIAttribute name="name" value="DS_TRAFIC_ASCENDFEED"/>
+<DIAttribute name="package_size" value="0"/>
+<DIAttribute name="parallel_sap_connections" value="0"/>
+<DIAttribute name="reader_is_DB2CDC_table" value="no"/>
+<DIAttribute name="reader_overflow_file" value="overflow_file"/>
+<DIAttribute name="reader_template_table" value="no"/>
+<DIAttribute name="reader_use_overflow_file" value="no"/>
+<DIAttribute name="reader_use_trex_transaction" value="no"/>
+<DIAttribute name="sap_odp_cwf_delay" value="5"/>
+<DIAttribute name="table_weight" value="0"/>
+<DIAttribute name="teradata_bulk_rdr_cleanup" value="yes"/>
+</DIAttributes>
+</DIDatabaseTableSource>
+
+<DIDatabaseTableTarget typeID="5" bulkLoader="false" datastoreName="DS_TRAFIC_DATA" ownerName="TRAFIC_DATA" tableName="TR_DWH_TRAF_ASCEND_GENTECH" >
+<DIInputView name="GENTECH"  />
+<DIAttributes>
+<DIAttribute name="connection_port" value="no"/>
+<DIAttribute name="ldr_configuration_enabled" value="yes"/>
+<DIAttribute name="ldr_configurations" hasNestedXMLTree ="true">
+
+<LDRConfigurations>
+<LDRConfiguration database_type="Oracle" database_version="Oracle 12c">
+<bulk_col_delimiter>/127</bulk_col_delimiter>
+<bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
+<bulk_ldr_control_file_name></bulk_ldr_control_file_name>
+<bulk_ldr_direct></bulk_ldr_direct>
+<bulk_ldr_direct_api></bulk_ldr_direct_api>
+<bulk_ldr_generate_files_only></bulk_ldr_generate_files_only>
+<bulk_ldr_max_bind_array>100000</bulk_ldr_max_bind_array>
+<bulk_ldr_max_discards>10</bulk_ldr_max_discards>
+<bulk_ldr_mode>append</bulk_ldr_mode>
+<bulk_ldr_recoverable></bulk_ldr_recoverable>
+<bulk_ldr_rows_per_commit>1000</bulk_ldr_rows_per_commit>
+<bulk_ldr_trailing_nullcols></bulk_ldr_trailing_nullcols>
+<bulk_ldr_use_control_file></bulk_ldr_use_control_file>
+<column_delimiter>,</column_delimiter>
+<enable_partitioning>no</enable_partitioning>
+<ignore_column_case>yes</ignore_column_case>
+<ignore_columns_null>no</ignore_columns_null>
+<ignore_columns_value></ignore_columns_value>
+<loader_auto_correct>no</loader_auto_correct>
+<loader_bulk_load></loader_bulk_load>
+<loader_compare_column>compare_by_name</loader_compare_column>
+<loader_delete_map></loader_delete_map>
+<loader_drop_and_create_table>yes</loader_drop_and_create_table>
+<loader_insert_map></loader_insert_map>
+<loader_insert_select_commit_size>yes</loader_insert_select_commit_size>
+<loader_load_choice>append</loader_load_choice>
+<loader_num_parallel_loaders>1</loader_num_parallel_loaders>
+<loader_overflow_file>DS_TRAFIC_DATA_TRAFIC_DATA_TR_DWH_TRAF_ASCEND_GENTECH.txt</loader_overflow_file>
+<loader_post_load1></loader_post_load1>
+<loader_pre_load1></loader_pre_load1>
+<loader_quote_names>0</loader_quote_names>
+<loader_transactional>no</loader_transactional>
+<loader_transactional_order>0</loader_transactional_order>
+<loader_update_key_columns>no</loader_update_key_columns>
+<loader_update_map></loader_update_map>
+<loader_use_user_defined_keys>no</loader_use_user_defined_keys>
+<loader_xact_size>1000</loader_xact_size>
+<newdb_table_type>column_store</newdb_table_type>
+<oracle_auto_correct_using_merge>yes</oracle_auto_correct_using_merge>
+<oracle_bulk_ldr_all_method>None</oracle_bulk_ldr_all_method>
+<oracle_bulk_ldr_file_method>None</oracle_bulk_ldr_file_method>
+<oracle_bulk_ldr_method>None</oracle_bulk_ldr_method>
+<oracle_bulk_ldr_method_api>API</oracle_bulk_ldr_method_api>
+<oracle_bulk_ldr_method_file>File</oracle_bulk_ldr_method_file>
+<oracle_bulk_ldr_method_none>None</oracle_bulk_ldr_method_none>
+<oracle_bulk_ldr_mode_api>append</oracle_bulk_ldr_mode_api>
+<oracle_bulk_ldr_use_local_index_for_pkey>no</oracle_bulk_ldr_use_local_index_for_pkey>
+<oracle_sqlldr_version></oracle_sqlldr_version>
+<overflow_file_format>write_data</overflow_file_format>
+<overriding_substitution_parameter_for_tablename></overriding_substitution_parameter_for_tablename>
+<text_delimiter></text_delimiter>
+<use_overflow_file>no</use_overflow_file>
+<use_unicode_varchar>no</use_unicode_varchar>
+<sql_text></sql_text>
+</LDRConfiguration>
+<LDRConfiguration database_type="Oracle" database_version="Oracle 10g">
+<bulk_col_delimiter>/127</bulk_col_delimiter>
+<bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
+<bulk_ldr_control_file_name></bulk_ldr_control_file_name>
+<bulk_ldr_direct></bulk_ldr_direct>
+<bulk_ldr_direct_api></bulk_ldr_direct_api>
+<bulk_ldr_generate_files_only></bulk_ldr_generate_files_only>
+<bulk_ldr_max_bind_array>100000</bulk_ldr_max_bind_array>
+<bulk_ldr_max_discards>10</bulk_ldr_max_discards>
+<bulk_ldr_mode>append</bulk_ldr_mode>
+<bulk_ldr_recoverable></bulk_ldr_recoverable>
+<bulk_ldr_rows_per_commit>1000</bulk_ldr_rows_per_commit>
+<bulk_ldr_trailing_nullcols></bulk_ldr_trailing_nullcols>
+<bulk_ldr_use_control_file></bulk_ldr_use_control_file>
+<column_delimiter>,</column_delimiter>
+<enable_partitioning>no</enable_partitioning>
+<ignore_column_case>yes</ignore_column_case>
+<ignore_columns_null>no</ignore_columns_null>
+<ignore_columns_value></ignore_columns_value>
+<loader_auto_correct>no</loader_auto_correct>
+<loader_bulk_load></loader_bulk_load>
+<loader_compare_column>compare_by_name</loader_compare_column>
+<loader_delete_map></loader_delete_map>
+<loader_drop_and_create_table>yes</loader_drop_and_create_table>
+<loader_insert_map></loader_insert_map>
+<loader_insert_select_commit_size>yes</loader_insert_select_commit_size>
+<loader_load_choice>append</loader_load_choice>
+<loader_num_parallel_loaders>1</loader_num_parallel_loaders>
+<loader_overflow_file>DS_TRAFIC_DATA_TRAFIC_DATA_TR_DWH_TRAF_ASCEND_GENTECH.txt</loader_overflow_file>
+<loader_post_load1></loader_post_load1>
+<loader_pre_load1></loader_pre_load1>
+<loader_quote_names>0</loader_quote_names>
+<loader_transactional>no</loader_transactional>
+<loader_transactional_order>0</loader_transactional_order>
+<loader_update_key_columns>no</loader_update_key_columns>
+<loader_update_map></loader_update_map>
+<loader_use_user_defined_keys>no</loader_use_user_defined_keys>
+<loader_xact_size>1000</loader_xact_size>
+<newdb_table_type>column_store</newdb_table_type>
+<oracle_auto_correct_using_merge>yes</oracle_auto_correct_using_merge>
+<oracle_bulk_ldr_all_method>None</oracle_bulk_ldr_all_method>
+<oracle_bulk_ldr_file_method>None</oracle_bulk_ldr_file_method>
+<oracle_bulk_ldr_method>None</oracle_bulk_ldr_method>
+<oracle_bulk_ldr_method_api>API</oracle_bulk_ldr_method_api>
+<oracle_bulk_ldr_method_file>File</oracle_bulk_ldr_method_file>
+<oracle_bulk_ldr_method_none>None</oracle_bulk_ldr_method_none>
+<oracle_bulk_ldr_mode_api>append</oracle_bulk_ldr_mode_api>
+<oracle_bulk_ldr_use_local_index_for_pkey>no</oracle_bulk_ldr_use_local_index_for_pkey>
+<oracle_sqlldr_version></oracle_sqlldr_version>
+<overflow_file_format>write_data</overflow_file_format>
+<overriding_substitution_parameter_for_tablename></overriding_substitution_parameter_for_tablename>
+<text_delimiter></text_delimiter>
+<use_overflow_file>no</use_overflow_file>
+<use_unicode_varchar>no</use_unicode_varchar>
+<sql_text></sql_text>
+</LDRConfiguration>
+</LDRConfigurations>
+</DIAttribute>
+<DIAttribute name="loader_template_table" value="yes"/>
+<DIAttribute name="name" value="DS_TRAFIC_DATA"/>
+<DIAttribute name="use_unicode_varchar" value="no"/>
+</DIAttributes>
+</DIDatabaseTableTarget>
+
+</DITransforms>
+<DIAttributes>
+<DIAttribute name="Cache_type" value="pageable_cache"/>
+<DIAttribute name="Parallelism_degree" value="0"/>
+<DIAttribute name="allows_both_input_and_output" value="yes"/>
+<DIAttribute name="dataflow_loader_bulk_load" value="no"/>
+<DIAttribute name="dataflow_loader_commit_size" value="default"/>
+<DIAttribute name="dataflow_loader_row_size_bytes" value="0"/>
+<DIAttribute name="dataflow_number_of_loaders" value="0"/>
+<DIAttribute name="run_once" value="no"/>
+<DIAttribute name="use_dataflow_links" value="no"/>
+<DIAttribute name="use_datastore_links" value="yes"/>
+<DIAttribute name="validation_xform_exists" value="no"/>
+<DIAttribute name="validation_xform_stats" value="no"/>
+</DIAttributes>
+</DIDataflow>
+<DIDataflow name="DF_TRAFIC2_DWH_HISTORIES" typeId="1" >
+<DITransforms>
+<DIDatabaseTableSource typeId="12" datastoreName="DS_TRAFIC_ASCENDFEED" ownerName="DBO" tableName="HISTORIES" >
+<DIOutputView name="HISTORIES"  />
+<DIAttributes>
+<DIAttribute name="Initial_Load" value="no"/>
+<DIAttribute name="array_fetch_size" value="1000"/>
+<DIAttribute name="cache" value="yes"/>
+<DIAttribute name="connection_port" value="no"/>
+<DIAttribute name="enable_partitioning" value="no"/>
+<DIAttribute name="name" value="DS_TRAFIC_ASCENDFEED"/>
+<DIAttribute name="package_size" value="0"/>
+<DIAttribute name="reader_is_DB2CDC_table" value="no"/>
+<DIAttribute name="reader_overflow_file" value="overflow_file"/>
+<DIAttribute name="reader_template_table" value="no"/>
+<DIAttribute name="reader_use_overflow_file" value="no"/>
+<DIAttribute name="reader_use_trex_transaction" value="no"/>
+<DIAttribute name="table_weight" value="0"/>
+<DIAttribute name="teradata_bulk_rdr_cleanup" value="yes"/>
+</DIAttributes>
+</DIDatabaseTableSource>
+
+<DIDatabaseTableTarget typeID="5" bulkLoader="false" datastoreName="DS_TRAFIC_DATA" ownerName="TRAFIC_DATA" tableName="TR_DWH_TRAF_ASCEND_HISTORIES" >
+<DIInputView name="HISTORIES"  />
+<DIAttributes>
+<DIAttribute name="connection_port" value="no"/>
+<DIAttribute name="ldr_configuration_enabled" value="yes"/>
+<DIAttribute name="ldr_configurations" hasNestedXMLTree ="true">
+
+<LDRConfigurations>
+<LDRConfiguration database_type="Oracle" database_version="Oracle 10g">
+<bulk_col_delimiter>/127</bulk_col_delimiter>
+<bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
+<bulk_ldr_max_bind_array>100000</bulk_ldr_max_bind_array>
+<bulk_ldr_max_discards>10</bulk_ldr_max_discards>
+<bulk_ldr_mode>append</bulk_ldr_mode>
+<bulk_ldr_rows_per_commit>1000</bulk_ldr_rows_per_commit>
+<column_delimiter>,</column_delimiter>
+<enable_partitioning>no</enable_partitioning>
+<ignore_column_case>yes</ignore_column_case>
+<ignore_columns_null>no</ignore_columns_null>
+<loader_auto_correct>no</loader_auto_correct>
+<loader_bulk_load></loader_bulk_load>
+<loader_compare_column>compare_by_name</loader_compare_column>
+<loader_drop_and_create_table>yes</loader_drop_and_create_table>
+<loader_insert_select_commit_size>yes</loader_insert_select_commit_size>
+<loader_load_choice>append</loader_load_choice>
+<loader_num_parallel_loaders>1</loader_num_parallel_loaders>
+<loader_overflow_file>DS_TRAFIC_DATA_TRAFIC_DATA_TR_DWH_TRAF_ASCEND_HISTORIES.txt</loader_overflow_file>
+<loader_quote_names>0</loader_quote_names>
+<loader_transactional>no</loader_transactional>
+<loader_transactional_order>0</loader_transactional_order>
+<loader_update_key_columns>no</loader_update_key_columns>
+<loader_use_user_defined_keys>no</loader_use_user_defined_keys>
+<loader_xact_size>1000</loader_xact_size>
+<oracle_auto_correct_using_merge>yes</oracle_auto_correct_using_merge>
+<oracle_bulk_ldr_all_method>None</oracle_bulk_ldr_all_method>
+<oracle_bulk_ldr_file_method>None</oracle_bulk_ldr_file_method>
+<oracle_bulk_ldr_method>None</oracle_bulk_ldr_method>
+<oracle_bulk_ldr_method_api>API</oracle_bulk_ldr_method_api>
+<oracle_bulk_ldr_method_file>File</oracle_bulk_ldr_method_file>
+<oracle_bulk_ldr_method_none>None</oracle_bulk_ldr_method_none>
+<oracle_bulk_ldr_mode_api>append</oracle_bulk_ldr_mode_api>
+<oracle_bulk_ldr_use_local_index_for_pkey>no</oracle_bulk_ldr_use_local_index_for_pkey>
+<overflow_file_format>write_data</overflow_file_format>
+<use_overflow_file>no</use_overflow_file>
+<use_unicode_varchar>no</use_unicode_varchar>
+</LDRConfiguration>
+<LDRConfiguration database_type="Oracle" database_version="Oracle 12c">
+<bulk_col_delimiter>/127</bulk_col_delimiter>
+<bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
+<bulk_ldr_control_file_name></bulk_ldr_control_file_name>
+<bulk_ldr_direct></bulk_ldr_direct>
+<bulk_ldr_direct_api></bulk_ldr_direct_api>
+<bulk_ldr_generate_files_only></bulk_ldr_generate_files_only>
+<bulk_ldr_max_bind_array>100000</bulk_ldr_max_bind_array>
+<bulk_ldr_max_discards>10</bulk_ldr_max_discards>
+<bulk_ldr_mode>append</bulk_ldr_mode>
+<bulk_ldr_recoverable></bulk_ldr_recoverable>
+<bulk_ldr_rows_per_commit>1000</bulk_ldr_rows_per_commit>
+<bulk_ldr_trailing_nullcols></bulk_ldr_trailing_nullcols>
+<bulk_ldr_use_control_file></bulk_ldr_use_control_file>
+<column_delimiter>,</column_delimiter>
+<enable_partitioning>no</enable_partitioning>
+<ignore_column_case>yes</ignore_column_case>
+<ignore_columns_null>no</ignore_columns_null>
+<ignore_columns_value></ignore_columns_value>
+<loader_auto_correct>no</loader_auto_correct>
+<loader_bulk_load></loader_bulk_load>
+<loader_compare_column>compare_by_name</loader_compare_column>
+<loader_delete_map></loader_delete_map>
+<loader_drop_and_create_table>yes</loader_drop_and_create_table>
+<loader_insert_map></loader_insert_map>
+<loader_insert_select_commit_size>yes</loader_insert_select_commit_size>
+<loader_load_choice>append</loader_load_choice>
+<loader_num_parallel_loaders>1</loader_num_parallel_loaders>
+<loader_overflow_file>DS_TRAFIC_DATA_TRAFIC_DATA_TR_DWH_TRAF_ASCEND_HISTORIES.txt</loader_overflow_file>
+<loader_quote_names>0</loader_quote_names>
+<loader_transactional>no</loader_transactional>
+<loader_transactional_order>0</loader_transactional_order>
+<loader_update_key_columns>no</loader_update_key_columns>
+<loader_update_map></loader_update_map>
+<loader_use_user_defined_keys>no</loader_use_user_defined_keys>
+<loader_xact_size>1000</loader_xact_size>
+<newdb_table_type>column_store</newdb_table_type>
+<oracle_auto_correct_using_merge>yes</oracle_auto_correct_using_merge>
+<oracle_bulk_ldr_all_method>None</oracle_bulk_ldr_all_method>
+<oracle_bulk_ldr_file_method>None</oracle_bulk_ldr_file_method>
+<oracle_bulk_ldr_method>None</oracle_bulk_ldr_method>
+<oracle_bulk_ldr_method_api>API</oracle_bulk_ldr_method_api>
+<oracle_bulk_ldr_method_file>File</oracle_bulk_ldr_method_file>
+<oracle_bulk_ldr_method_none>None</oracle_bulk_ldr_method_none>
+<oracle_bulk_ldr_mode_api>append</oracle_bulk_ldr_mode_api>
+<oracle_bulk_ldr_use_local_index_for_pkey>no</oracle_bulk_ldr_use_local_index_for_pkey>
+<oracle_sqlldr_version></oracle_sqlldr_version>
+<overflow_file_format>write_data</overflow_file_format>
+<overriding_substitution_parameter_for_tablename></overriding_substitution_parameter_for_tablename>
+<text_delimiter></text_delimiter>
+<use_overflow_file>no</use_overflow_file>
+<use_unicode_varchar>no</use_unicode_varchar>
+</LDRConfiguration>
+</LDRConfigurations>
+
+</DIAttribute>
+<DIAttribute name="loader_template_table" value="yes"/>
+<DIAttribute name="name" value="DS_TRAFIC_DATA"/>
+<DIAttribute name="use_unicode_varchar" value="no"/>
+</DIAttributes>
+</DIDatabaseTableTarget>
+
+</DITransforms>
+<DIAttributes>
+<DIAttribute name="Cache_type" value="pageable_cache"/>
+<DIAttribute name="Parallelism_degree" value="0"/>
+<DIAttribute name="allows_both_input_and_output" value="yes"/>
+<DIAttribute name="run_once" value="no"/>
+<DIAttribute name="use_dataflow_links" value="no"/>
+<DIAttribute name="use_datastore_links" value="yes"/>
+<DIAttribute name="validation_xform_exists" value="no"/>
+<DIAttribute name="validation_xform_stats" value="no"/>
+</DIAttributes>
+</DIDataflow>
+<DIDataflow name="DF_TRAFIC2_DWH_LASTDELIVERY" typeId="1" >
+<DITransforms>
+<DIDatabaseTableSource typeId="12" datastoreName="DS_TRAFIC_ASCENDFEED" ownerName="DBO" tableName="LASTDELIVERY" >
+<DIOutputView name="LASTDELIVERY"  />
+<DIAttributes>
+<DIAttribute name="Initial_Load" value="no"/>
+<DIAttribute name="array_fetch_size" value="1000"/>
+<DIAttribute name="cache" value="yes"/>
+<DIAttribute name="connection_port" value="no"/>
+<DIAttribute name="enable_partitioning" value="no"/>
+<DIAttribute name="name" value="DS_TRAFIC_ASCENDFEED"/>
+<DIAttribute name="package_size" value="0"/>
+<DIAttribute name="reader_is_DB2CDC_table" value="no"/>
+<DIAttribute name="reader_overflow_file" value="overflow_file"/>
+<DIAttribute name="reader_template_table" value="no"/>
+<DIAttribute name="reader_use_overflow_file" value="no"/>
+<DIAttribute name="reader_use_trex_transaction" value="no"/>
+<DIAttribute name="table_weight" value="0"/>
+<DIAttribute name="teradata_bulk_rdr_cleanup" value="yes"/>
+</DIAttributes>
+</DIDatabaseTableSource>
+
+<DIDatabaseTableTarget typeID="5" bulkLoader="false" datastoreName="DS_TRAFIC_DATA" ownerName="TRAFIC_DATA" tableName="TR_DWH_TRAF_ASCEND_LASTDELIV" >
+<DIInputView name="LASTDELIVERY"  />
+<DIAttributes>
+<DIAttribute name="connection_port" value="no"/>
+<DIAttribute name="ldr_configuration_enabled" value="yes"/>
+<DIAttribute name="ldr_configurations" hasNestedXMLTree ="true">
+
+<LDRConfigurations>
+<LDRConfiguration database_type="Oracle" database_version="Oracle 10g">
+<bulk_col_delimiter>/127</bulk_col_delimiter>
+<bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
+<bulk_ldr_max_bind_array>100000</bulk_ldr_max_bind_array>
+<bulk_ldr_max_discards>10</bulk_ldr_max_discards>
+<bulk_ldr_mode>append</bulk_ldr_mode>
+<bulk_ldr_rows_per_commit>1000</bulk_ldr_rows_per_commit>
+<column_delimiter>,</column_delimiter>
+<enable_partitioning>no</enable_partitioning>
+<ignore_column_case>yes</ignore_column_case>
+<ignore_columns_null>no</ignore_columns_null>
+<loader_auto_correct>no</loader_auto_correct>
+<loader_bulk_load></loader_bulk_load>
+<loader_compare_column>compare_by_name</loader_compare_column>
+<loader_drop_and_create_table>yes</loader_drop_and_create_table>
+<loader_insert_select_commit_size>yes</loader_insert_select_commit_size>
+<loader_load_choice>append</loader_load_choice>
+<loader_num_parallel_loaders>1</loader_num_parallel_loaders>
+<loader_quote_names>0</loader_quote_names>
+<loader_transactional>no</loader_transactional>
+<loader_transactional_order>0</loader_transactional_order>
+<loader_update_key_columns>no</loader_update_key_columns>
+<loader_use_user_defined_keys>no</loader_use_user_defined_keys>
+<loader_xact_size>1000</loader_xact_size>
+<oracle_auto_correct_using_merge>yes</oracle_auto_correct_using_merge>
+<oracle_bulk_ldr_all_method>None</oracle_bulk_ldr_all_method>
+<oracle_bulk_ldr_file_method>None</oracle_bulk_ldr_file_method>
+<oracle_bulk_ldr_method>None</oracle_bulk_ldr_method>
+<oracle_bulk_ldr_method_api>API</oracle_bulk_ldr_method_api>
+<oracle_bulk_ldr_method_file>File</oracle_bulk_ldr_method_file>
+<oracle_bulk_ldr_method_none>None</oracle_bulk_ldr_method_none>
+<oracle_bulk_ldr_mode_api>append</oracle_bulk_ldr_mode_api>
+<oracle_bulk_ldr_use_local_index_for_pkey>no</oracle_bulk_ldr_use_local_index_for_pkey>
+<overflow_file_format>write_data</overflow_file_format>
+<use_overflow_file>no</use_overflow_file>
+<use_unicode_varchar>no</use_unicode_varchar>
+</LDRConfiguration>
+<LDRConfiguration database_type="Oracle" database_version="Oracle 12c">
+<bulk_col_delimiter>/127</bulk_col_delimiter>
+<bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
+<bulk_ldr_control_file_name></bulk_ldr_control_file_name>
+<bulk_ldr_direct></bulk_ldr_direct>
+<bulk_ldr_direct_api></bulk_ldr_direct_api>
+<bulk_ldr_generate_files_only></bulk_ldr_generate_files_only>
+<bulk_ldr_max_bind_array>100000</bulk_ldr_max_bind_array>
+<bulk_ldr_max_discards>10</bulk_ldr_max_discards>
+<bulk_ldr_mode>append</bulk_ldr_mode>
+<bulk_ldr_recoverable></bulk_ldr_recoverable>
+<bulk_ldr_rows_per_commit>1000</bulk_ldr_rows_per_commit>
+<bulk_ldr_trailing_nullcols></bulk_ldr_trailing_nullcols>
+<bulk_ldr_use_control_file></bulk_ldr_use_control_file>
+<column_delimiter>,</column_delimiter>
+<enable_partitioning>no</enable_partitioning>
+<ignore_column_case>yes</ignore_column_case>
+<ignore_columns_null>no</ignore_columns_null>
+<ignore_columns_value></ignore_columns_value>
+<loader_auto_correct>no</loader_auto_correct>
+<loader_bulk_load></loader_bulk_load>
+<loader_compare_column>compare_by_name</loader_compare_column>
+<loader_delete_map></loader_delete_map>
+<loader_drop_and_create_table>yes</loader_drop_and_create_table>
+<loader_insert_map></loader_insert_map>
+<loader_insert_select_commit_size>yes</loader_insert_select_commit_size>
+<loader_load_choice>append</loader_load_choice>
+<loader_num_parallel_loaders>1</loader_num_parallel_loaders>
+<loader_overflow_file></loader_overflow_file>
+<loader_quote_names>0</loader_quote_names>
+<loader_transactional>no</loader_transactional>
+<loader_transactional_order>0</loader_transactional_order>
+<loader_update_key_columns>no</loader_update_key_columns>
+<loader_update_map></loader_update_map>
+<loader_use_user_defined_keys>no</loader_use_user_defined_keys>
+<loader_xact_size>1000</loader_xact_size>
+<newdb_table_type>column_store</newdb_table_type>
+<oracle_auto_correct_using_merge>yes</oracle_auto_correct_using_merge>
+<oracle_bulk_ldr_all_method>None</oracle_bulk_ldr_all_method>
+<oracle_bulk_ldr_file_method>None</oracle_bulk_ldr_file_method>
+<oracle_bulk_ldr_method>None</oracle_bulk_ldr_method>
+<oracle_bulk_ldr_method_api>API</oracle_bulk_ldr_method_api>
+<oracle_bulk_ldr_method_file>File</oracle_bulk_ldr_method_file>
+<oracle_bulk_ldr_method_none>None</oracle_bulk_ldr_method_none>
+<oracle_bulk_ldr_mode_api>append</oracle_bulk_ldr_mode_api>
+<oracle_bulk_ldr_use_local_index_for_pkey>no</oracle_bulk_ldr_use_local_index_for_pkey>
+<oracle_sqlldr_version></oracle_sqlldr_version>
+<overflow_file_format>write_data</overflow_file_format>
+<overriding_substitution_parameter_for_tablename></overriding_substitution_parameter_for_tablename>
+<text_delimiter></text_delimiter>
+<use_overflow_file>no</use_overflow_file>
+<use_unicode_varchar>no</use_unicode_varchar>
+</LDRConfiguration>
+</LDRConfigurations>
+
+</DIAttribute>
+<DIAttribute name="loader_template_table" value="yes"/>
+<DIAttribute name="name" value="DS_TRAFIC_DATA"/>
+<DIAttribute name="use_unicode_varchar" value="no"/>
+</DIAttributes>
+</DIDatabaseTableTarget>
+
+</DITransforms>
+<DIAttributes>
+<DIAttribute name="Cache_type" value="pageable_cache"/>
+<DIAttribute name="Parallelism_degree" value="0"/>
+<DIAttribute name="allows_both_input_and_output" value="yes"/>
+<DIAttribute name="run_once" value="no"/>
+<DIAttribute name="use_dataflow_links" value="no"/>
+<DIAttribute name="use_datastore_links" value="yes"/>
+<DIAttribute name="validation_xform_exists" value="no"/>
+<DIAttribute name="validation_xform_stats" value="no"/>
+</DIAttributes>
+</DIDataflow>
+<DIDataflow name="DF_TRAFIC2_DWH_LASTORDER" typeId="1" >
+<DITransforms>
+<DIDatabaseTableSource typeId="12" datastoreName="DS_TRAFIC_ASCENDFEED" ownerName="DBO" tableName="LASTORDER" >
+<DIOutputView name="LASTORDER"  />
+<DIAttributes>
+<DIAttribute name="Initial_Load" value="no"/>
+<DIAttribute name="array_fetch_size" value="1000"/>
+<DIAttribute name="cache" value="yes"/>
+<DIAttribute name="connection_port" value="no"/>
+<DIAttribute name="enable_partitioning" value="no"/>
+<DIAttribute name="name" value="DS_TRAFIC_ASCENDFEED"/>
+<DIAttribute name="package_size" value="0"/>
+<DIAttribute name="reader_is_DB2CDC_table" value="no"/>
+<DIAttribute name="reader_overflow_file" value="overflow_file"/>
+<DIAttribute name="reader_template_table" value="no"/>
+<DIAttribute name="reader_use_overflow_file" value="no"/>
+<DIAttribute name="reader_use_trex_transaction" value="no"/>
+<DIAttribute name="table_weight" value="0"/>
+<DIAttribute name="teradata_bulk_rdr_cleanup" value="yes"/>
+</DIAttributes>
+</DIDatabaseTableSource>
+
+<DIDatabaseTableTarget typeID="5" bulkLoader="false" datastoreName="DS_TRAFIC_DATA" ownerName="TRAFIC_DATA" tableName="TR_DWH_TRAF_ASCEND_LASTORDER" >
+<DIInputView name="LASTORDER"  />
+<DIAttributes>
+<DIAttribute name="connection_port" value="no"/>
+<DIAttribute name="ldr_configuration_enabled" value="yes"/>
+<DIAttribute name="ldr_configurations" hasNestedXMLTree ="true">
+
+<LDRConfigurations>
+<LDRConfiguration database_type="Oracle" database_version="Oracle 10g">
+<bulk_col_delimiter>/127</bulk_col_delimiter>
+<bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
+<bulk_ldr_max_bind_array>100000</bulk_ldr_max_bind_array>
+<bulk_ldr_max_discards>10</bulk_ldr_max_discards>
+<bulk_ldr_mode>append</bulk_ldr_mode>
+<bulk_ldr_rows_per_commit>1000</bulk_ldr_rows_per_commit>
+<column_delimiter>,</column_delimiter>
+<enable_partitioning>no</enable_partitioning>
+<ignore_column_case>yes</ignore_column_case>
+<ignore_columns_null>no</ignore_columns_null>
+<loader_auto_correct>no</loader_auto_correct>
+<loader_bulk_load></loader_bulk_load>
+<loader_compare_column>compare_by_name</loader_compare_column>
+<loader_drop_and_create_table>yes</loader_drop_and_create_table>
+<loader_insert_select_commit_size>yes</loader_insert_select_commit_size>
+<loader_load_choice>append</loader_load_choice>
+<loader_num_parallel_loaders>1</loader_num_parallel_loaders>
+<loader_quote_names>0</loader_quote_names>
+<loader_transactional>no</loader_transactional>
+<loader_transactional_order>0</loader_transactional_order>
+<loader_update_key_columns>no</loader_update_key_columns>
+<loader_use_user_defined_keys>no</loader_use_user_defined_keys>
+<loader_xact_size>1000</loader_xact_size>
+<oracle_auto_correct_using_merge>yes</oracle_auto_correct_using_merge>
+<oracle_bulk_ldr_all_method>None</oracle_bulk_ldr_all_method>
+<oracle_bulk_ldr_file_method>None</oracle_bulk_ldr_file_method>
+<oracle_bulk_ldr_method>None</oracle_bulk_ldr_method>
+<oracle_bulk_ldr_method_api>API</oracle_bulk_ldr_method_api>
+<oracle_bulk_ldr_method_file>File</oracle_bulk_ldr_method_file>
+<oracle_bulk_ldr_method_none>None</oracle_bulk_ldr_method_none>
+<oracle_bulk_ldr_mode_api>append</oracle_bulk_ldr_mode_api>
+<oracle_bulk_ldr_use_local_index_for_pkey>no</oracle_bulk_ldr_use_local_index_for_pkey>
+<overflow_file_format>write_data</overflow_file_format>
+<use_overflow_file>no</use_overflow_file>
+<use_unicode_varchar>no</use_unicode_varchar>
+</LDRConfiguration>
+<LDRConfiguration database_type="Oracle" database_version="Oracle 12c">
+<bulk_col_delimiter>/127</bulk_col_delimiter>
+<bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
+<bulk_ldr_control_file_name></bulk_ldr_control_file_name>
+<bulk_ldr_direct></bulk_ldr_direct>
+<bulk_ldr_direct_api></bulk_ldr_direct_api>
+<bulk_ldr_generate_files_only></bulk_ldr_generate_files_only>
+<bulk_ldr_max_bind_array>100000</bulk_ldr_max_bind_array>
+<bulk_ldr_max_discards>10</bulk_ldr_max_discards>
+<bulk_ldr_mode>append</bulk_ldr_mode>
+<bulk_ldr_recoverable></bulk_ldr_recoverable>
+<bulk_ldr_rows_per_commit>1000</bulk_ldr_rows_per_commit>
+<bulk_ldr_trailing_nullcols></bulk_ldr_trailing_nullcols>
+<bulk_ldr_use_control_file></bulk_ldr_use_control_file>
+<column_delimiter>,</column_delimiter>
+<enable_partitioning>no</enable_partitioning>
+<ignore_column_case>yes</ignore_column_case>
+<ignore_columns_null>no</ignore_columns_null>
+<ignore_columns_value></ignore_columns_value>
+<loader_auto_correct>no</loader_auto_correct>
+<loader_bulk_load></loader_bulk_load>
+<loader_compare_column>compare_by_name</loader_compare_column>
+<loader_delete_map></loader_delete_map>
+<loader_drop_and_create_table>yes</loader_drop_and_create_table>
+<loader_insert_map></loader_insert_map>
+<loader_insert_select_commit_size>yes</loader_insert_select_commit_size>
+<loader_load_choice>append</loader_load_choice>
+<loader_num_parallel_loaders>1</loader_num_parallel_loaders>
+<loader_overflow_file></loader_overflow_file>
+<loader_quote_names>0</loader_quote_names>
+<loader_transactional>no</loader_transactional>
+<loader_transactional_order>0</loader_transactional_order>
+<loader_update_key_columns>no</loader_update_key_columns>
+<loader_update_map></loader_update_map>
+<loader_use_user_defined_keys>no</loader_use_user_defined_keys>
+<loader_xact_size>1000</loader_xact_size>
+<newdb_table_type>column_store</newdb_table_type>
+<oracle_auto_correct_using_merge>yes</oracle_auto_correct_using_merge>
+<oracle_bulk_ldr_all_method>None</oracle_bulk_ldr_all_method>
+<oracle_bulk_ldr_file_method>None</oracle_bulk_ldr_file_method>
+<oracle_bulk_ldr_method>None</oracle_bulk_ldr_method>
+<oracle_bulk_ldr_method_api>API</oracle_bulk_ldr_method_api>
+<oracle_bulk_ldr_method_file>File</oracle_bulk_ldr_method_file>
+<oracle_bulk_ldr_method_none>None</oracle_bulk_ldr_method_none>
+<oracle_bulk_ldr_mode_api>append</oracle_bulk_ldr_mode_api>
+<oracle_bulk_ldr_use_local_index_for_pkey>no</oracle_bulk_ldr_use_local_index_for_pkey>
+<oracle_sqlldr_version></oracle_sqlldr_version>
+<overflow_file_format>write_data</overflow_file_format>
+<overriding_substitution_parameter_for_tablename></overriding_substitution_parameter_for_tablename>
+<text_delimiter></text_delimiter>
+<use_overflow_file>no</use_overflow_file>
+<use_unicode_varchar>no</use_unicode_varchar>
+</LDRConfiguration>
+</LDRConfigurations>
+
+</DIAttribute>
+<DIAttribute name="loader_template_table" value="yes"/>
+<DIAttribute name="name" value="DS_TRAFIC_DATA"/>
+<DIAttribute name="use_unicode_varchar" value="no"/>
+</DIAttributes>
+</DIDatabaseTableTarget>
+
+</DITransforms>
+<DIAttributes>
+<DIAttribute name="Cache_type" value="pageable_cache"/>
+<DIAttribute name="Parallelism_degree" value="0"/>
+<DIAttribute name="allows_both_input_and_output" value="yes"/>
+<DIAttribute name="run_once" value="no"/>
+<DIAttribute name="use_dataflow_links" value="no"/>
+<DIAttribute name="use_datastore_links" value="yes"/>
+<DIAttribute name="validation_xform_exists" value="no"/>
+<DIAttribute name="validation_xform_stats" value="no"/>
+</DIAttributes>
+</DIDataflow>
+<DIDataflow name="DF_TRAFIC2_DWH_ORDERSPLACEDTMP" typeId="1" >
+<DITransforms>
+<DIDatabaseTableSource typeId="12" datastoreName="DS_TRAFIC_ASCENDFEED" ownerName="DBO" tableName="ORDERSPLACEDTMP" >
+<DIOutputView name="ORDERSPLACEDTMP"  />
+<DIAttributes>
+<DIAttribute name="Initial_Load" value="no"/>
+<DIAttribute name="array_fetch_size" value="1000"/>
+<DIAttribute name="cache" value="yes"/>
+<DIAttribute name="connection_port" value="no"/>
+<DIAttribute name="enable_partitioning" value="no"/>
+<DIAttribute name="name" value="DS_TRAFIC_ASCENDFEED"/>
+<DIAttribute name="package_size" value="0"/>
+<DIAttribute name="reader_is_DB2CDC_table" value="no"/>
+<DIAttribute name="reader_overflow_file" value="overflow_file"/>
+<DIAttribute name="reader_template_table" value="no"/>
+<DIAttribute name="reader_use_overflow_file" value="no"/>
+<DIAttribute name="reader_use_trex_transaction" value="no"/>
+<DIAttribute name="table_weight" value="0"/>
+<DIAttribute name="teradata_bulk_rdr_cleanup" value="yes"/>
+</DIAttributes>
+</DIDatabaseTableSource>
+
+<DIDatabaseTableTarget typeID="5" bulkLoader="false" datastoreName="DS_TRAFIC_DATA" ownerName="TRAFIC_DATA" tableName="TR_DWH_TRAF_ASCEND_ORDPLCDTMP" >
+<DIInputView name="ORDERSPLACEDTMP"  />
+<DIAttributes>
+<DIAttribute name="connection_port" value="no"/>
+<DIAttribute name="ldr_configuration_enabled" value="yes"/>
+<DIAttribute name="ldr_configurations" hasNestedXMLTree ="true">
+
+<LDRConfigurations>
+<LDRConfiguration database_type="Oracle" database_version="Oracle 10g">
+<bulk_col_delimiter>/127</bulk_col_delimiter>
+<bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
+<bulk_ldr_max_bind_array>100000</bulk_ldr_max_bind_array>
+<bulk_ldr_max_discards>10</bulk_ldr_max_discards>
+<bulk_ldr_mode>append</bulk_ldr_mode>
+<bulk_ldr_rows_per_commit>1000</bulk_ldr_rows_per_commit>
+<column_delimiter>,</column_delimiter>
+<enable_partitioning>no</enable_partitioning>
+<ignore_column_case>yes</ignore_column_case>
+<ignore_columns_null>no</ignore_columns_null>
+<loader_auto_correct>no</loader_auto_correct>
+<loader_bulk_load></loader_bulk_load>
+<loader_compare_column>compare_by_name</loader_compare_column>
+<loader_drop_and_create_table>yes</loader_drop_and_create_table>
+<loader_insert_select_commit_size>yes</loader_insert_select_commit_size>
+<loader_load_choice>append</loader_load_choice>
+<loader_num_parallel_loaders>1</loader_num_parallel_loaders>
+<loader_quote_names>0</loader_quote_names>
+<loader_transactional>no</loader_transactional>
+<loader_transactional_order>0</loader_transactional_order>
+<loader_update_key_columns>no</loader_update_key_columns>
+<loader_use_user_defined_keys>no</loader_use_user_defined_keys>
+<loader_xact_size>1000</loader_xact_size>
+<oracle_auto_correct_using_merge>yes</oracle_auto_correct_using_merge>
+<oracle_bulk_ldr_all_method>None</oracle_bulk_ldr_all_method>
+<oracle_bulk_ldr_file_method>None</oracle_bulk_ldr_file_method>
+<oracle_bulk_ldr_method>None</oracle_bulk_ldr_method>
+<oracle_bulk_ldr_method_api>API</oracle_bulk_ldr_method_api>
+<oracle_bulk_ldr_method_file>File</oracle_bulk_ldr_method_file>
+<oracle_bulk_ldr_method_none>None</oracle_bulk_ldr_method_none>
+<oracle_bulk_ldr_mode_api>append</oracle_bulk_ldr_mode_api>
+<oracle_bulk_ldr_use_local_index_for_pkey>no</oracle_bulk_ldr_use_local_index_for_pkey>
+<overflow_file_format>write_data</overflow_file_format>
+<use_overflow_file>no</use_overflow_file>
+<use_unicode_varchar>no</use_unicode_varchar>
+</LDRConfiguration>
+<LDRConfiguration database_type="Oracle" database_version="Oracle 12c">
+<bulk_col_delimiter>/127</bulk_col_delimiter>
+<bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
+<bulk_ldr_control_file_name></bulk_ldr_control_file_name>
+<bulk_ldr_direct></bulk_ldr_direct>
+<bulk_ldr_direct_api></bulk_ldr_direct_api>
+<bulk_ldr_generate_files_only></bulk_ldr_generate_files_only>
+<bulk_ldr_max_bind_array>100000</bulk_ldr_max_bind_array>
+<bulk_ldr_max_discards>10</bulk_ldr_max_discards>
+<bulk_ldr_mode>append</bulk_ldr_mode>
+<bulk_ldr_recoverable></bulk_ldr_recoverable>
+<bulk_ldr_rows_per_commit>1000</bulk_ldr_rows_per_commit>
+<bulk_ldr_trailing_nullcols></bulk_ldr_trailing_nullcols>
+<bulk_ldr_use_control_file></bulk_ldr_use_control_file>
+<column_delimiter>,</column_delimiter>
+<enable_partitioning>no</enable_partitioning>
+<ignore_column_case>yes</ignore_column_case>
+<ignore_columns_null>no</ignore_columns_null>
+<ignore_columns_value></ignore_columns_value>
+<loader_auto_correct>no</loader_auto_correct>
+<loader_bulk_load></loader_bulk_load>
+<loader_compare_column>compare_by_name</loader_compare_column>
+<loader_delete_map></loader_delete_map>
+<loader_drop_and_create_table>yes</loader_drop_and_create_table>
+<loader_insert_map></loader_insert_map>
+<loader_insert_select_commit_size>yes</loader_insert_select_commit_size>
+<loader_load_choice>append</loader_load_choice>
+<loader_num_parallel_loaders>1</loader_num_parallel_loaders>
+<loader_overflow_file></loader_overflow_file>
+<loader_quote_names>0</loader_quote_names>
+<loader_transactional>no</loader_transactional>
+<loader_transactional_order>0</loader_transactional_order>
+<loader_update_key_columns>no</loader_update_key_columns>
+<loader_update_map></loader_update_map>
+<loader_use_user_defined_keys>no</loader_use_user_defined_keys>
+<loader_xact_size>1000</loader_xact_size>
+<newdb_table_type>column_store</newdb_table_type>
+<oracle_auto_correct_using_merge>yes</oracle_auto_correct_using_merge>
+<oracle_bulk_ldr_all_method>None</oracle_bulk_ldr_all_method>
+<oracle_bulk_ldr_file_method>None</oracle_bulk_ldr_file_method>
+<oracle_bulk_ldr_method>None</oracle_bulk_ldr_method>
+<oracle_bulk_ldr_method_api>API</oracle_bulk_ldr_method_api>
+<oracle_bulk_ldr_method_file>File</oracle_bulk_ldr_method_file>
+<oracle_bulk_ldr_method_none>None</oracle_bulk_ldr_method_none>
+<oracle_bulk_ldr_mode_api>append</oracle_bulk_ldr_mode_api>
+<oracle_bulk_ldr_use_local_index_for_pkey>no</oracle_bulk_ldr_use_local_index_for_pkey>
+<oracle_sqlldr_version></oracle_sqlldr_version>
+<overflow_file_format>write_data</overflow_file_format>
+<overriding_substitution_parameter_for_tablename></overriding_substitution_parameter_for_tablename>
+<text_delimiter></text_delimiter>
+<use_overflow_file>no</use_overflow_file>
+<use_unicode_varchar>no</use_unicode_varchar>
+</LDRConfiguration>
+</LDRConfigurations>
+
+</DIAttribute>
+<DIAttribute name="loader_template_table" value="yes"/>
+<DIAttribute name="name" value="DS_TRAFIC_DATA"/>
+<DIAttribute name="use_unicode_varchar" value="no"/>
+</DIAttributes>
+</DIDatabaseTableTarget>
+
+</DITransforms>
+<DIAttributes>
+<DIAttribute name="Cache_type" value="pageable_cache"/>
+<DIAttribute name="Parallelism_degree" value="0"/>
+<DIAttribute name="allows_both_input_and_output" value="yes"/>
+<DIAttribute name="run_once" value="no"/>
+<DIAttribute name="use_dataflow_links" value="no"/>
+<DIAttribute name="use_datastore_links" value="yes"/>
+<DIAttribute name="validation_xform_exists" value="no"/>
+<DIAttribute name="validation_xform_stats" value="no"/>
+</DIAttributes>
+</DIDataflow>
+<DIDataflow name="DF_TRAFIC2_DWH_SPECTECH" typeId="1" >
+<DITransforms>
+<DIDatabaseTableSource typeId="12" datastoreName="DS_TRAFIC_ASCENDFEED" ownerName="DBO" tableName="SPECTECH" >
+<DIOutputView name="SPECTECH"  />
+<DIAttributes>
+<DIAttribute name="Initial_Load" value="no"/>
+<DIAttribute name="array_fetch_size" value="1000"/>
+<DIAttribute name="cache" value="yes"/>
+<DIAttribute name="connection_port" value="no"/>
+<DIAttribute name="enable_partitioning" value="no"/>
+<DIAttribute name="name" value="DS_TRAFIC_ASCENDFEED"/>
+<DIAttribute name="package_size" value="0"/>
+<DIAttribute name="reader_is_DB2CDC_table" value="no"/>
+<DIAttribute name="reader_overflow_file" value="overflow_file"/>
+<DIAttribute name="reader_template_table" value="no"/>
+<DIAttribute name="reader_use_overflow_file" value="no"/>
+<DIAttribute name="reader_use_trex_transaction" value="no"/>
+<DIAttribute name="table_weight" value="0"/>
+<DIAttribute name="teradata_bulk_rdr_cleanup" value="yes"/>
+</DIAttributes>
+</DIDatabaseTableSource>
+
+<DIDatabaseTableTarget typeID="5" bulkLoader="false" datastoreName="DS_TRAFIC_DATA" ownerName="TRAFIC_DATA" tableName="TR_DWH_TRAF_ASCEND_SPECTECH" >
+<DIInputView name="SPECTECH"  />
+<DIAttributes>
+<DIAttribute name="connection_port" value="no"/>
+<DIAttribute name="ldr_configuration_enabled" value="yes"/>
+<DIAttribute name="ldr_configurations" hasNestedXMLTree ="true">
+
+<LDRConfigurations>
+<LDRConfiguration database_type="Oracle" database_version="Oracle 10g">
+<bulk_col_delimiter>/127</bulk_col_delimiter>
+<bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
+<bulk_ldr_max_bind_array>100000</bulk_ldr_max_bind_array>
+<bulk_ldr_max_discards>10</bulk_ldr_max_discards>
+<bulk_ldr_mode>append</bulk_ldr_mode>
+<bulk_ldr_rows_per_commit>1000</bulk_ldr_rows_per_commit>
+<column_delimiter>,</column_delimiter>
+<enable_partitioning>no</enable_partitioning>
+<ignore_column_case>yes</ignore_column_case>
+<ignore_columns_null>no</ignore_columns_null>
+<loader_auto_correct>no</loader_auto_correct>
+<loader_bulk_load></loader_bulk_load>
+<loader_compare_column>compare_by_name</loader_compare_column>
+<loader_drop_and_create_table>yes</loader_drop_and_create_table>
+<loader_insert_select_commit_size>yes</loader_insert_select_commit_size>
+<loader_load_choice>append</loader_load_choice>
+<loader_num_parallel_loaders>1</loader_num_parallel_loaders>
+<loader_overflow_file>DS_TRAFIC_DATA_TRAFIC_DATA_TR_DWH_TRAF_ASCEND_SPECTECH.txt</loader_overflow_file>
+<loader_quote_names>0</loader_quote_names>
+<loader_transactional>no</loader_transactional>
+<loader_transactional_order>0</loader_transactional_order>
+<loader_update_key_columns>no</loader_update_key_columns>
+<loader_use_user_defined_keys>no</loader_use_user_defined_keys>
+<loader_xact_size>1000</loader_xact_size>
+<oracle_auto_correct_using_merge>yes</oracle_auto_correct_using_merge>
+<oracle_bulk_ldr_all_method>None</oracle_bulk_ldr_all_method>
+<oracle_bulk_ldr_file_method>None</oracle_bulk_ldr_file_method>
+<oracle_bulk_ldr_method>None</oracle_bulk_ldr_method>
+<oracle_bulk_ldr_method_api>API</oracle_bulk_ldr_method_api>
+<oracle_bulk_ldr_method_file>File</oracle_bulk_ldr_method_file>
+<oracle_bulk_ldr_method_none>None</oracle_bulk_ldr_method_none>
+<oracle_bulk_ldr_mode_api>append</oracle_bulk_ldr_mode_api>
+<oracle_bulk_ldr_use_local_index_for_pkey>no</oracle_bulk_ldr_use_local_index_for_pkey>
+<overflow_file_format>write_data</overflow_file_format>
+<use_overflow_file>no</use_overflow_file>
+<use_unicode_varchar>no</use_unicode_varchar>
+</LDRConfiguration>
+<LDRConfiguration database_type="Oracle" database_version="Oracle 12c">
+<bulk_col_delimiter>/127</bulk_col_delimiter>
+<bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
+<bulk_ldr_control_file_name></bulk_ldr_control_file_name>
+<bulk_ldr_direct></bulk_ldr_direct>
+<bulk_ldr_direct_api></bulk_ldr_direct_api>
+<bulk_ldr_generate_files_only></bulk_ldr_generate_files_only>
+<bulk_ldr_max_bind_array>100000</bulk_ldr_max_bind_array>
+<bulk_ldr_max_discards>10</bulk_ldr_max_discards>
+<bulk_ldr_mode>append</bulk_ldr_mode>
+<bulk_ldr_recoverable></bulk_ldr_recoverable>
+<bulk_ldr_rows_per_commit>1000</bulk_ldr_rows_per_commit>
+<bulk_ldr_trailing_nullcols></bulk_ldr_trailing_nullcols>
+<bulk_ldr_use_control_file></bulk_ldr_use_control_file>
+<column_delimiter>,</column_delimiter>
+<enable_partitioning>no</enable_partitioning>
+<ignore_column_case>yes</ignore_column_case>
+<ignore_columns_null>no</ignore_columns_null>
+<ignore_columns_value></ignore_columns_value>
+<loader_auto_correct>no</loader_auto_correct>
+<loader_bulk_load></loader_bulk_load>
+<loader_compare_column>compare_by_name</loader_compare_column>
+<loader_delete_map></loader_delete_map>
+<loader_drop_and_create_table>yes</loader_drop_and_create_table>
+<loader_insert_map></loader_insert_map>
+<loader_insert_select_commit_size>yes</loader_insert_select_commit_size>
+<loader_load_choice>append</loader_load_choice>
+<loader_num_parallel_loaders>1</loader_num_parallel_loaders>
+<loader_overflow_file>DS_TRAFIC_DATA_TRAFIC_DATA_TR_DWH_TRAF_ASCEND_SPECTECH.txt</loader_overflow_file>
+<loader_quote_names>0</loader_quote_names>
+<loader_transactional>no</loader_transactional>
+<loader_transactional_order>0</loader_transactional_order>
+<loader_update_key_columns>no</loader_update_key_columns>
+<loader_update_map></loader_update_map>
+<loader_use_user_defined_keys>no</loader_use_user_defined_keys>
+<loader_xact_size>1000</loader_xact_size>
+<newdb_table_type>column_store</newdb_table_type>
+<oracle_auto_correct_using_merge>yes</oracle_auto_correct_using_merge>
+<oracle_bulk_ldr_all_method>None</oracle_bulk_ldr_all_method>
+<oracle_bulk_ldr_file_method>None</oracle_bulk_ldr_file_method>
+<oracle_bulk_ldr_method>None</oracle_bulk_ldr_method>
+<oracle_bulk_ldr_method_api>API</oracle_bulk_ldr_method_api>
+<oracle_bulk_ldr_method_file>File</oracle_bulk_ldr_method_file>
+<oracle_bulk_ldr_method_none>None</oracle_bulk_ldr_method_none>
+<oracle_bulk_ldr_mode_api>append</oracle_bulk_ldr_mode_api>
+<oracle_bulk_ldr_use_local_index_for_pkey>no</oracle_bulk_ldr_use_local_index_for_pkey>
+<oracle_sqlldr_version></oracle_sqlldr_version>
+<overflow_file_format>write_data</overflow_file_format>
+<overriding_substitution_parameter_for_tablename></overriding_substitution_parameter_for_tablename>
+<text_delimiter></text_delimiter>
+<use_overflow_file>no</use_overflow_file>
+<use_unicode_varchar>no</use_unicode_varchar>
+</LDRConfiguration>
+</LDRConfigurations>
+
+</DIAttribute>
+<DIAttribute name="loader_template_table" value="yes"/>
+<DIAttribute name="name" value="DS_TRAFIC_DATA"/>
+<DIAttribute name="use_unicode_varchar" value="no"/>
+</DIAttributes>
+</DIDatabaseTableTarget>
+
+</DITransforms>
+<DIAttributes>
+<DIAttribute name="Cache_type" value="pageable_cache"/>
+<DIAttribute name="Parallelism_degree" value="0"/>
+<DIAttribute name="allows_both_input_and_output" value="yes"/>
+<DIAttribute name="run_once" value="no"/>
+<DIAttribute name="use_dataflow_links" value="no"/>
+<DIAttribute name="use_datastore_links" value="yes"/>
+<DIAttribute name="validation_xform_exists" value="no"/>
+<DIAttribute name="validation_xform_stats" value="no"/>
+</DIAttributes>
+</DIDataflow>
+<DIDataflow name="DF_TRAFIC2_DWH_V_CURRENTHISTORIES" typeId="1" >
+<DITransforms>
+<DIDatabaseTableSource typeId="12" datastoreName="DS_TRAFIC_ASCENDFEED" ownerName="DBO" tableName="V_CURRENTHISTORIES" >
+<DIOutputView name="V_CURRENTHISTORIES"  />
+<DIAttributes>
+<DIAttribute name="Initial_Load" value="no"/>
+<DIAttribute name="array_fetch_size" value="1000"/>
+<DIAttribute name="cache" value="yes"/>
+<DIAttribute name="connection_port" value="no"/>
+<DIAttribute name="enable_partitioning" value="no"/>
+<DIAttribute name="name" value="DS_TRAFIC_ASCENDFEED"/>
+<DIAttribute name="package_size" value="0"/>
+<DIAttribute name="reader_is_DB2CDC_table" value="no"/>
+<DIAttribute name="reader_overflow_file" value="overflow_file"/>
+<DIAttribute name="reader_template_table" value="no"/>
+<DIAttribute name="reader_use_overflow_file" value="no"/>
+<DIAttribute name="reader_use_trex_transaction" value="no"/>
+<DIAttribute name="table_weight" value="0"/>
+<DIAttribute name="teradata_bulk_rdr_cleanup" value="yes"/>
+</DIAttributes>
+</DIDatabaseTableSource>
+
+<DIDatabaseTableTarget typeID="5" bulkLoader="false" datastoreName="DS_TRAFIC_DATA" ownerName="TRAFIC_DATA" tableName="TD_DWH_TRAF_ASCNED_V_CURHIST" >
+<DIInputView name="V_CURRENTHISTORIES"  />
+<DIAttributes>
+<DIAttribute name="connection_port" value="no"/>
+<DIAttribute name="ldr_configuration_enabled" value="yes"/>
+<DIAttribute name="ldr_configurations" hasNestedXMLTree ="true">
+
+<LDRConfigurations>
+<LDRConfiguration database_type="Oracle" database_version="Oracle 10g">
+<bulk_col_delimiter>/127</bulk_col_delimiter>
+<bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
+<bulk_ldr_max_bind_array>100000</bulk_ldr_max_bind_array>
+<bulk_ldr_max_discards>10</bulk_ldr_max_discards>
+<bulk_ldr_mode>append</bulk_ldr_mode>
+<bulk_ldr_rows_per_commit>1000</bulk_ldr_rows_per_commit>
+<column_delimiter>,</column_delimiter>
+<enable_partitioning>no</enable_partitioning>
+<ignore_column_case>yes</ignore_column_case>
+<ignore_columns_null>no</ignore_columns_null>
+<loader_auto_correct>no</loader_auto_correct>
+<loader_bulk_load></loader_bulk_load>
+<loader_compare_column>compare_by_name</loader_compare_column>
+<loader_drop_and_create_table>yes</loader_drop_and_create_table>
+<loader_insert_select_commit_size>yes</loader_insert_select_commit_size>
+<loader_load_choice>append</loader_load_choice>
+<loader_num_parallel_loaders>1</loader_num_parallel_loaders>
+<loader_quote_names>0</loader_quote_names>
+<loader_transactional>no</loader_transactional>
+<loader_transactional_order>0</loader_transactional_order>
+<loader_update_key_columns>no</loader_update_key_columns>
+<loader_use_user_defined_keys>no</loader_use_user_defined_keys>
+<loader_xact_size>1000</loader_xact_size>
+<oracle_auto_correct_using_merge>yes</oracle_auto_correct_using_merge>
+<oracle_bulk_ldr_all_method>None</oracle_bulk_ldr_all_method>
+<oracle_bulk_ldr_file_method>None</oracle_bulk_ldr_file_method>
+<oracle_bulk_ldr_method>None</oracle_bulk_ldr_method>
+<oracle_bulk_ldr_method_api>API</oracle_bulk_ldr_method_api>
+<oracle_bulk_ldr_method_file>File</oracle_bulk_ldr_method_file>
+<oracle_bulk_ldr_method_none>None</oracle_bulk_ldr_method_none>
+<oracle_bulk_ldr_mode_api>append</oracle_bulk_ldr_mode_api>
+<oracle_bulk_ldr_use_local_index_for_pkey>no</oracle_bulk_ldr_use_local_index_for_pkey>
+<overflow_file_format>write_data</overflow_file_format>
+<use_overflow_file>no</use_overflow_file>
+<use_unicode_varchar>no</use_unicode_varchar>
+</LDRConfiguration>
+<LDRConfiguration database_type="Oracle" database_version="Oracle 12c">
+<bulk_col_delimiter>/127</bulk_col_delimiter>
+<bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
+<bulk_ldr_control_file_name></bulk_ldr_control_file_name>
+<bulk_ldr_direct></bulk_ldr_direct>
+<bulk_ldr_direct_api></bulk_ldr_direct_api>
+<bulk_ldr_generate_files_only></bulk_ldr_generate_files_only>
+<bulk_ldr_max_bind_array>100000</bulk_ldr_max_bind_array>
+<bulk_ldr_max_discards>10</bulk_ldr_max_discards>
+<bulk_ldr_mode>append</bulk_ldr_mode>
+<bulk_ldr_recoverable></bulk_ldr_recoverable>
+<bulk_ldr_rows_per_commit>1000</bulk_ldr_rows_per_commit>
+<bulk_ldr_trailing_nullcols></bulk_ldr_trailing_nullcols>
+<bulk_ldr_use_control_file></bulk_ldr_use_control_file>
+<column_delimiter>,</column_delimiter>
+<enable_partitioning>no</enable_partitioning>
+<ignore_column_case>yes</ignore_column_case>
+<ignore_columns_null>no</ignore_columns_null>
+<ignore_columns_value></ignore_columns_value>
+<loader_auto_correct>no</loader_auto_correct>
+<loader_bulk_load></loader_bulk_load>
+<loader_compare_column>compare_by_name</loader_compare_column>
+<loader_delete_map></loader_delete_map>
+<loader_drop_and_create_table>yes</loader_drop_and_create_table>
+<loader_insert_map></loader_insert_map>
+<loader_insert_select_commit_size>yes</loader_insert_select_commit_size>
+<loader_load_choice>append</loader_load_choice>
+<loader_num_parallel_loaders>1</loader_num_parallel_loaders>
+<loader_overflow_file></loader_overflow_file>
+<loader_quote_names>0</loader_quote_names>
+<loader_transactional>no</loader_transactional>
+<loader_transactional_order>0</loader_transactional_order>
+<loader_update_key_columns>no</loader_update_key_columns>
+<loader_update_map></loader_update_map>
+<loader_use_user_defined_keys>no</loader_use_user_defined_keys>
+<loader_xact_size>1000</loader_xact_size>
+<newdb_table_type>column_store</newdb_table_type>
+<oracle_auto_correct_using_merge>yes</oracle_auto_correct_using_merge>
+<oracle_bulk_ldr_all_method>None</oracle_bulk_ldr_all_method>
+<oracle_bulk_ldr_file_method>None</oracle_bulk_ldr_file_method>
+<oracle_bulk_ldr_method>None</oracle_bulk_ldr_method>
+<oracle_bulk_ldr_method_api>API</oracle_bulk_ldr_method_api>
+<oracle_bulk_ldr_method_file>File</oracle_bulk_ldr_method_file>
+<oracle_bulk_ldr_method_none>None</oracle_bulk_ldr_method_none>
+<oracle_bulk_ldr_mode_api>append</oracle_bulk_ldr_mode_api>
+<oracle_bulk_ldr_use_local_index_for_pkey>no</oracle_bulk_ldr_use_local_index_for_pkey>
+<oracle_sqlldr_version></oracle_sqlldr_version>
+<overflow_file_format>write_data</overflow_file_format>
+<overriding_substitution_parameter_for_tablename></overriding_substitution_parameter_for_tablename>
+<text_delimiter></text_delimiter>
+<use_overflow_file>no</use_overflow_file>
+<use_unicode_varchar>no</use_unicode_varchar>
+</LDRConfiguration>
+</LDRConfigurations>
+
+</DIAttribute>
+<DIAttribute name="loader_template_table" value="yes"/>
+<DIAttribute name="name" value="DS_TRAFIC_DATA"/>
+<DIAttribute name="use_unicode_varchar" value="no"/>
+</DIAttributes>
+</DIDatabaseTableTarget>
+
+</DITransforms>
+<DIAttributes>
+<DIAttribute name="Cache_type" value="pageable_cache"/>
+<DIAttribute name="Parallelism_degree" value="0"/>
+<DIAttribute name="allows_both_input_and_output" value="yes"/>
+<DIAttribute name="run_once" value="no"/>
+<DIAttribute name="use_dataflow_links" value="no"/>
+<DIAttribute name="use_datastore_links" value="yes"/>
+<DIAttribute name="validation_xform_exists" value="no"/>
+<DIAttribute name="validation_xform_stats" value="no"/>
+</DIAttributes>
+</DIDataflow>
+<DIDataflow name="DF_TRAFIC2_DWH_V_HISTORIES" typeId="1" >
+<DITransforms>
+<DIDatabaseTableSource typeId="12" datastoreName="DS_TRAFIC_ASCENDFEED" ownerName="DBO" tableName="V_HISTORIES" >
+<DIOutputView name="V_HISTORIES"  />
+<DIAttributes>
+<DIAttribute name="Initial_Load" value="no"/>
+<DIAttribute name="array_fetch_size" value="1000"/>
+<DIAttribute name="cache" value="yes"/>
+<DIAttribute name="connection_port" value="no"/>
+<DIAttribute name="enable_partitioning" value="no"/>
+<DIAttribute name="name" value="DS_TRAFIC_ASCENDFEED"/>
+<DIAttribute name="package_size" value="0"/>
+<DIAttribute name="parallel_sap_connections" value="0"/>
+<DIAttribute name="reader_is_DB2CDC_table" value="no"/>
+<DIAttribute name="reader_overflow_file" value="overflow_file"/>
+<DIAttribute name="reader_template_table" value="no"/>
+<DIAttribute name="reader_use_overflow_file" value="no"/>
+<DIAttribute name="reader_use_trex_transaction" value="no"/>
+<DIAttribute name="sap_odp_cwf_delay" value="5"/>
+<DIAttribute name="table_weight" value="0"/>
+<DIAttribute name="teradata_bulk_rdr_cleanup" value="yes"/>
+</DIAttributes>
+</DIDatabaseTableSource>
+
+<DIDatabaseTableTarget typeID="5" bulkLoader="false" datastoreName="DS_TRAFIC_DATA" ownerName="TRAFIC_DATA" tableName="TD_DWH_TRAF_ASCEND_V_HISTORIES" >
+<DIInputView name="V_HISTORIES"  />
+<DIAttributes>
+<DIAttribute name="connection_port" value="no"/>
+<DIAttribute name="ldr_configuration_enabled" value="yes"/>
+<DIAttribute name="ldr_configurations" hasNestedXMLTree ="true">
+
+<LDRConfigurations>
+<LDRConfiguration database_type="Oracle" database_version="Oracle 12c">
+<bulk_col_delimiter>/127</bulk_col_delimiter>
+<bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
+<bulk_ldr_control_file_name></bulk_ldr_control_file_name>
+<bulk_ldr_direct></bulk_ldr_direct>
+<bulk_ldr_direct_api></bulk_ldr_direct_api>
+<bulk_ldr_generate_files_only></bulk_ldr_generate_files_only>
+<bulk_ldr_max_bind_array>100000</bulk_ldr_max_bind_array>
+<bulk_ldr_max_discards>10</bulk_ldr_max_discards>
+<bulk_ldr_mode>append</bulk_ldr_mode>
+<bulk_ldr_recoverable></bulk_ldr_recoverable>
+<bulk_ldr_rows_per_commit>1000</bulk_ldr_rows_per_commit>
+<bulk_ldr_trailing_nullcols></bulk_ldr_trailing_nullcols>
+<bulk_ldr_use_control_file></bulk_ldr_use_control_file>
+<column_delimiter>,</column_delimiter>
+<enable_partitioning>no</enable_partitioning>
+<ignore_column_case>yes</ignore_column_case>
+<ignore_columns_null>no</ignore_columns_null>
+<ignore_columns_value></ignore_columns_value>
+<loader_auto_correct>no</loader_auto_correct>
+<loader_bulk_load></loader_bulk_load>
+<loader_compare_column>compare_by_name</loader_compare_column>
+<loader_delete_map></loader_delete_map>
+<loader_drop_and_create_table>yes</loader_drop_and_create_table>
+<loader_insert_map></loader_insert_map>
+<loader_insert_select_commit_size>yes</loader_insert_select_commit_size>
+<loader_load_choice>append</loader_load_choice>
+<loader_num_parallel_loaders>1</loader_num_parallel_loaders>
+<loader_overflow_file>DS_TRAFIC_DATA_TRAFIC_DATA_TD_DWH_TRAF_ASCEND_V_HISTORIES.txt</loader_overflow_file>
+<loader_post_load1></loader_post_load1>
+<loader_pre_load1></loader_pre_load1>
+<loader_quote_names>0</loader_quote_names>
+<loader_transactional>no</loader_transactional>
+<loader_transactional_order>0</loader_transactional_order>
+<loader_update_key_columns>no</loader_update_key_columns>
+<loader_update_map></loader_update_map>
+<loader_use_user_defined_keys>no</loader_use_user_defined_keys>
+<loader_xact_size>1000</loader_xact_size>
+<oracle_auto_correct_using_merge>yes</oracle_auto_correct_using_merge>
+<oracle_bulk_ldr_all_method>None</oracle_bulk_ldr_all_method>
+<oracle_bulk_ldr_file_method>None</oracle_bulk_ldr_file_method>
+<oracle_bulk_ldr_method>None</oracle_bulk_ldr_method>
+<oracle_bulk_ldr_method_api>API</oracle_bulk_ldr_method_api>
+<oracle_bulk_ldr_method_file>File</oracle_bulk_ldr_method_file>
+<oracle_bulk_ldr_method_none>None</oracle_bulk_ldr_method_none>
+<oracle_bulk_ldr_mode_api>append</oracle_bulk_ldr_mode_api>
+<oracle_bulk_ldr_use_local_index_for_pkey>no</oracle_bulk_ldr_use_local_index_for_pkey>
+<oracle_sqlldr_version></oracle_sqlldr_version>
+<overflow_file_format>write_data</overflow_file_format>
+<overriding_substitution_parameter_for_tablename></overriding_substitution_parameter_for_tablename>
+<text_delimiter></text_delimiter>
+<use_overflow_file>no</use_overflow_file>
+<use_unicode_varchar>no</use_unicode_varchar>
+<sql_text></sql_text>
+</LDRConfiguration>
+<LDRConfiguration database_type="Oracle" database_version="Oracle 10g">
+<bulk_col_delimiter>/127</bulk_col_delimiter>
+<bulk_ldr_cleanup>yes</bulk_ldr_cleanup>
+<bulk_ldr_control_file_name></bulk_ldr_control_file_name>
+<bulk_ldr_direct></bulk_ldr_direct>
+<bulk_ldr_direct_api></bulk_ldr_direct_api>
+<bulk_ldr_generate_files_only></bulk_ldr_generate_files_only>
+<bulk_ldr_max_bind_array>100000</bulk_ldr_max_bind_array>
+<bulk_ldr_max_discards>10</bulk_ldr_max_discards>
+<bulk_ldr_mode>append</bulk_ldr_mode>
+<bulk_ldr_recoverable></bulk_ldr_recoverable>
+<bulk_ldr_rows_per_commit>1000</bulk_ldr_rows_per_commit>
+<bulk_ldr_trailing_nullcols></bulk_ldr_trailing_nullcols>
+<bulk_ldr_use_control_file></bulk_ldr_use_control_file>
+<column_delimiter>,</column_delimiter>
+<enable_partitioning>no</enable_partitioning>
+<ignore_column_case>yes</ignore_column_case>
+<ignore_columns_null>no</ignore_columns_null>
+<ignore_columns_value></ignore_columns_value>
+<loader_auto_correct>no</loader_auto_correct>
+<loader_bulk_load></loader_bulk_load>
+<loader_compare_column>compare_by_name</loader_compare_column>
+<loader_delete_map></loader_delete_map>
+<loader_drop_and_create_table>yes</loader_drop_and_create_table>
+<loader_insert_map></loader_insert_map>
+<loader_insert_select_commit_size>yes</loader_insert_select_commit_size>
+<loader_load_choice>append</loader_load_choice>
+<loader_num_parallel_loaders>1</loader_num_parallel_loaders>
+<loader_overflow_file>DS_TRAFIC_DATA_TRAFIC_DATA_TD_DWH_TRAF_ASCEND_V_HISTORIES.txt</loader_overflow_file>
+<loader_post_load1></loader_post_load1>
+<loader_pre_load1></loader_pre_load1>
+<loader_quote_names>0</loader_quote_names>
+<loader_transactional>no</loader_transactional>
+<loader_transactional_order>0</loader_transactional_order>
+<loader_update_key_columns>no</loader_update_key_columns>
+<loader_update_map></loader_update_map>
+<loader_use_user_defined_keys>no</loader_use_user_defined_keys>
+<loader_xact_size>1000</loader_xact_size>
+<newdb_table_type>column_store</newdb_table_type>
+<oracle_auto_correct_using_merge>yes</oracle_auto_correct_using_merge>
+<oracle_bulk_ldr_all_method>None</oracle_bulk_ldr_all_method>
+<oracle_bulk_ldr_file_method>None</oracle_bulk_ldr_file_method>
+<oracle_bulk_ldr_method>None</oracle_bulk_ldr_method>
+<oracle_bulk_ldr_method_api>API</oracle_bulk_ldr_method_api>
+<oracle_bulk_ldr_method_file>File</oracle_bulk_ldr_method_file>
+<oracle_bulk_ldr_method_none>None</oracle_bulk_ldr_method_none>
+<oracle_bulk_ldr_mode_api>append</oracle_bulk_ldr_mode_api>
+<oracle_bulk_ldr_use_local_index_for_pkey>no</oracle_bulk_ldr_use_local_index_for_pkey>
+<oracle_sqlldr_version></oracle_sqlldr_version>
+<overflow_file_format>write_data</overflow_file_format>
+<overriding_substitution_parameter_for_tablename></overriding_substitution_parameter_for_tablename>
+<text_delimiter></text_delimiter>
+<use_overflow_file>no</use_overflow_file>
+<use_unicode_varchar>no</use_unicode_varchar>
+<sql_text></sql_text>
+</LDRConfiguration>
+</LDRConfigurations>
+</DIAttribute>
+<DIAttribute name="loader_template_table" value="yes"/>
+<DIAttribute name="name" value="DS_TRAFIC_DATA"/>
+<DIAttribute name="use_unicode_varchar" value="no"/>
+</DIAttributes>
+</DIDatabaseTableTarget>
+
+</DITransforms>
+<DIAttributes>
+<DIAttribute name="Cache_type" value="pageable_cache"/>
+<DIAttribute name="Parallelism_degree" value="0"/>
+<DIAttribute name="allows_both_input_and_output" value="yes"/>
+<DIAttribute name="dataflow_loader_bulk_load" value="no"/>
+<DIAttribute name="dataflow_loader_commit_size" value="default"/>
+<DIAttribute name="dataflow_loader_row_size_bytes" value="0"/>
+<DIAttribute name="dataflow_number_of_loaders" value="0"/>
+<DIAttribute name="run_once" value="no"/>
+<DIAttribute name="use_dataflow_links" value="no"/>
+<DIAttribute name="use_datastore_links" value="yes"/>
+<DIAttribute name="validation_xform_exists" value="no"/>
+<DIAttribute name="validation_xform_stats" value="no"/>
+</DIAttributes>
+</DIDataflow>
+<DIJob name="JOB_TRAFIC2_ASCEND" typeId="2" >
+<DISteps>
+<DICallStep typeId="0"  calledObjectType="Workflow" name="WF_TRAFIC2_REF_ASCENDFEED_GENTECH" >
+</DICallStep>
+<DICallStep typeId="0"  calledObjectType="Workflow" name="WF_TRAFIC2_REF_ASCENDFEED_SPECTECH" >
+</DICallStep>
+<DICallStep typeId="0"  calledObjectType="Workflow" name="WF_TRAFIC2_REF_ASCENDFEED_HISTORIES" >
+</DICallStep>
+<DICallStep typeId="0"  calledObjectType="Workflow" name="WF_TRAFIC2_REF_ASCENDFEED_V_HISTORIES" >
+</DICallStep>
+<DICallStep typeId="0"  calledObjectType="Workflow" name="WF_TRAFIC2_REF_ASCENDFEED_V_CURRENTHISTORIES" >
+</DICallStep>
+<DICallStep typeId="0"  calledObjectType="Workflow" name="WF_TRAFIC2_REF_ASCENDFEED_AREA" >
+</DICallStep>
+<DICallStep typeId="0"  calledObjectType="Workflow" name="WF_TRAFIC2_REF_ASCENDFEED_AC_CARGO" >
+</DICallStep>
+<DICallStep typeId="0"  calledObjectType="Workflow" name="WF_TRAFIC2_REF_ASCENDFEED_CATEGORY" >
+</DICallStep>
+<DICallStep typeId="0"  calledObjectType="Workflow" name="WF_TRAFIC2_REF_ASCENDFEED_COMPANY" >
+</DICallStep>
+<DICallStep typeId="0"  calledObjectType="Workflow" name="WF_TRAFIC2_REF_ASCENDFEED_COUNTRY" >
+</DICallStep>
+<DICallStep typeId="0"  calledObjectType="Workflow" name="WF_TRAFIC2_REF_ASCENDFEED_EVENT" >
+</DICallStep>
+<DICallStep typeId="0"  calledObjectType="Workflow" name="WF_TRAFIC2_REF_ASCENDFEED_ORDER" >
+</DICallStep>
+<DICallStep typeId="0"  calledObjectType="Workflow" name="WF_TRAFIC2_REF_ASCENDFEED_LASTDELIVERY" >
+</DICallStep>
+<DIScript>
+<DIUIOptions>
+<DIAttribute name="ui_display_name" value="Script_grant"/>
+<DIAttribute name="ui_script_text" value="sql('DS_TRAFIC_DATA', 'grant select on TRAFIC_DATA.TR_DWH_TRAF_ASCEND_GENTECH to TRAFIC_FGSR_CONS');&#xD;&#xA;sql('DS_TRAFIC_DATA', 'grant select on TRAFIC_DATA.TR_DWH_TRAF_ASCEND_SPECTECH to TRAFIC_FGSR_CONS');&#xD;&#xA;sql('DS_TRAFIC_DATA', 'grant select on TRAFIC_DATA.TR_DWH_TRAF_ASCEND_HISTORIES to TRAFIC_FGSR_CONS');&#xD;&#xA;sql('DS_TRAFIC_DATA', 'grant select on TRAFIC_DATA.TD_DWH_TRAF_ASCEND_V_HISTORIES to TRAFIC_FGSR_CONS');&#xD;&#xA;sql('DS_TRAFIC_DATA', 'grant select on TRAFIC_DATA.TD_DWH_TRAF_ASCNED_V_CURHIST to TRAFIC_FGSR_CONS');&#xD;&#xA;sql('DS_TRAFIC_DATA', 'grant select on TRAFIC_DATA.TR_DWH_TRAF_ASCEND_AREA to TRAFIC_FGSR_CONS');&#xD;&#xA;sql('DS_TRAFIC_DATA', 'grant select on TRAFIC_DATA.TR_DWH_TRAF_ASCEND_AC_CARGO to TRAFIC_FGSR_CONS');&#xD;&#xA;sql('DS_TRAFIC_DATA', 'grant select on TRAFIC_DATA.TR_DWH_TRAF_ASCEND_CATEGORY to TRAFIC_FGSR_CONS');&#xD;&#xA;sql('DS_TRAFIC_DATA', 'grant select on TRAFIC_DATA.TR_DWH_TRAF_ASCEND_COUNTRY to TRAFIC_FGSR_CONS');&#xD;&#xA;sql('DS_TRAFIC_DATA', 'grant select on TRAFIC_DATA.TR_DWH_TRAF_ASCEND_EVENT to TRAFIC_FGSR_CONS');&#xD;&#xA;sql('DS_TRAFIC_DATA', 'grant select on TRAFIC_DATA.TR_DWH_TRAF_ASCEND_EVENTTYPES to TRAFIC_FGSR_CONS');&#xD;&#xA;sql('DS_TRAFIC_DATA', 'grant select on TRAFIC_DATA.TR_DWH_TRAF_ASCEND_LASTDELIV to TRAFIC_FGSR_CONS');&#xD;&#xA;sql('DS_TRAFIC_DATA', 'grant select on TRAFIC_DATA.TR_DWH_TRAF_ASCEND_LASTORDER to TRAFIC_FGSR_CONS');&#xD;&#xA;sql('DS_TRAFIC_DATA', 'grant select on TRAFIC_DATA.TR_DWH_TRAF_ASCEND_ORDPLCDTMP to TRAFIC_FGSR_CONS');&#xD;&#xA;sql('DS_TRAFIC_DATA', 'commit');"/>
+</DIUIOptions>
+<DIFunctionCallStep typeId="11" >
+<DIExpression isString="true" expr="sql('DS_TRAFIC_DATA', 'grant select on TRAFIC_DATA.TR_DWH_TRAF_ASCEND_GENTECH to TRAFIC_FGSR_CONS')" >
+<FUNCTION_CALL name="sql"  type="DI" >
+<CONSTANT value="DS_TRAFIC_DATA" datatype="VARCHAR" size="14" />
+<CONSTANT value="grant select on TRAFIC_DATA.TR_DWH_TRAF_ASCEND_GENTECH to TRAFIC_FGSR_CONS" datatype="VARCHAR" size="74" />
+</FUNCTION_CALL>
+</DIExpression>
+</DIFunctionCallStep>
+<DIFunctionCallStep typeId="11" >
+<DIExpression isString="true" expr="sql('DS_TRAFIC_DATA', 'grant select on TRAFIC_DATA.TR_DWH_TRAF_ASCEND_SPECTECH to TRAFIC_FGSR_CONS')" >
+<FUNCTION_CALL name="sql"  type="DI" >
+<CONSTANT value="DS_TRAFIC_DATA" datatype="VARCHAR" size="14" />
+<CONSTANT value="grant select on TRAFIC_DATA.TR_DWH_TRAF_ASCEND_SPECTECH to TRAFIC_FGSR_CONS" datatype="VARCHAR" size="75" />
+</FUNCTION_CALL>
+</DIExpression>
+</DIFunctionCallStep>
+<DIFunctionCallStep typeId="11" >
+<DIExpression isString="true" expr="sql('DS_TRAFIC_DATA', 'grant select on TRAFIC_DATA.TR_DWH_TRAF_ASCEND_HISTORIES to TRAFIC_FGSR_CONS')" >
+<FUNCTION_CALL name="sql"  type="DI" >
+<CONSTANT value="DS_TRAFIC_DATA" datatype="VARCHAR" size="14" />
+<CONSTANT value="grant select on TRAFIC_DATA.TR_DWH_TRAF_ASCEND_HISTORIES to TRAFIC_FGSR_CONS" datatype="VARCHAR" size="76" />
+</FUNCTION_CALL>
+</DIExpression>
+</DIFunctionCallStep>
+<DIFunctionCallStep typeId="11" >
+<DIExpression isString="true" expr="sql('DS_TRAFIC_DATA', 'grant select on TRAFIC_DATA.TD_DWH_TRAF_ASCEND_V_HISTORIES to TRAFIC_FGSR_CONS')" >
+<FUNCTION_CALL name="sql"  type="DI" >
+<CONSTANT value="DS_TRAFIC_DATA" datatype="VARCHAR" size="14" />
+<CONSTANT value="grant select on TRAFIC_DATA.TD_DWH_TRAF_ASCEND_V_HISTORIES to TRAFIC_FGSR_CONS" datatype="VARCHAR" size="78" />
+</FUNCTION_CALL>
+</DIExpression>
+</DIFunctionCallStep>
+<DIFunctionCallStep typeId="11" >
+<DIExpression isString="true" expr="sql('DS_TRAFIC_DATA', 'grant select on TRAFIC_DATA.TD_DWH_TRAF_ASCNED_V_CURHIST to TRAFIC_FGSR_CONS')" >
+<FUNCTION_CALL name="sql"  type="DI" >
+<CONSTANT value="DS_TRAFIC_DATA" datatype="VARCHAR" size="14" />
+<CONSTANT value="grant select on TRAFIC_DATA.TD_DWH_TRAF_ASCNED_V_CURHIST to TRAFIC_FGSR_CONS" datatype="VARCHAR" size="76" />
+</FUNCTION_CALL>
+</DIExpression>
+</DIFunctionCallStep>
+<DIFunctionCallStep typeId="11" >
+<DIExpression isString="true" expr="sql('DS_TRAFIC_DATA', 'grant select on TRAFIC_DATA.TR_DWH_TRAF_ASCEND_AREA to TRAFIC_FGSR_CONS')" >
+<FUNCTION_CALL name="sql"  type="DI" >
+<CONSTANT value="DS_TRAFIC_DATA" datatype="VARCHAR" size="14" />
+<CONSTANT value="grant select on TRAFIC_DATA.TR_DWH_TRAF_ASCEND_AREA to TRAFIC_FGSR_CONS" datatype="VARCHAR" size="71" />
+</FUNCTION_CALL>
+</DIExpression>
+</DIFunctionCallStep>
+<DIFunctionCallStep typeId="11" >
+<DIExpression isString="true" expr="sql('DS_TRAFIC_DATA', 'grant select on TRAFIC_DATA.TR_DWH_TRAF_ASCEND_AC_CARGO to TRAFIC_FGSR_CONS')" >
+<FUNCTION_CALL name="sql"  type="DI" >
+<CONSTANT value="DS_TRAFIC_DATA" datatype="VARCHAR" size="14" />
+<CONSTANT value="grant select on TRAFIC_DATA.TR_DWH_TRAF_ASCEND_AC_CARGO to TRAFIC_FGSR_CONS" datatype="VARCHAR" size="75" />
+</FUNCTION_CALL>
+</DIExpression>
+</DIFunctionCallStep>
+<DIFunctionCallStep typeId="11" >
+<DIExpression isString="true" expr="sql('DS_TRAFIC_DATA', 'grant select on TRAFIC_DATA.TR_DWH_TRAF_ASCEND_CATEGORY to TRAFIC_FGSR_CONS')" >
+<FUNCTION_CALL name="sql"  type="DI" >
+<CONSTANT value="DS_TRAFIC_DATA" datatype="VARCHAR" size="14" />
+<CONSTANT value="grant select on TRAFIC_DATA.TR_DWH_TRAF_ASCEND_CATEGORY to TRAFIC_FGSR_CONS" datatype="VARCHAR" size="75" />
+</FUNCTION_CALL>
+</DIExpression>
+</DIFunctionCallStep>
+<DIFunctionCallStep typeId="11" >
+<DIExpression isString="true" expr="sql('DS_TRAFIC_DATA', 'grant select on TRAFIC_DATA.TR_DWH_TRAF_ASCEND_COUNTRY to TRAFIC_FGSR_CONS')" >
+<FUNCTION_CALL name="sql"  type="DI" >
+<CONSTANT value="DS_TRAFIC_DATA" datatype="VARCHAR" size="14" />
+<CONSTANT value="grant select on TRAFIC_DATA.TR_DWH_TRAF_ASCEND_COUNTRY to TRAFIC_FGSR_CONS" datatype="VARCHAR" size="74" />
+</FUNCTION_CALL>
+</DIExpression>
+</DIFunctionCallStep>
+<DIFunctionCallStep typeId="11" >
+<DIExpression isString="true" expr="sql('DS_TRAFIC_DATA', 'grant select on TRAFIC_DATA.TR_DWH_TRAF_ASCEND_EVENT to TRAFIC_FGSR_CONS')" >
+<FUNCTION_CALL name="sql"  type="DI" >
+<CONSTANT value="DS_TRAFIC_DATA" datatype="VARCHAR" size="14" />
+<CONSTANT value="grant select on TRAFIC_DATA.TR_DWH_TRAF_ASCEND_EVENT to TRAFIC_FGSR_CONS" datatype="VARCHAR" size="72" />
+</FUNCTION_CALL>
+</DIExpression>
+</DIFunctionCallStep>
+<DIFunctionCallStep typeId="11" >
+<DIExpression isString="true" expr="sql('DS_TRAFIC_DATA', 'grant select on TRAFIC_DATA.TR_DWH_TRAF_ASCEND_EVENTTYPES to TRAFIC_FGSR_CONS')" >
+<FUNCTION_CALL name="sql"  type="DI" >
+<CONSTANT value="DS_TRAFIC_DATA" datatype="VARCHAR" size="14" />
+<CONSTANT value="grant select on TRAFIC_DATA.TR_DWH_TRAF_ASCEND_EVENTTYPES to TRAFIC_FGSR_CONS" datatype="VARCHAR" size="77" />
+</FUNCTION_CALL>
+</DIExpression>
+</DIFunctionCallStep>
+<DIFunctionCallStep typeId="11" >
+<DIExpression isString="true" expr="sql('DS_TRAFIC_DATA', 'grant select on TRAFIC_DATA.TR_DWH_TRAF_ASCEND_LASTDELIV to TRAFIC_FGSR_CONS')" >
+<FUNCTION_CALL name="sql"  type="DI" >
+<CONSTANT value="DS_TRAFIC_DATA" datatype="VARCHAR" size="14" />
+<CONSTANT value="grant select on TRAFIC_DATA.TR_DWH_TRAF_ASCEND_LASTDELIV to TRAFIC_FGSR_CONS" datatype="VARCHAR" size="76" />
+</FUNCTION_CALL>
+</DIExpression>
+</DIFunctionCallStep>
+<DIFunctionCallStep typeId="11" >
+<DIExpression isString="true" expr="sql('DS_TRAFIC_DATA', 'grant select on TRAFIC_DATA.TR_DWH_TRAF_ASCEND_LASTORDER to TRAFIC_FGSR_CONS')" >
+<FUNCTION_CALL name="sql"  type="DI" >
+<CONSTANT value="DS_TRAFIC_DATA" datatype="VARCHAR" size="14" />
+<CONSTANT value="grant select on TRAFIC_DATA.TR_DWH_TRAF_ASCEND_LASTORDER to TRAFIC_FGSR_CONS" datatype="VARCHAR" size="76" />
+</FUNCTION_CALL>
+</DIExpression>
+</DIFunctionCallStep>
+<DIFunctionCallStep typeId="11" >
+<DIExpression isString="true" expr="sql('DS_TRAFIC_DATA', 'grant select on TRAFIC_DATA.TR_DWH_TRAF_ASCEND_ORDPLCDTMP to TRAFIC_FGSR_CONS')" >
+<FUNCTION_CALL name="sql"  type="DI" >
+<CONSTANT value="DS_TRAFIC_DATA" datatype="VARCHAR" size="14" />
+<CONSTANT value="grant select on TRAFIC_DATA.TR_DWH_TRAF_ASCEND_ORDPLCDTMP to TRAFIC_FGSR_CONS" datatype="VARCHAR" size="77" />
+</FUNCTION_CALL>
+</DIExpression>
+</DIFunctionCallStep>
+<DIFunctionCallStep typeId="11" >
+<DIExpression isString="true" expr="sql('DS_TRAFIC_DATA', 'commit')" >
+<FUNCTION_CALL name="sql"  type="DI" >
+<CONSTANT value="DS_TRAFIC_DATA" datatype="VARCHAR" size="14" />
+<CONSTANT value="commit" datatype="VARCHAR" size="6" />
+</FUNCTION_CALL>
+</DIExpression>
+</DIFunctionCallStep>
+</DIScript>
+</DISteps>
+<DIAttributes>
+<DIAttribute name="job_checkpoint_enabled" value="no"/>
+<DIAttribute name="job_collect_statistics" value="no"/>
+<DIAttribute name="job_collect_statistics_monitor" value="no"/>
+<DIAttribute name="job_create_debug_package" value="no"/>
+<DIAttribute name="job_enable_assemblers" value="yes"/>
+<DIAttribute name="job_enable_audit" value="yes"/>
+<DIAttribute name="job_enable_dataquality" value="yes"/>
+<DIAttribute name="job_export_repo" value="no"/>
+<DIAttribute name="job_export_reports" value="no"/>
+<DIAttribute name="job_isrecoverable" value="no"/>
+<DIAttribute name="job_mode" value="Multi-Process"/>
+<DIAttribute name="job_monitor_sample_rate" value="1000"/>
+<DIAttribute name="job_monitor_timer_rate" value="5"/>
+<DIAttribute name="job_name" value="JOB_TRAFIC2_ASCEND"/>
+<DIAttribute name="job_print_version" value="no"/>
+<DIAttribute name="job_testmode_enabled" value="no"/>
+<DIAttribute name="job_trace_abapquery" value="no"/>
+<DIAttribute name="job_trace_all" value="no"/>
+<DIAttribute name="job_trace_ascomm" value="no"/>
+<DIAttribute name="job_trace_assemblers" value="no"/>
+<DIAttribute name="job_trace_audit" value="no"/>
+<DIAttribute name="job_trace_dataflow" value="yes"/>
+<DIAttribute name="job_trace_idoc_file" value="no"/>
+<DIAttribute name="job_trace_memory_loader" value="no"/>
+<DIAttribute name="job_trace_memory_reader" value="no"/>
+<DIAttribute name="job_trace_optimized_dataflow" value="no"/>
+<DIAttribute name="job_trace_parallel_execution" value="no"/>
+<DIAttribute name="job_trace_rfc_function" value="no"/>
+<DIAttribute name="job_trace_row" value="no"/>
+<DIAttribute name="job_trace_script" value="no"/>
+<DIAttribute name="job_trace_session" value="yes"/>
+<DIAttribute name="job_trace_sql_only" value="no"/>
+<DIAttribute name="job_trace_sqlfunctions" value="no"/>
+<DIAttribute name="job_trace_sqlloaders" value="no"/>
+<DIAttribute name="job_trace_sqlreaders" value="no"/>
+<DIAttribute name="job_trace_sqltransforms" value="no"/>
+<DIAttribute name="job_trace_stored_procedure" value="no"/>
+<DIAttribute name="job_trace_table" value="no"/>
+<DIAttribute name="job_trace_table_reader" value="no"/>
+<DIAttribute name="job_trace_transform" value="no"/>
+<DIAttribute name="job_trace_userfunction" value="no"/>
+<DIAttribute name="job_trace_usertransform" value="no"/>
+<DIAttribute name="job_trace_workflow" value="yes"/>
+<DIAttribute name="job_type" value="batch"/>
+<DIAttribute name="job_use_statistics" value="yes"/>
+<DIAttribute name="locale_codepage" value="&lt;default&gt;"/>
+<DIAttribute name="locale_language" value="&lt;default&gt;"/>
+<DIAttribute name="locale_territory" value="&lt;default&gt;"/>
+</DIAttributes>
+</DIJob>
+<DIWorkflow name="WF_TRAFIC2_REF_ASCENDFEED_AC_CARGO" typeId="2" >
+<DISteps>
+<DICallStep typeId="1"  calledObjectType="Dataflow" name="DF_TRAFIC2_DWH_AC_CARGO" >
+</DICallStep>
+</DISteps>
+<DIAttributes>
+<DIAttribute name="run_once" value="no"/>
+<DIAttribute name="unit_of_recovery" value="no"/>
+</DIAttributes>
+</DIWorkflow>
+<DIWorkflow name="WF_TRAFIC2_REF_ASCENDFEED_AREA" typeId="2" >
+<DISteps>
+<DICallStep typeId="1"  calledObjectType="Dataflow" name="DF_TRAFIC2_DWH_AREA" >
+</DICallStep>
+</DISteps>
+<DIAttributes>
+<DIAttribute name="run_once" value="no"/>
+<DIAttribute name="unit_of_recovery" value="no"/>
+</DIAttributes>
+</DIWorkflow>
+<DIWorkflow name="WF_TRAFIC2_REF_ASCENDFEED_CATEGORY" typeId="2" >
+<DISteps>
+<DICallStep typeId="1"  calledObjectType="Dataflow" name="DF_TRAFIC2_DWH_CATEGORY" >
+</DICallStep>
+</DISteps>
+<DIAttributes>
+<DIAttribute name="run_once" value="no"/>
+<DIAttribute name="unit_of_recovery" value="no"/>
+<DIAttribute name="workflow_type" value="Regular"/>
+</DIAttributes>
+</DIWorkflow>
+<DIWorkflow name="WF_TRAFIC2_REF_ASCENDFEED_COMPANY" typeId="2" >
+<DISteps>
+<DICallStep typeId="1"  calledObjectType="Dataflow" name="DF_TRAFIC2_DWH_COMPANY" >
+</DICallStep>
+</DISteps>
+<DIAttributes>
+<DIAttribute name="run_once" value="no"/>
+<DIAttribute name="unit_of_recovery" value="no"/>
+</DIAttributes>
+</DIWorkflow>
+<DIWorkflow name="WF_TRAFIC2_REF_ASCENDFEED_COUNTRY" typeId="2" >
+<DISteps>
+<DICallStep typeId="1"  calledObjectType="Dataflow" name="DF_TRAFIC2_DWH_COUNTRY" >
+</DICallStep>
+</DISteps>
+<DIAttributes>
+<DIAttribute name="run_once" value="no"/>
+<DIAttribute name="unit_of_recovery" value="no"/>
+</DIAttributes>
+</DIWorkflow>
+<DIWorkflow name="WF_TRAFIC2_REF_ASCENDFEED_EVENT" typeId="2" >
+<DISteps>
+<DICallStep typeId="1"  calledObjectType="Dataflow" name="DF_TRAFIC2_DWH_EVENT" >
+</DICallStep>
+<DICallStep typeId="1"  calledObjectType="Dataflow" name="DF_TRAFIC2_DWH_EVENTTYPES" >
+</DICallStep>
+</DISteps>
+<DIAttributes>
+<DIAttribute name="run_once" value="no"/>
+<DIAttribute name="unit_of_recovery" value="no"/>
+</DIAttributes>
+</DIWorkflow>
+<DIWorkflow name="WF_TRAFIC2_REF_ASCENDFEED_GENTECH" typeId="2" >
+<DISteps>
+<DICallStep typeId="1"  calledObjectType="Dataflow" name="DF_TRAFIC2_DWH_GENTECH" >
+</DICallStep>
+</DISteps>
+<DIAttributes>
+<DIAttribute name="run_once" value="no"/>
+<DIAttribute name="unit_of_recovery" value="no"/>
+<DIAttribute name="workflow_type" value="Regular"/>
+</DIAttributes>
+</DIWorkflow>
+<DIWorkflow name="WF_TRAFIC2_REF_ASCENDFEED_HISTORIES" typeId="2" >
+<DISteps>
+<DICallStep typeId="1"  calledObjectType="Dataflow" name="DF_TRAFIC2_DWH_HISTORIES" >
+</DICallStep>
+</DISteps>
+<DIAttributes>
+<DIAttribute name="run_once" value="no"/>
+<DIAttribute name="unit_of_recovery" value="no"/>
+</DIAttributes>
+</DIWorkflow>
+<DIWorkflow name="WF_TRAFIC2_REF_ASCENDFEED_LASTDELIVERY" typeId="2" >
+<DISteps>
+<DICallStep typeId="1"  calledObjectType="Dataflow" name="DF_TRAFIC2_DWH_LASTDELIVERY" >
+</DICallStep>
+</DISteps>
+<DIAttributes>
+<DIAttribute name="run_once" value="no"/>
+<DIAttribute name="unit_of_recovery" value="no"/>
+</DIAttributes>
+</DIWorkflow>
+<DIWorkflow name="WF_TRAFIC2_REF_ASCENDFEED_ORDER" typeId="2" >
+<DISteps>
+<DICallStep typeId="1"  calledObjectType="Dataflow" name="DF_TRAFIC2_DWH_LASTORDER" >
+</DICallStep>
+<DICallStep typeId="1"  calledObjectType="Dataflow" name="DF_TRAFIC2_DWH_ORDERSPLACEDTMP" >
+</DICallStep>
+</DISteps>
+<DIAttributes>
+<DIAttribute name="run_once" value="no"/>
+<DIAttribute name="unit_of_recovery" value="no"/>
+</DIAttributes>
+</DIWorkflow>
+<DIWorkflow name="WF_TRAFIC2_REF_ASCENDFEED_SPECTECH" typeId="2" >
+<DISteps>
+<DICallStep typeId="1"  calledObjectType="Dataflow" name="DF_TRAFIC2_DWH_SPECTECH" >
+</DICallStep>
+</DISteps>
+<DIAttributes>
+<DIAttribute name="run_once" value="no"/>
+<DIAttribute name="unit_of_recovery" value="no"/>
+</DIAttributes>
+</DIWorkflow>
+<DIWorkflow name="WF_TRAFIC2_REF_ASCENDFEED_V_CURRENTHISTORIES" typeId="2" >
+<DISteps>
+<DICallStep typeId="1"  calledObjectType="Dataflow" name="DF_TRAFIC2_DWH_V_CURRENTHISTORIES" >
+</DICallStep>
+</DISteps>
+<DIAttributes>
+<DIAttribute name="run_once" value="no"/>
+<DIAttribute name="unit_of_recovery" value="no"/>
+</DIAttributes>
+</DIWorkflow>
+<DIWorkflow name="WF_TRAFIC2_REF_ASCENDFEED_V_HISTORIES" typeId="2" >
+<DISteps>
+<DICallStep typeId="1"  calledObjectType="Dataflow" name="DF_TRAFIC2_DWH_V_HISTORIES" >
+</DICallStep>
+</DISteps>
+<DIAttributes>
+<DIAttribute name="run_once" value="no"/>
+<DIAttribute name="unit_of_recovery" value="no"/>
+<DIAttribute name="workflow_type" value="Regular"/>
+</DIAttributes>
+</DIWorkflow>
+
+</DataIntegratorExport>

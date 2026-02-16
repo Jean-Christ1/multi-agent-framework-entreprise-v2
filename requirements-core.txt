@@ -1,0 +1,11 @@
+# JAF Core - Minimal dependencies
+# This file contains the minimum required packages for the JAF framework core.
+# Use this when you only need the base framework (models, settings, DB access),
+# without any LLM/AI integrations.
+
+pydantic>=2.0,<3.0
+pydantic-settings>=2.0,<3.0
+sqlalchemy>=2.0,<3.0
+asyncpg>=0.28,<1.0
+aiosqlite>=0.19,<1.0
+python-dotenv>=1.0,<2.0

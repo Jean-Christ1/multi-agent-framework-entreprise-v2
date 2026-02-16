@@ -1,0 +1,11 @@
+# JAF Full Installation
+# For minimal install: pip install -r requirements-core.txt
+# For LLM support: pip install -r requirements-llm.txt
+# For ETL demo: pip install -r requirements-demo.txt
+
+-r requirements-llm.txt
+
+# API (optional, for future web interface)
+fastapi>=0.100,<1.0
+uvicorn[standard]>=0.23,<1.0
+httpx>=0.25,<1.0

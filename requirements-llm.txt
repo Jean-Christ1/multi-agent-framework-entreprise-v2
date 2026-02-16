@@ -1,0 +1,8 @@
+# JAF LLM Support - Requires core
+# This file extends the core dependencies with LLM-related packages.
+# Install this when you want to enable AI/LLM functionality (agents, OpenAI API, etc).
+# It includes core requirements first, then adds LLM integrations.
+
+-r requirements-core.txt
+crewai>=0.28,<1.0
+openai>=1.0,<2.0

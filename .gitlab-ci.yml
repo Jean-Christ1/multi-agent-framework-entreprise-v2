@@ -1,0 +1,94 @@
+image: python:3.11
+
+stages:
+  - lint
+  - test
+  - build
+  - deploy
+
+# Default rules for most jobs
+.default_rules:
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_BRANCH == "main"
+
+# Lint stage
+lint:ruff:
+  stage: lint
+  extends: .default_rules
+  script:
+    - pip install ruff
+    - ruff check .
+  allow_failure: false
+
+lint:black:
+  stage: lint
+  extends: .default_rules
+  script:
+    - pip install black
+    - black --check --diff .
+  allow_failure: false
+
+# Test stage
+test:pytest:
+  stage: test
+  extends: .default_rules
+  variables:
+    DATABASE_URL: "sqlite+aiosqlite:///./test.db"
+  script:
+    - pip install -r requirements.txt
+    - pip install -r requirements-demo.txt
+    - pip install pytest pytest-asyncio pytest-cov
+    - pytest --cov=framework --cov=agents --cov-report=term --cov-report=xml --cov-report=html
+  coverage: '/(?i)total.*? (100(?:\.0+)?\%|[1-9]?\d(?:\.\d+)?\%)$/'
+  artifacts:
+    reports:
+      coverage_report:
+        coverage_format: cobertura
+        path: coverage.xml
+    paths:
+      - htmlcov/
+    expire_in: 30 days
+  allow_failure: false
+
+# Build stage
+build:package:
+  stage: build
+  extends: .default_rules
+  script:
+    - pip install build
+    - python -m build
+    - |
+      echo "Package built successfully:"
+      ls -lh dist/
+  artifacts:
+    paths:
+      - dist/
+    expire_in: 7 days
+  allow_failure: false
+
+# Deploy stage
+pages:
+  stage: deploy
+  script:
+    - pip install mkdocs-material "mkdocstrings[python]"
+    - mkdocs build -d public
+  
+  artifacts:
+    paths:
+      - public
+  
+  rules:
+    - if: $CI_COMMIT_BRANCH == "init"
+
+publish-package:
+  stage: deploy
+  image: python:3.11
+  rules:
+    - if: $CI_COMMIT_TAG =~ /^v\d+\.\d+\.\d+$/
+  script:
+    - pip install build twine
+    - python -m build
+    - TWINE_PASSWORD=${CI_JOB_TOKEN} TWINE_USERNAME=gitlab-ci-token
+      python -m twine upload --repository-url ${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/pypi dist/*
+  allow_failure: true
